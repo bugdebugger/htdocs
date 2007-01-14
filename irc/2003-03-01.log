@@ -1,0 +1,291 @@
+Mar 01 18:57:08 -->	You are now talking on #pingus
+Mar 01 19:14:14 -->	Nehal (aaa@h24-82-92-37.vf.shawcable.net) has joined #pingus
+Mar 01 19:14:31 <Nehal>	grumbel: does pingus work under win32?
+Mar 01 19:34:19 <grumbel>	it should, but havn't tested it myself
+Mar 01 20:00:36 <Nehal>	oh
+Mar 01 20:01:10 <Nehal>	maybe ill try it
+Mar 01 20:38:41 <Zombie>	Did any if you listen to me?
+Mar 01 20:39:02 <Nehal>	i just came in
+Mar 01 20:39:18 <Zombie>	Are you Pingus Developers?
+Mar 01 20:39:30 <Nehal>	me? nope
+Mar 01 20:39:34 <Nehal>	grumbel is
+Mar 01 20:39:38 <Zombie>	whjat about Him?
+Mar 01 20:41:11 <Zombie>	hello?
+Mar 01 20:41:25 <Nehal>	grumbel is, he probably is afk right now
+Mar 01 20:42:24 <Zombie>	'I have some ideas to make your project more successful.
+Mar 01 20:42:51 <grumbel>	yo?
+Mar 01 20:43:21 <Zombie>	I'm a student in college
+Mar 01 20:43:34 <Zombie>	and I have some ideas I'd like to shhare with you.
+Mar 01 20:43:47 <grumbel>	then go on and share :)
+Mar 01 20:44:10 <Zombie>	I think you need to work on your semantics with Pingus.
+Mar 01 20:45:19 <Zombie>	Pingus is an excellent idea
+Mar 01 20:45:37 <Zombie>	it just needs some concept level work
+Mar 01 20:46:41 <grumbel>	its the overall game design that is pretty ugly or not existant at all
+Mar 01 20:47:06 <Zombie>	I know.
+Mar 01 20:47:15 <grumbel>	Pingus is currentyl good at starting a level from command line, the in game GUI is pretty much useless at the current point
+Mar 01 20:47:43 <Zombie>	I also think its somewhat TOO Difficult.
+Mar 01 20:47:59 <Nehal>	the game is too difficult? no i didnt find it so
+Mar 01 20:48:10 <grumbel>	"the game" doesn't exist at all
+Mar 01 20:48:22 <Nehal>	maybe some of the tutorial levels can be a little easier, but other than that its ok
+Mar 01 20:48:27 <grumbel>	its an engine + a bunch of levels (some playable some not)
+Mar 01 20:48:48 <grumbel>	Zombie: are you using latest CVS?
+Mar 01 20:49:05 <Zombie>	No, I'm using whats in Mandrake's Cooker
+Mar 01 20:49:20 <grumbel>	remove that and use CVS
+Mar 01 20:49:53 <Zombie>	Well, can we talk a little about concept level semantics?
+Mar 01 20:50:07 <grumbel>	after you tried CVS
+Mar 01 20:50:21 <grumbel>	it might already contain a few things you miss.
+Mar 01 20:50:47 <Zombie>	where can I download the latest CVS?
+Mar 01 20:51:02 <grumbel>	export CVSROOT=':pserver:anonymous@dark.x.dtu.dk:/usr/local/cvsroot'
+Mar 01 20:51:06 <grumbel>	 cvs logi
+Mar 01 20:51:11 <grumbel>	cvs -z3 checkout Games/Pingus
+Mar 01 20:51:22 <grumbel>	s/logi/login/
+Mar 01 20:53:29 <Nehal>	grumbel: what compiler did u use when u last tested on win32, and when was this?
+Mar 01 20:53:44 <grumbel>	Nehal: MSVC6
+Mar 01 20:54:12 <grumbel>	Nehal: clanlib will give you throuble with other compilers, might work with borland one's, but MSVC is the main one
+Mar 01 20:54:40 <Nehal>	ill modify clanlib to work with mingw
+Mar 01 20:55:36 <Nehal>	but one thing i hate about mingw, it is hella slow, much slower than gcc for unix, and takes a lot of memory
+Mar 01 21:04:07 <grumbel>	Zombie: have you downloaded CVS?
+Mar 01 21:04:12 <grumbel>	Zombie: more infos at http://pingus.seul.org/development/cvs.html
+Mar 01 21:04:22 <Nehal>	libmikmod compiled and installed, now clanlib
+Mar 01 21:04:31 <Nehal>	or does hermes come first, i keep forgetting?
+Mar 01 21:07:40 <grumbel>	hermes first
+Mar 01 21:08:44 <Nehal>	crap, i need autogen
+Mar 01 21:08:51 <Nehal>	grumbel: can u send me configure for hermes?
+Mar 01 21:12:30 <grumbel>	http://pingus.seul.org/~grumbel/tmp/Hermes-1.3.2-1.tar.bz2
+Mar 01 21:12:43 <grumbel>	contains the auto* stuff
+Mar 01 21:13:02 <Nehal>	thx
+Mar 01 21:17:47 <grumbel>	Zombie: you there?
+Mar 01 21:18:58 <Zombie>	er
+Mar 01 21:19:00 <Zombie>	Yes
+Mar 01 21:19:21 <Zombie>	Can I give some reccommendatioms?
+Mar 01 21:21:30 <Nehal>	Zombie: dont ask, just say :)
+Mar 01 21:21:57 <Zombie>	Extract Data from the original Lemmings a Freecraft did from Warcraft II
+Mar 01 21:22:11 -->	Cer (cer@p5086ABEB.dip.t-dialin.net) has joined #pingus
+Mar 01 21:22:19 <--	Cer has quit (Client Quit)
+Mar 01 21:23:01 <grumbel>	Zombie: Pingus data looks much better than lemmings, so its pretty pointless
+Mar 01 21:23:18 <Zombie>	Not it would not bee,
+Mar 01 21:23:43 <grumbel>	beside that Pingus is not even close to being gameplay compatible with lemmings
+Mar 01 21:24:11 <grumbel>	Zombie: done the CVS checkout?
+Mar 01 21:24:34 <grumbel>	Zombie: if so, read http://pingus.seul.org/development/cvs.html, contains now some infos on how to get a binary
+Mar 01 21:25:42 <Zombie>	I'm d/ling something else right now
+Mar 01 21:26:01 <Nehal>	hermes installed, 2 down 1 to go
+Mar 01 21:26:05 <Zombie>	but I'm more intrested in the semantics of the program as opposed to
+Mar 01 21:26:24 <Zombie>	the details as to what you have made thusfar
+Mar 01 21:26:39 <grumbel>	what do you mean by semantics in this case?
+Mar 01 21:26:54 <Zombie>	You've proven to me you have the technical know-how to build this thing
+Mar 01 21:27:36 <Zombie>	What you don't know is how to appropriately document, and nogstolgically 
+Mar 01 21:27:51 <Zombie>	advertise your project
+Mar 01 21:28:31 <grumbel>	I have decided that I currently have nothing to advertise, that why its currently doesn't have much spotlight on it.
+Mar 01 21:28:54 <Zombie>	Thats part of semantics.
+Mar 01 21:28:54 <grumbel>	it already got enough of that way back, it didn't help much
+Mar 01 21:29:14 <Zombie>	Your idea has some very good merit.
+Mar 01 21:30:04 <Zombie>	and I know what its like to have a project that you really want to do (Mega Man: Black Project) fail on me for technical reasons
+Mar 01 21:30:51 <Zombie>	but you have overcome the technical barrier
+Mar 01 21:31:09 <grumbel>	pingus actually never was a project 'that I really want to do', it was more an accident.
+Mar 01 21:31:24 <Zombie>	Oh?
+Mar 01 21:32:26 <grumbel>	was more ment to be a short time project to learn a bit programming, well turned out to take a bit longer than expected and got a bit more attention than expected
+Mar 01 21:32:35 <Nehal>	dangit, configure for clanlib doesn't detect hemres
+Mar 01 21:33:21 <grumbel>	Nehal: config.log is your friend... well, at least sometimes
+Mar 01 21:34:03 <Nehal>	i just usually edit configure and erase and 'exit' :)
+Mar 01 21:34:06 <Nehal>	s/and/any
+Mar 01 21:35:15 <Zombie>	Can I give you my experiance in this?
+Mar 01 21:36:45 <Zombie>	I wanted to make a massive (At the time MS-DOS) game called Mega Man the Rise of the House of Hyperion.
+Mar 01 21:36:58 <Zombie>	I made a web page on this project
+Mar 01 21:37:17 <Zombie>	I story boarded the wwhole thing
+Mar 01 21:38:05 <Zombie>	I got voice actors
+Mar 01 21:38:24 <Zombie>	I spent months Extracting sprites from  Mega Man 1-6
+Mar 01 21:41:30 <Zombie>	I built a main data file from a Doom WAD
+Mar 01 21:42:55 <Zombie>	But because I knew nothing about coding my project failed
+Mar 01 21:43:42 <Zombie>	got that?
+Mar 01 21:43:44 <grumbel>	yep
+Mar 01 21:44:05 <Zombie>	For you I think the reverse is true.
+Mar 01 21:44:16 <Zombie>	Therefore you experiance "scope creep:
+Mar 01 21:44:25 <Nehal>	hmm, so far i had to make a modification, and im getting a lot of warnings, but clanlib seems to be compiling fine
+Mar 01 21:45:10 <grumbel>	Nehal: do you compile clanlib for X11 or DirectX?
+Mar 01 21:46:03 <Nehal>	grumbel: well WIN32 or __WIN32__ or whatever is automatically defined, so it is compiling with directx, or i would certainly get an error by now :-)
+Mar 01 21:46:34 <Nehal>	actually i know it is, cos it couldnt find d3d.h , i had to comment that line out, i have directx.h and dinput.h and all the others, i guess d3d.h isn't needed anyways
+Mar 01 21:47:21 <Nehal>	more than 100 megs swap in use :(
+Mar 01 21:57:50 -->	gervase (gervase@modem-1613.elk.dialup.pol.co.uk) has joined #pingus
+Mar 01 21:58:52 <grumbel>	hi gervase
+Mar 01 21:58:59 <gervase>	Hello!
+Mar 01 21:59:08 <grumbel>	Zombie: so what do you think I should do different?
+Mar 01 22:01:34 <Zombie>	hold on
+Mar 01 22:01:54 <Nehal>	oh crap, clanlib does not go well with mingw
+Mar 01 22:05:24 <gervase>	:Just managed to compile the latest cvs about 10 minutes ago
+Mar 01 22:06:06 <gervase>	and I keep on getting lots of "frame below zero: nan" or
+Mar 01 22:06:12 <gervase>	"frame below zero: inf"
+Mar 01 22:06:36 <gervase>	Could this be due to a bad delta being passed into Sprite::update() ?
+Mar 01 22:07:18 <grumbel>	gervase: is the frame-skip stuff
+Mar 01 22:07:28 <grumbel>	gervase: which should probally be completly rewriten
+Mar 01 22:07:46 <grumbel>	pingus doesn't behave very well on slow systems
+Mar 01 22:08:06 <grumbel>	and even on fast systems with a little CPU load it gets quite choopy
+Mar 01 22:09:33 <Nehal>	there are completely different source directories for win32/unix , it is not easy getting clanlib to work...
+Mar 01 22:09:34 -->	abcdefghi (skittles@12-28-48-169.southshore.com) has joined #pingus
+Mar 01 22:09:48 <abcdefghi>	hi when dose the mettin start?
+Mar 01 22:09:59 <grumbel>	kind of
+Mar 01 22:11:27 <abcdefghi>	well i was think about how we could make pingus better and i thought that mabey we could incorperate the old dos games in to pingus like in freecraft
+Mar 01 22:11:32 <Zombie>	back
+Mar 01 22:11:37 <Zombie>	lunch is good :)
+Mar 01 22:12:18 <grumbel>	abcdefghi: no, that would make things much worse.
+Mar 01 22:12:31 <abcdefghi>	why?
+Mar 01 22:12:35 <grumbel>	or is it just me who can't stand freecraft gfx for more than five seconds?
+Mar 01 22:12:37 <Zombie>	Good, everyone is here
+Mar 01 22:12:50 <Zombie>	hm?
+Mar 01 22:13:10 <grumbel>	beside that there is copyright throuble and resolution throuble 320x200, doesn't look that good on a 800x600 screen
+Mar 01 22:13:15 <Nehal>	grumbel: most freecraft uses use the wc2 graphics, and yes the fcmp graphics suck, they are improving though
+Mar 01 22:13:23 <Nehal>	s/uses/users
+Mar 01 22:13:47 <abcdefghi>	true well that shows hom much i think things through
+Mar 01 22:13:54 <grumbel>	Nehal: yeah, but thats kind of the problem, cause nearly everybody can use wc2, the free ones are lagging behind
+Mar 01 22:14:07 <abcdefghi>	yep
+Mar 01 22:14:09 <Nehal>	grumbel: right
+Mar 01 22:14:31 <grumbel>	and I think redoing something that is already done, is not worth doing at all, especially games.
+Mar 01 22:15:02 <abcdefghi>	is there a banner for pingus that people can put around there sites?
+Mar 01 22:15:09 <abcdefghi>	yes i guess
+Mar 01 22:16:05 <grumbel>	we have banners somewhere, but not available on the webpage at the moment.
+Mar 01 22:16:42 <abcdefghi>	well we could get them on the website and then people like my dad can put them on their sites
+Mar 01 22:17:12 <abcdefghi>	how far are we to the next relese of pingus?
+Mar 01 22:17:45 <grumbel>	as close as ever I think, its just a matter of sitting down for two weeks and get it finished
+Mar 01 22:18:20 <abcdefghi>	well that is good how much of the gui is hooked out to the servers options?
+Mar 01 22:20:20 <grumbel>	the gui is more or less working, its just a matter of striping out the stuff that is not working
+Mar 01 22:20:30 <grumbel>	like option menu and contrib-screens
+Mar 01 22:20:48 <abcdefghi>	k
+Mar 01 22:21:26 <abcdefghi>	how many of the levels are hooked out to the gui?
+Mar 01 22:21:41 <grumbel>	15-20
+Mar 01 22:21:48 <abcdefghi>	oh
+Mar 01 22:23:33 <abcdefghi>	what can people like me do to hook up more levels to the gui?
+Mar 01 22:24:16 <grumbel>	nothing, the next release will not have more than 15-20 levels
+Mar 01 22:24:56 <abcdefghi>	i why that few?
+Mar 01 22:25:05 <abcdefghi>	-i
+Mar 01 22:25:49 <grumbel>	because we want to start out small
+Mar 01 22:26:19 <abcdefghi>	that makes sense
+Mar 01 22:27:01 <abcdefghi>	will you beable to download the other levels if you want to?
+Mar 01 22:27:17 <grumbel>	no
+Mar 01 22:27:21 <abcdefghi>	k
+Mar 01 22:27:45 <grumbel>	well, people can always use CVS to get everything, but there won't be any public visible download button
+Mar 01 22:27:56 <abcdefghi>	true
+Mar 01 22:28:24 <Nehal>	grumbel: ever played lemmings 2?
+Mar 01 22:28:39 <abcdefghi>	no i can't find it.
+Mar 01 22:29:08 <grumbel>	Nehal: a bit, but not that much
+Mar 01 22:29:31 <grumbel>	abcdefghi: http://pingus.seul.org/development/cvs.html
+Mar 01 22:29:46 <abcdefghi>	k
+Mar 01 22:31:20 <abcdefghi>	only my win part of this box has a connection to the internet right now but i will hook up linux to the internet soon.
+Mar 01 22:32:59 <grumbel>	gervase: have seen the test apps in contrib/ ?
+Mar 01 22:37:30 <gervase>	Found it.  It basically just puts a "sprite" on the screen and goes through each of the frames, if I read the code correctly.
+Mar 01 22:38:34 <grumbel>	gervase: thats the not so usefull one, the soundtest/ thing is more intersting
+Mar 01 22:40:05 <grumbel>	gervase: can be used to test pingus, not so bug free, sound system
+Mar 01 22:40:17 <abcdefghi>	what parts of pingus are working that weren't working in the last verision?
+Mar 01 22:41:01 <grumbel>	can't remember, lots of stuff
+Mar 01 22:41:08 <abcdefghi>	cool
+Mar 01 22:41:23 <abcdefghi>	is there an irc client for linux
+Mar 01 22:41:40 <Nehal>	abcdefghi: haha
+Mar 01 22:41:46 <abcdefghi>	?
+Mar 01 22:41:48 <grumbel>	abcdefghi: tons of, from telnet, to xchat, whatever you like
+Mar 01 22:42:09 <abcdefghi>	oh so you can just login with telnet?
+Mar 01 22:42:31 <grumbel>	if you have the IRC-RFC at hand, yep
+Mar 01 22:42:46 <abcdefghi>	what is that and where can i get it?
+Mar 01 22:42:59 <Nehal>	abcdefghi: xchat, bitchx, kvirc, sirc, irssi, ircII, savirc, xirssi, the list goes on...
+Mar 01 22:43:05 <Nehal>	xchat is the best though :)
+Mar 01 22:43:18 <abcdefghi>	k
+Mar 01 22:43:40 <--	abcdefghi has quit ()
+Mar 01 22:44:17 <gervase>	Got an error while compiling soundtest
+Mar 01 22:44:28 <grumbel>	so, anybody feeling the need to cleanup the pingus development section on the webpage?
+Mar 01 22:44:33 <grumbel>	gervase: which error?
+Mar 01 22:44:37 <gervase>	"/usr/bin/ld: cannot find -lclanVorbis"
+Mar 01 22:44:41 <gervase>	Is it reqd?
+Mar 01 22:44:55 <grumbel>	remove it from the makefile
+Mar 01 22:45:14 <grumbel>	its not required for pingus, but soundtest/ doesn't have a full blown configure script
+Mar 01 22:45:24 -->	abcdefghi (skittles@12-28-48-169.southshore.com) has joined #pingus
+Mar 01 22:45:44 <abcdefghi>	how do i use xchat?
+Mar 01 22:45:51 <abcdefghi>	to connect to irc
+Mar 01 22:45:57 <grumbel>	start it and use it, I would say
+Mar 01 22:46:03 <abcdefghi>	k
+Mar 01 22:46:17 <grumbel>	xchat is a pretty straight forward clicky-app
+Mar 01 22:46:29 <abcdefghi>	k good
+Mar 01 22:47:24 <abcdefghi>	in the faq for pingus it says "A game manual along with a tutorial is planed and might be released together with the next version" is that still planed?
+Mar 01 22:48:17 <grumbel>	of course its planed, the question is if somebody is writing it
+Mar 01 22:48:41 <abcdefghi>	is anybody writing it?
+Mar 01 22:48:45 <gervase>	Is the game manual different from the web manual?
+Mar 01 22:49:09 gervase grumbel Mar 01 22:49:09 gervase grumbel Mar 01 22:49:26 <grumbel>	gervase: maybe another style sheet or so to make it look better when seperated from the webpage, but same content
+Mar 01 22:49:38 <abcdefghi>	k
+Mar 01 22:50:32 <abcdefghi>	well i gtg
+Mar 01 22:50:35 <abcdefghi>	bye
+Mar 01 22:50:41 <--	abcdefghi has quit ()
+Mar 01 22:51:12 <gervase>	Got a problem with soundtest
+Mar 01 22:51:31 <gervase>	Ln 1: "[DebugStream::Buffer fallback stream] [Output] Initializing ClanLib-Sound"
+Mar 01 22:51:43 <gervase>	Ln 2: "[DebugStream::Buffer fallback stream] [Output] Initializing ClanLib-MikMod"
+Mar 01 22:52:00 <gervase>	[DebugStream::Buffer fallback stream] [Output] PathManager: music/music/pingus-1.it -> ../../data//music/music/pingus-1
+Mar 01 22:52:03 <Nehal>	gg
+Mar 01 22:52:14 <gervase>	.it"
+Mar 01 22:52:39 <gervase>	Ln 4: "[DebugStream::Buffer fallback stream] [Output] PingusSoundReal: Playing music: ../../data//music/music/pingus-1.it"
+Mar 01 22:52:58 <gervase>	Ln 4: "Aborted"
+Mar 01 22:53:15 <gervase>	Sorry Ln 5: "Aborted"
+Mar 01 22:54:06 <grumbel>	you have newest CVS?
+Mar 01 22:54:24 <--	Nehal has quit ("Client exiting")
+Mar 01 22:54:27 <grumbel>	changed the music/ prefix a bit
+Mar 01 23:10:28 <grumbel>	roadmap is now a bit updated http://pingus.seul.org/development/roadmap.html
+Mar 01 23:15:01 <gervase>	Got rid of "music/" prefix bits
+Mar 01 23:15:13 <gervase>	But now get the following errors
+Mar 01 23:15:31 <gervase>	"PathManager: music/pingus-1.it -> /music/pingus-1.it"
+Mar 01 23:16:00 <gervase>	"PingusSoundReal: Playing music: /music/pingus-1.it"
+Mar 01 23:16:02 <gervase>	"Aborted"
+Mar 01 23:16:23 <grumbel>	is your pingus current CVS?
+Mar 01 23:16:37 <grumbel>	I changed the location of the pathmanager stuff a few days ago
+Mar 01 23:16:55 <grumbel>	it was done multiple times in some places, which didn't work to well.
+Mar 01 23:16:59 <gervase>	I updated at about 20:30 today.
+Mar 01 23:21:38 <grumbel>	hm
+Mar 01 23:24:06 <grumbel>	pathfinder is doing something wrong than
+Mar 01 23:24:48 <grumbel>	gervase: is your pingus compile also current?
+Mar 01 23:25:16 <grumbel>	since the contrib/ stuff simply grabs the object files from the src/ directory without checking for a necesarry rebuild
+Mar 01 23:25:58 <grumbel>	std::string comp_path = base_path + "/" + relative_path;
+Mar 01 23:26:11 <grumbel>	if base_path is empty you get your behaviour
+Mar 01 23:29:24 <grumbel>	eik, stupid me
+Mar 01 23:30:10 <--	gervase has quit (Read error: 60 (Operation timed out))
+Mar 01 23:40:54 -->	gervase (gervase@modem-2970.baboon.dialup.pol.co.uk) has joined #pingus
+Mar 01 23:45:59 <grumbel>	fix for soundtest is in CVS
+Mar 02 00:11:01 <gervase>	Managed to get my own fix to soundtest to work, but too late!
+Mar 02 00:11:23 <gervase>	I removed one too many of the "music/" prefixes.
+Mar 02 00:12:46 <gervase>	Just wonder, is it worth making sound test be able to play music 1 to 9 and not just 1, 2, 3, 5 and 6?
+Mar 02 00:19:28 <grumbel>	doesn't really matter
+Mar 02 00:19:47 <grumbel>	was just to see if you could play multiple music tracks after another without memleak or lockups
+Mar 02 00:20:07 <grumbel>	music is working ok in this matter
+Mar 02 00:20:17 <grumbel>	but sound is not, its memleaking quite a lot
+Mar 02 00:20:35 <grumbel>	and pingus-massdestruction sounds ugly, since to many .wav's are played at the same time
+Mar 02 00:20:49 <grumbel>	you can reproduce that by right-clicking in the soundtest window
+Mar 02 00:21:48 <gervase>	Well.  It's the first ever time I've ever heard any of the music!
+Mar 02 00:22:20 <gervase>	With regards to the sound, the worst thing that happens is the "FIXME" msg appears.
+Mar 02 00:22:42 <grumbel>	look at 'top' and you see its memleaking
+Mar 02 00:22:45 <gervase>	The sound pans well.
+Mar 02 00:22:56 <grumbel>	its not as worse as mem-leaking music, but still fills the memory
+Mar 02 00:24:15 <grumbel>	we need the resource manager to handle music and sound stuff
+Mar 02 00:24:24 <gervase>	When you say the top, the top of what?
+Mar 02 00:24:32 <grumbel>	currently we are just 'new'ing Clanlib sound streams and never deleting them
+Mar 02 00:24:45 <grumbel>	the programm 'top'
+Mar 02 00:25:32 <grumbel>	memleaks are good to see there when you run soundtest
+Mar 02 00:25:51 <grumbel>	even so valgrind or some real memory debuger will give you much more acurat results
+Mar 02 00:27:46 <grumbel>	btw. animtest is just meant to test sprites for there frame-per-second when they look best, isn't really a finished programm and didn't help all that much, but might come handy one time
+Mar 02 00:37:48 <gervase>	Unless I am missing something, couldn't the new statements be moved outside?
+Mar 02 00:38:23 <gervase>	You can then pass the newly created object by ptr.
+Mar 02 00:38:42 <gervase>	You then put delete in the destructor.
+Mar 02 00:40:28 <grumbel>	we need a smart_ptr wrapper class around the music stuff
+Mar 02 00:40:32 <grumbel>	sound stuff I mean
+Mar 02 00:40:51 <grumbel>	music is ok as it is, since we only allocate one music file at once and destroy it if another music gets started
+Mar 02 00:41:47 <grumbel>	sound effects could simply be allocated once at system startup
+Mar 02 00:42:10 <grumbel>	since we only have a handfull of them, then stuffed in a std::map<> and deleted at sound shutdown
+Mar 02 00:42:25 <grumbel>	so we could reuse the sound effects at least
+Mar 02 01:05:13 <gervase>	I assume that you would replace PingusSoundReal with the std::map<>,
+Mar 02 01:05:27 <gervase>	which PingusSound would search?
+Mar 02 01:05:51 <gervase>	The std::map<> would be a member of PingusSound.
+Mar 02 01:08:06 <gervase>	No need for smart_ptr then.
+Mar 02 01:10:16 <grumbel>	problem is that this still doesn't solve the problem with playing to many of the same sound at once
+Mar 02 01:10:36 <grumbel>	so a seperate class is needed
+Mar 02 01:11:50 <grumbel>	but std::map solution would be pretty simple to implement and probally enough for the first release
+Mar 02 01:13:07 <gervase>	Does the too many sounds problem only occur at Armageddon time?
+Mar 02 01:17:41 <gervase>	If only one sound is allowed to play at the same time, I think Armageddon would sound silly.
+Mar 02 01:18:16 <gervase>	I think you would only hear 2 "Oh-no"s, when in fact 50 Pingus are about to die.
+Mar 02 01:20:48 <gervase>	My ISP's auto disconnect will be kicking into action in literally 1 a minute.
+Mar 02 01:21:47 <gervase>	So, I'll bid you all farewell...
+Mar 02 01:22:54 <grumbel>	it doesn't have to be 50 sounds
+Mar 02 01:22:59 <grumbel>	but probally 5 or so 
+Mar 02 01:23:16 <grumbel>	playing the same sound over and over again, results in some kind of 'echo'-like sound
+Mar 02 01:23:23 <grumbel>	which sounds completly wrong and broken
+Mar 02 01:24:24 <grumbel>	good night, going to sleep "Real Soon Now"[tm]

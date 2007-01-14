@@ -1,0 +1,205 @@
+<html> <head><title>Pingus IRC Log</title></head> <body>  <h1></h1><table width="80%" border="1" align="center"><tr><th>Nick</th><th>Message</th></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">You are now talking on #pingus</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">henri (~hfmanson@cc286660-a.ensch1.ov.home.nl) has joined #pingus</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">hallo</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">henri has quit (Client Quit)</td></tr>
+<td align="right" bgcolor="#AAAAAA">---</td><td bgcolor="#AAAAAA">You have new mail (1 messages, 1118 bytes total).</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">ginge (ginge@modem-1236.zebra.dialup.pol.co.uk) has joined #pingus</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">hi</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">henri (~hfmanson@cc286660-a.ensch1.ov.home.nl) has joined #pingus</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">hi henri</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">gervase (gervase@modem-2043.python.dialup.pol.co.uk) has joined #pingus</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">hello </td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">at 19.00 West European time is's going to start?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Hi!</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">about 5 mins time by my computer clock</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">its getting fuller :)</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Would it be best to start with a general introduction of who each of us are?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">I'm Henri Manson, I've been busy removing memory leaks in pingus</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: ah, still haven't commited your patch</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">I'm Gervase Lam.  I've mostly been trying to remove the playability bugs.  But I would just like to get the bug list down.</td></tr>
+<td align="right" bgcolor="#999999">&gt;grumbel&lt;</td><td bgcolor="#999999"> &lt;algorithm&gt;?  is missing in button_panel.cxx</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">I'm Neil Mitchell, and I use Windows, so have been doing Win specific things</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">If anyone else is also using VC++ I've implemented a memory allocation hook function so you can find where</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">the memory was allocated one a leak is detected when terminating Pingus</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">I've also got my own leak detector, I just haven't run it with Pingus</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">I've also noticed that some functions return complete objects instead of references to them.</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">that costs overhead</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">aren't there really good memory leak/access error detectors for Linux, that are much better than Windows ones?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">ginge: valgrind should be good, but I havn't really used it myself</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Is there a vague agenda to this meeting?!</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: there are quite a few objects in ClanLib that are refcounted, so that shouldn't be such a big problem</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">gervase: no.</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">I have a question. As a pingus beginner is there some documentation available about the design of pingus?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">classes etc..</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: <a href="http://pingus.seul.org/development.html">http://pingus.seul.org/development.html</a> </td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: that contains a bit, but most likly quite a bit outdated</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">thanks</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: <a href="http://pingus.seul.org/sourcecodestructure.html">http://pingus.seul.org/sourcecodestructure.html</a> </td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: but this one was written before the big cleanup</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">What is the plan with regards to getting out the next release?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">gervase: tutorial island + a few normal levels should be 100% working</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">gervase: sound and music also needs to be working correctly</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">gervase: and actions should be finished</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">gervase: level editor also needs to get a bit polished</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">I've made some changes so the sound works again in Windows. The music is still hardcode in pingus. is the file</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">format still .it. Why is MIDI not used?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">It sounds like there is a long way to go.  For example, one of the "bugs" needs to be sorted are Sliders.  The problem is that there is still transitional animation for Sliders.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">The (Linux) software cursor problem is also on the list for the next release 0.5.0.  Is this a ClanLib problem?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">Much memory leaks are caused by the ::instance construct which initialises a static object variable with "the" object</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">but that static variable is never freed.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">With regards to MIDI, aren't we going with WAV files because they are more flexible?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">Another question. Why isn't the pingus project included in SourceForge?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">It can be handy to assign tasks to volunteers.</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">grumbel_ (~grumbel@pD9E1122B.dip.t-dialin.net) has joined #pingus</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Well, the mailing lists (only) used to be on SourceForge.  But because of the 'poor' functionality they have, we moved this summer.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">I think one of the problems was one of the "Reply" fields?  Correct me on all counts if I am wrong.</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">hm, my xchat client staled again... looks like I missed the last five minutes or so, could somebody copy&paste them to me?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">do you want to have to story so far?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">How would you like this to be done?  Could look confusing on the screen.</td></tr>
+<td align="right" bgcolor="darkblue">grumbel grumbel_ Nov 02 19:28:11 &gt;grumbel_&lt;</td><td bgcolor="darkblue">test </td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">henri: clanlib doesn't have midi support and midi support in general under linux is quite ugly</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">beside that mod's sound a lot better, while not wasting that much space as .ogg files which we also support</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">but most important, .it was the format which the musican used to create the music</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">does anybody know how I can dump a backtrace from within the programm without launching gdb?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">IIRC there was some function/library to do it</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">but I can't remember which one</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">I am going to clean up the PingusMain/GenericMain/AbstractMain mess a bit</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: could you compile a new win32-binary?</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">sure, I have one that is pre-tutorial world, but with no major bugs</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">I can do another one, but at the moment I can't run pingus (recent reformat), so I can't check it works first</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">henri: all those singleton instance() things should probally get replaced with ::init()/::deinit() stuff</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">How shall I "move" the file to Pingus?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: you should be able to use tha savanna account to upload files</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">grumbel has quit (Read error: 110 (Connection timed out))</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">grumbel (~grumbel@pD9E1122B.dip.t-dialin.net) has joined #pingus</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">that isn't very easy using Windows, it is really setup for Linux, any easier way?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: no</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: aren't there ftp clients that can speak sftp?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: you basically just need a key pair and an client that speaks sftp, thats all</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen"><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">http://www.chiark.greenend.org.uk/~sgtatham/putty/</a> </td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">not that I have on me, I'll look into it again, I have putty already, but before it just "didn't work"</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">if sftp fails, try plain scp, that should work </td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">gervase: the slider action can be left out for the next release, its still to unfinished</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">what is currently happening with the website?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: webpage is in savannas-html-CVS, subdirectory redesign/</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">alright, I'll look into that - is it my XML one?</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">and what needs to be done for it to go from redesign -&gt; real</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: its your xml stuff</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: we need new content</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: and we should probally make the change together with the new release</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">good idea</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen"><a href="http://savannah.nongnu.org/bugs/index.php?group_id=2184&set=custom&advsrch=1&msort=0&report_id=110&category_id%5B%5D=0&bug_group_id%5B%5D=0&assigned_to%5B%5D=0&platform_version_id%5B%5D=0&status_id%5B%5D=1&release_id%5B%5D=0&plan_release_id%5B%5D=101&SUBMIT=Browse&chunksz=50">http://savannah.nongnu.org/bugs/index.php?group_id=2184&set=custom&...</a> </td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">that should be the bugs that needs to get fixed before the next release</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">Niel: can you mail me (hfmanson@home.nl) what your activities are in windows?</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">activities? - you mean like my skills?</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">grumbel: Do you want people to work on the website as anon then submit patches to the mailing list?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">best would be if we could get a seperate maintainer for the webpage</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">but patches should do for the moment</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">all people with a savanna account should also be able to write directly to the html-CVS tree</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">but do you want us to commit directly or patch to the mailing list?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">you can commit directly</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">but if you want to do a larger change, discuss at the mailinglist first</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">ItsMeHarry (~simcon@host213-122-143-139.in-addr.btopenworld.com) has joined #pingus</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">ItsMeHarry (~simcon@host213-122-143-139.in-addr.btopenworld.com) has left #pingus</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">we sooner or later need a start-up application for pingus</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">which allows player to select resolution, fullscreen or not and things like that</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">does anybody want to take that job?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">How platform independent could this be?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">not sure</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">either we write two seperate ones for linux and win32 or we use wxwindows or something like that</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">I suppose dialog boxes like that used in the Editor could be used.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">no</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">thats already 'too late'</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">the startup-app should use the native system GUI tools</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">since it should be used to avoid clanlib throuble</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">basically an options dialog that writes out to a settings file?</td></tr>
+<td align="right" bgcolor="#aadddd">&lt;gnutzel&gt;</td><td bgcolor="#aadddd">Maybe we could try wxwin Stuff?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">If Pingus is going to use a system abstraction class so that it is platform independent, it would be daft to have a platform dependent start-up application.</td></tr>
+<td align="right" bgcolor="#aadddd">&lt;gnutzel&gt;</td><td bgcolor="#aadddd">Hm, I thought it would be good for a quick standalone `Configurator` application.</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">gervase: getting 100% abstract from the platform will never work</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">for example one might to chose the opengl driver to use or things like that</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">ginge: I'm back, I meant what you are doing right now for the pingus project</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: yep, something like that</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: doesn't have to be very complicated</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: but could of course be a bit more sophisticated to write down error logs and things like that</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">ginge: so that people can easily copy&paste stuff when they want to write a bug report or things like that</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">I can do a system configurator for windows with ease, just give me the stuff that wants doing etc.</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">I was also thinking of doing an installer for Pingus on Windows, as most Win users won't want to either unzip or CVS</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">henri: nothing at the moment, other than what i've offered in the previous two lines</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Somebody e-mailed the list quite a while back about a platform independent installer.</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen"><a href="http://www.nullsoft.com/free/nsis/">http://www.nullsoft.com/free/nsis/</a> </td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">this is a free installer application</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">That was what I was thinking of using, I have done installers in that before</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">i don't think its platform independant though</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">The slight problem is that would mean deviating from what is Linux's standard Red Hat Packaging system.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">But then again I have StarOffice on Linux.  And the installer, which is not Red Hat, is fine.</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">gervase: I don't really like installers for linux</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">well ok, I don't really like .deb and .rpm either</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;ginge&gt;</td><td bgcolor="#BBBBBB">g2g, can someone post the whole text of the conversation to the website?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">has somebody a complete log?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">btw. should we write a worldmap editor or continue to write them by hand?</td></tr>
+<td align="right" bgcolor="#ddaadd">grumbel grumbel_ Nov 02 20:53:59 &gt;grumbel&lt;</td><td bgcolor="#ddaadd">Ich haette eins von **** BEGIN LOGGING AT Sat Nov  2 15:43:42 2002</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: I commited your memleak patch now</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">ItsMeHarry (~simcon@host213-122-143-139.in-addr.btopenworld.com) has joined #pingus</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: but I changed quite a few things in it</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">I have a log of the conversation so for, should I send it?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">grumbel: I'll update CVS this evening, what have you changed?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">added destructor in controller and init/deinit for PingusResource</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">I also cleaned up the Pingus/Abstract/GenericMain stuff</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">grumbel: on what platform are you working?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">linux</td></tr>
+<td align="right" bgcolor="#bbaadd">&lt;ItsMeHarry&gt;</td><td bgcolor="#bbaadd">why are there 2 grumbels?</td></tr>
+<td align="right" bgcolor="#bbaadd">&lt;ItsMeHarry&gt;</td><td bgcolor="#bbaadd">ich verstehe nicht</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">cause I have to xchats up and running</td></tr>
+<td align="right" bgcolor="#bbaadd">&lt;ItsMeHarry&gt;</td><td bgcolor="#bbaadd">two, ok :)</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">when I use cvs update, must I also update clanlib?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">henri: no</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">henri: clanlib0.6 is pretty much staled, if somebody important gets added i'll post it to the mailinglist</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">y (gervase@modem-2723.python.dialup.pol.co.uk) has joined #pingus</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">gervase has quit (Read error: 110 (Connection timed out))</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">y has quit (Client Quit)</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">gervase (gervase@modem-2723.python.dialup.pol.co.uk) has joined #pingus</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">I've just had a look at the wxwin site &lt;<a href="http://www.wxwindows.org/&gt;.">http://www.wxwindows.org/&gt;.</a>  It's a "cross platform GUI framework" system.</td></tr>
+<td align="right" bgcolor="#AAAAAA">---</td><td bgcolor="#AAAAAA">ChanServ has changed the topic to: Pingus - <a href="http://pingus.seul.org">http://pingus.seul.org</a> </td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">ginge has quit (Read error: 113 (No route to host))</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">hello, when using should I always use 'checkout' and not 'update'? Now several contains things like '&lt;&lt;&lt;&lt;&lt;&lt;' and then apparently some integration</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">conflicts...</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">when using cvs</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: rm the files and update again</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: unless you have something in the files you want to keep, than you have to resolve the conflict manually</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">this always happens if you change something, send a patch, I'll change the patch a bit and commit -&gt; bang, a conflict</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">havn't really found a way to avoid that</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">ItsMeHarry has quit (Remote closed the connection)</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">grumbel: Now I'm regetting the source from CVS...</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">grumbel: when this meeting is over I can send you the text of it.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">henri: ok</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">grumbel: done compiling, only 6 errors! One of them is that generic_main.cxx isn't in the project. Can I remove it from the project?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">yep, can be removed from project</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">Here's another one which I already got in the first place:</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">F:\User\pingus\Games\Pingus\src\worldobj_data_factory.cxx(159) : error C2065: 'XML_ELEMENT_PTR' : undeclared identifier</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">its this XML_GET_LINE() macro which doesn't seem to work under windows (or at least not with some versions of libxml)</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">BTW: that's the only error left. I added #include &lt;ClanLib/Core/System/console_window.h&gt;</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">I'll add a workaround</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">in pingus_main.cxx for CL_ConsoleWindow </td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">now everythings compiles again. In VC++ when linking I add a 'd' to the end of every Clanlib library to indicate it's a debugger</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">library</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">commited a fix</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">grumbel: Do you get a console window automatically in Linux?</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">you launch stuff from the terminal most of the time</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">so there is no need for a console window</td></tr>
+<td align="right" bgcolor="darkgreen">&lt;grumbel_&gt;</td><td bgcolor="darkgreen">beside that console window is an empty dummy under linux, it doesn't do anything</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">so the #ifdef isn't really necesarry, I'll remove it</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">if seen you have created a PingusResource::deinit</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">when does it get called?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">woops, I'll hook it up</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">there is quite a bit more that is init()'ed but not deinited() </td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">I had added a 'delete main_obj' in generic_main.cxx. where has the stuff gone of generic_main.cxx?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">removed</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">generic main was just wrapper stuff, not really needed</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">Hello Ingo</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">hi</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;henri&gt;</td><td bgcolor="#DDDDDD">now the pingus deinit functions are called in pingusMain::main</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;grumbel&gt;</td><td bgcolor="#CCCCCC">ok</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">henri has quit ()</td></tr>
+ </table> </body></html>

@@ -1,0 +1,293 @@
+<html> <head><title>Pingus IRC Log</title></head> <body>  <h1></h1><table width="80%" border="1" align="center"><tr><th>Nick</th><th>Message</th></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">You are now talking on #pingus</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">Nehal (aaa@h24-82-92-37.vf.shawcable.net) has joined #pingus</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel: does pingus work under win32?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">it should, but havn't tested it myself</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">oh</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">maybe ill try it</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Did any if you listen to me?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">i just came in</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Are you Pingus Developers?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">me? nope</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel is</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">whjat about Him?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">hello?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel is, he probably is afk right now</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">'I have some ideas to make your project more successful.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">yo?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I'm a student in college</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">and I have some ideas I'd like to shhare with you.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">then go on and share :)</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I think you need to work on your semantics with Pingus.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Pingus is an excellent idea</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">it just needs some concept level work</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">its the overall game design that is pretty ugly or not existant at all</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I know.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Pingus is currentyl good at starting a level from command line, the in game GUI is pretty much useless at the current point</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I also think its somewhat TOO Difficult.</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">the game is too difficult? no i didnt find it so</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">"the game" doesn't exist at all</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">maybe some of the tutorial levels can be a little easier, but other than that its ok</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">its an engine + a bunch of levels (some playable some not)</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Zombie: are you using latest CVS?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">No, I'm using whats in Mandrake's Cooker</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">remove that and use CVS</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Well, can we talk a little about concept level semantics?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">after you tried CVS</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">it might already contain a few things you miss.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">where can I download the latest CVS?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">export CVSROOT=':pserver:anonymous@dark.x.dtu.dk:/usr/local/cvsroot'</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA"> cvs logi</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">cvs -z3 checkout Games/Pingus</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">s/logi/login/</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel: what compiler did u use when u last tested on win32, and when was this?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Nehal: MSVC6</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Nehal: clanlib will give you throuble with other compilers, might work with borland one's, but MSVC is the main one</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">ill modify clanlib to work with mingw</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">but one thing i hate about mingw, it is hella slow, much slower than gcc for unix, and takes a lot of memory</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Zombie: have you downloaded CVS?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Zombie: more infos at <a href="http://pingus.seul.org/development/cvs.html">http://pingus.seul.org/development/cvs.html</a> </td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">libmikmod compiled and installed, now clanlib</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">or does hermes come first, i keep forgetting?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">hermes first</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">crap, i need autogen</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel: can u send me configure for hermes?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA"><a href="http://pingus.seul.org/~grumbel/tmp/Hermes-1.3.2-1.tar.bz2">http://pingus.seul.org/~grumbel/tmp/Hermes-1.3.2-1.tar.bz2</a> </td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">contains the auto* stuff</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">thx</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Zombie: you there?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">er</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Yes</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Can I give some reccommendatioms?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">Zombie: dont ask, just say :)</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Extract Data from the original Lemmings a Freecraft did from Warcraft II</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">Cer (cer@p5086ABEB.dip.t-dialin.net) has joined #pingus</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">Cer has quit (Client Quit)</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Zombie: Pingus data looks much better than lemmings, so its pretty pointless</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Not it would not bee,</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">beside that Pingus is not even close to being gameplay compatible with lemmings</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Zombie: done the CVS checkout?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Zombie: if so, read <a href="http://pingus.seul.org/development/cvs.html,">http://pingus.seul.org/development/cvs.html,</a> contains now some infos on how to get a binary</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I'm d/ling something else right now</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">hermes installed, 2 down 1 to go</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">but I'm more intrested in the semantics of the program as opposed to</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">the details as to what you have made thusfar</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">what do you mean by semantics in this case?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">You've proven to me you have the technical know-how to build this thing</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">What you don't know is how to appropriately document, and nogstolgically </td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">advertise your project</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">I have decided that I currently have nothing to advertise, that why its currently doesn't have much spotlight on it.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Thats part of semantics.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">it already got enough of that way back, it didn't help much</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Your idea has some very good merit.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">and I know what its like to have a project that you really want to do (Mega Man: Black Project) fail on me for technical reasons</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">but you have overcome the technical barrier</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">pingus actually never was a project 'that I really want to do', it was more an accident.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Oh?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">was more ment to be a short time project to learn a bit programming, well turned out to take a bit longer than expected and got a bit more attention than expected</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">dangit, configure for clanlib doesn't detect hemres</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Nehal: config.log is your friend... well, at least sometimes</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">i just usually edit configure and erase and 'exit' :)</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">s/and/any</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Can I give you my experiance in this?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I wanted to make a massive (At the time MS-DOS) game called Mega Man the Rise of the House of Hyperion.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I made a web page on this project</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I story boarded the wwhole thing</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I got voice actors</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I spent months Extracting sprites from  Mega Man 1-6</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">I built a main data file from a Doom WAD</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">But because I knew nothing about coding my project failed</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">got that?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">yep</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">For you I think the reverse is true.</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Therefore you experiance "scope creep:</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">hmm, so far i had to make a modification, and im getting a lot of warnings, but clanlib seems to be compiling fine</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Nehal: do you compile clanlib for X11 or DirectX?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel: well WIN32 or __WIN32__ or whatever is automatically defined, so it is compiling with directx, or i would certainly get an error by now :-)</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">actually i know it is, cos it couldnt find d3d.h , i had to comment that line out, i have directx.h and dinput.h and all the others, i guess d3d.h isn't needed anyways</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">more than 100 megs swap in use :(</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">gervase (gervase@modem-1613.elk.dialup.pol.co.uk) has joined #pingus</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">hi gervase</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Hello!</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Zombie: so what do you think I should do different?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">hold on</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">oh crap, clanlib does not go well with mingw</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">:Just managed to compile the latest cvs about 10 minutes ago</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">and I keep on getting lots of "frame below zero: nan" or</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">"frame below zero: inf"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Could this be due to a bad delta being passed into Sprite::update() ?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">gervase: is the frame-skip stuff</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">gervase: which should probally be completly rewriten</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">pingus doesn't behave very well on slow systems</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">and even on fast systems with a little CPU load it gets quite choopy</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">there are completely different source directories for win32/unix , it is not easy getting clanlib to work...</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">abcdefghi (skittles@12-28-48-169.southshore.com) has joined #pingus</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">hi when dose the mettin start?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">kind of</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">well i was think about how we could make pingus better and i thought that mabey we could incorperate the old dos games in to pingus like in freecraft</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">back</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">lunch is good :)</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">abcdefghi: no, that would make things much worse.</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">why?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">or is it just me who can't stand freecraft gfx for more than five seconds?</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">Good, everyone is here</td></tr>
+<td align="right" bgcolor="#CCCCCC">&lt;Zombie&gt;</td><td bgcolor="#CCCCCC">hm?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">beside that there is copyright throuble and resolution throuble 320x200, doesn't look that good on a 800x600 screen</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel: most freecraft uses use the wc2 graphics, and yes the fcmp graphics suck, they are improving though</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">s/uses/users</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">true well that shows hom much i think things through</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Nehal: yeah, but thats kind of the problem, cause nearly everybody can use wc2, the free ones are lagging behind</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">yep</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel: right</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">and I think redoing something that is already done, is not worth doing at all, especially games.</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">is there a banner for pingus that people can put around there sites?</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">yes i guess</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">we have banners somewhere, but not available on the webpage at the moment.</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">well we could get them on the website and then people like my dad can put them on their sites</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">how far are we to the next relese of pingus?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">as close as ever I think, its just a matter of sitting down for two weeks and get it finished</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">well that is good how much of the gui is hooked out to the servers options?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">the gui is more or less working, its just a matter of striping out the stuff that is not working</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">like option menu and contrib-screens</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">k</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">how many of the levels are hooked out to the gui?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">15-20</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">oh</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">what can people like me do to hook up more levels to the gui?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">nothing, the next release will not have more than 15-20 levels</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">i why that few?</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">-i</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">because we want to start out small</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">that makes sense</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">will you beable to download the other levels if you want to?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">no</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">k</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">well, people can always use CVS to get everything, but there won't be any public visible download button</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">true</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">grumbel: ever played lemmings 2?</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">no i can't find it.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">Nehal: a bit, but not that much</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">abcdefghi: <a href="http://pingus.seul.org/development/cvs.html">http://pingus.seul.org/development/cvs.html</a> </td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">k</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">only my win part of this box has a connection to the internet right now but i will hook up linux to the internet soon.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">gervase: have seen the test apps in contrib/ ?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Found it.  It basically just puts a "sprite" on the screen and goes through each of the frames, if I read the code correctly.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">gervase: thats the not so usefull one, the soundtest/ thing is more intersting</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">gervase: can be used to test pingus, not so bug free, sound system</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">what parts of pingus are working that weren't working in the last verision?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">can't remember, lots of stuff</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">cool</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">is there an irc client for linux</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">abcdefghi: haha</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">abcdefghi: tons of, from telnet, to xchat, whatever you like</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">oh so you can just login with telnet?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">if you have the IRC-RFC at hand, yep</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">what is that and where can i get it?</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">abcdefghi: xchat, bitchx, kvirc, sirc, irssi, ircII, savirc, xirssi, the list goes on...</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">xchat is the best though :)</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">k</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">abcdefghi has quit ()</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Got an error while compiling soundtest</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">so, anybody feeling the need to cleanup the pingus development section on the webpage?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">gervase: which error?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">"/usr/bin/ld: cannot find -lclanVorbis"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Is it reqd?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">remove it from the makefile</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">its not required for pingus, but soundtest/ doesn't have a full blown configure script</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">abcdefghi (skittles@12-28-48-169.southshore.com) has joined #pingus</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">how do i use xchat?</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">to connect to irc</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">start it and use it, I would say</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">k</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">xchat is a pretty straight forward clicky-app</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">k good</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">in the faq for pingus it says "A game manual along with a tutorial is planed and might be released together with the next version" is that still planed?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">of course its planed, the question is if somebody is writing it</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">is anybody writing it?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Is the game manual different from the web manual?</td></tr>
+<td align="right" bgcolor="#999999">gervase grumbel Mar 01 22:49:09 gervase grumbel Mar 01 22:49:26 &lt;grumbel&gt;</td><td bgcolor="#999999">gervase: maybe another style sheet or so to make it look better when seperated from the webpage, but same content</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">k</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">well i gtg</td></tr>
+<td align="right" bgcolor="#BBBBBB">&lt;abcdefghi&gt;</td><td bgcolor="#BBBBBB">bye</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">abcdefghi has quit ()</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Got a problem with soundtest</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Ln 1: "[DebugStream::Buffer fallback stream] [Output] Initializing ClanLib-Sound"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Ln 2: "[DebugStream::Buffer fallback stream] [Output] Initializing ClanLib-MikMod"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">[DebugStream::Buffer fallback stream] [Output] PathManager: music/music/pingus-1.it -&gt; ../../data//music/music/pingus-1</td></tr>
+<td align="right" bgcolor="#DDDDDD">&lt;Nehal&gt;</td><td bgcolor="#DDDDDD">gg</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">.it"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Ln 4: "[DebugStream::Buffer fallback stream] [Output] PingusSoundReal: Playing music: ../../data//music/music/pingus-1.it"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Ln 4: "Aborted"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Sorry Ln 5: "Aborted"</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">you have newest CVS?</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">Nehal has quit ("Client exiting")</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">changed the music/ prefix a bit</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">roadmap is now a bit updated <a href="http://pingus.seul.org/development/roadmap.html">http://pingus.seul.org/development/roadmap.html</a> </td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Got rid of "music/" prefix bits</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">But now get the following errors</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">"PathManager: music/pingus-1.it -&gt; /music/pingus-1.it"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">"PingusSoundReal: Playing music: /music/pingus-1.it"</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">"Aborted"</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">is your pingus current CVS?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">I changed the location of the pathmanager stuff a few days ago</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">it was done multiple times in some places, which didn't work to well.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">I updated at about 20:30 today.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">hm</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">pathfinder is doing something wrong than</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">gervase: is your pingus compile also current?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">since the contrib/ stuff simply grabs the object files from the src/ directory without checking for a necesarry rebuild</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">std::string comp_path = base_path + "/" + relative_path;</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">if base_path is empty you get your behaviour</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">eik, stupid me</td></tr>
+<td align="right" bgcolor="#BBBB00">&lt;--</td><td bgcolor="#BBBB00">gervase has quit (Read error: 60 (Operation timed out))</td></tr>
+<td align="right" bgcolor="#BBBB00">--&gt;</td><td bgcolor="#BBBB00">gervase (gervase@modem-2970.baboon.dialup.pol.co.uk) has joined #pingus</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">fix for soundtest is in CVS</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Managed to get my own fix to soundtest to work, but too late!</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">I removed one too many of the "music/" prefixes.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Just wonder, is it worth making sound test be able to play music 1 to 9 and not just 1, 2, 3, 5 and 6?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">doesn't really matter</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">was just to see if you could play multiple music tracks after another without memleak or lockups</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">music is working ok in this matter</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">but sound is not, its memleaking quite a lot</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">and pingus-massdestruction sounds ugly, since to many .wav's are played at the same time</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">you can reproduce that by right-clicking in the soundtest window</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Well.  It's the first ever time I've ever heard any of the music!</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">With regards to the sound, the worst thing that happens is the "FIXME" msg appears.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">look at 'top' and you see its memleaking</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">The sound pans well.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">its not as worse as mem-leaking music, but still fills the memory</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">we need the resource manager to handle music and sound stuff</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">When you say the top, the top of what?</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">currently we are just 'new'ing Clanlib sound streams and never deleting them</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">the programm 'top'</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">memleaks are good to see there when you run soundtest</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">even so valgrind or some real memory debuger will give you much more acurat results</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">btw. animtest is just meant to test sprites for there frame-per-second when they look best, isn't really a finished programm and didn't help all that much, but might come handy one time</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Unless I am missing something, couldn't the new statements be moved outside?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">You can then pass the newly created object by ptr.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">You then put delete in the destructor.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">we need a smart_ptr wrapper class around the music stuff</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">sound stuff I mean</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">music is ok as it is, since we only allocate one music file at once and destroy it if another music gets started</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">sound effects could simply be allocated once at system startup</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">since we only have a handfull of them, then stuffed in a std::map&lt;&gt; and deleted at sound shutdown</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">so we could reuse the sound effects at least</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">I assume that you would replace PingusSoundReal with the std::map&lt;&gt;,</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">which PingusSound would search?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">The std::map&lt;&gt; would be a member of PingusSound.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">No need for smart_ptr then.</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">problem is that this still doesn't solve the problem with playing to many of the same sound at once</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">so a seperate class is needed</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">but std::map solution would be pretty simple to implement and probally enough for the first release</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">Does the too many sounds problem only occur at Armageddon time?</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">If only one sound is allowed to play at the same time, I think Armageddon would sound silly.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">I think you would only hear 2 "Oh-no"s, when in fact 50 Pingus are about to die.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">My ISP's auto disconnect will be kicking into action in literally 1 a minute.</td></tr>
+<td align="right" bgcolor="#EEEEEE">&lt;gervase&gt;</td><td bgcolor="#EEEEEE">So, I'll bid you all farewell...</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">it doesn't have to be 50 sounds</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">but probally 5 or so </td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">playing the same sound over and over again, results in some kind of 'echo'-like sound</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">which sounds completly wrong and broken</td></tr>
+<td align="right" bgcolor="#AAAAAA">&lt;grumbel&gt;</td><td bgcolor="#AAAAAA">good night, going to sleep "Real Soon Now"[tm]</td></tr>
+ </table> </body></html>

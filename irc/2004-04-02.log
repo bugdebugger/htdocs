@@ -1,0 +1,568 @@
+<wingman2> lets go
+--- grumbel has changed the topic to: Pingus - http://pingus.seul.org - meeting now
+<perica_> I think grubel should give some introductory word...
+<grumbel> Welcome everybody...
+--> settra (settra@flandre-2-82-66-36-82.fbx.proxad.net) has joined #pingus
+<Lemmus> Thanks.
+--> Torangan (~David_Phi@dsl-082-083-129-250.arcor-ip.net) has joined #pingus
+<grumbel> Torangan quited away a few minutes ago, hope he comes back, else it could get a bit throublesome to talk about 0.6.1 stuff
+<grumbel> ok, there you are, good :)
+<Torangan> I just had some client problems. ;-)
+--> mat (~mat@l03m-14-55.d2.club-internet.fr) has joined #pingus
+--> tobgle (~tobgle@G7208.g.pppool.de) has joined #pingus
+ tobgle Torangan 
+<Torangan> Was there any talk already - didn't get a message for the last 45 minutes or so.
+<wingman2> no
+ tobgle Torangan 
+<perica_> nothing that matters anyway
+<grumbel> Torangan: ok, what are the missing things for 0.6.1?
+<grumbel> ie. beside the font
+<wingman2> 2nd island
+<Torangan> Important is just the font anymore.
+<Lemmus> No 2nd island is for 0.7.0
+<wingman2> k
+* MatzeB is back (gone 01:03:28)
+<Torangan> As soon as we get it I'll see what translations can be completed fast enough for 0.6.1 and which should wait for 0.7
+<perica_> what is the goal of 0.6.1 actually?
+<Torangan> bugfixing
+<Torangan> providing a testbed for 0.7 and the first official Win32 binary ever ;-)
+<MatzeB> meeting already started?
+<perica_> That would be great, many of my friends wanted to play it, but didn't want to install Linux just because of it
+<Torangan> 0.6.1 will contain mostly new translations as well as a few bugfixes and a nice font for latin1 and latin2.
+<MatzeB> I could help with a windows version I think
+ tobgle Torangan 
+<Lemmus> I also think that some cleanup in the level directory would be in place for .6.1. I am running through the levels atm.
+--> che (che@p5091F80D.dip.t-dialin.net) has joined #pingus
+<grumbel> Torangan: there already was a win32 bin for 0.4 :)
+<che> hello.
+<Torangan> It's been possible to compile in Win32 all the time since 0.6 - just neither grumbel nor I have the required tools and at the time of the release there were problems getting a binary.
+ mat MatzeB 
+<grumbel> MatzeB: Sphair (not yet here) will take care of win32 stuff
+<Torangan> Well, the first Win32 binary for a playable version?
+<MatzeB> ok
+ tobgle Torangan 
+--> Harry (hstorbac@ruutana.ratol.fi) has joined #pingus
+<grumbel> has anybody tested the editor in 0.6-cvs?
+--> Ginge (~chatzilla@modem-1836.bonobo.dialup.pol.co.uk) has joined #pingus
+* MatzeB tries compiling pingus cvs but failed
+<Torangan> running through the levels remind me that I should install the level comment tool really soon now
+<grumbel> ie. the one in 0.6 freezed quite a few times, the in cvs should be better but might still be 'freezy'
+<MatzeB> canvas.* and some other files seemed to be missing
+<Torangan> ClanLib 0.7 installed?
+<MatzeB> clanlib cvs
+ mat MatzeB 
+<MatzeB> is this canvas a clanlib file?
+<MatzeB> seemed like a pingus file to me
+<grumbel> MatzeB: pingus 0.6 needs clanlib0.6, pingus-cvs needs clanlib0.7
+<Torangan> And pingus-cvs doesn't produce a working binary but that's about to change hopefully.
+<MatzeB> repostitory at :pserver:anonymous@cvs.clanlib.org:/var/lib/cvs is the correct one?
+<che> grumbel: just to drop that in... clanlib is such a monster.. id have already packaged pingus if i had enough time to really look into clanlib ;)
+<MatzeB> pingus heavily depends on clanlib from what I've seen
+<Torangan> pingus.seul.org/developement/cvs.hml - I put the info how to get the 0.6.1 sources there too
+<MatzeB> anyway to stay more on topic the TODO for this month is in the happypenguin.org post?
+--> eats_only_heads (~chatzilla@adsl-63-206-116-232.dsl.snfc21.pacbell.net) has joined #pingus
+<Lemmus> Do we have any guidelines for "proper" levels? I.e. is it ok to make changes in what material is solid and what is background, etc... How to define difficulties, etc, etc...
+<perica_> ClanLib :(   I would suggest porting Pingus to SDL, but it looks like a whole lot of work...
+ mat MatzeB 
+ mat MatzeB 
+<grumbel> MatzeB: the Todo isn't very detailed at the moment at happypenguin.org I try to flesh it out and provide some external links later on
+<MatzeB> and like alot of unnecessary work to me
+<MatzeB> well I'd like to help in coding and maybe I can help in deployement a bit (like loki installer or win32 version)
+<grumbel> perica_: its pointless, clanlib works, if it doesn't better fix clanlib than try to reimplemting clanlib ontop of sdl (which clanlib0.7 is anyway, at least in part)
+<Torangan> grumbel: do you want to acutualize the todo of pingus.seul.org too?
+<MatzeB> also if it is I needed I could design some levels...
+<Zombie> Tell me something
+<Zombie> What ever happened to the "Super Tux" Function in 0.5.3?
+<grumbel> Zombie: it was never good for anything, just some graphics from xpenguins
+<perica_> grubel: You're right. Perhaps I can get into fixing clanlib when I have some free time
+<jpetersen> pingus-cvs: basher.cxx:28:28: ../resources.hxx: No such file or directory
+<Zombie> What was it supposed to be for?
+<MatzeB> yep
+<MatzeB> I have samer error as jpetersen
+<Torangan> MatzeB: new levels are always a good idea :-)
+<grumbel> Zombie: nothing, completly useless
+<jpetersen> MatzeB: ok
+--> kerrigan (~kerrigan@lsanca1-ar48-4-46-107-103.lsanca1.dsl-verizon.net) has joined #Pingus
+<MatzeB> Torangan: it's just that I'm best at coding
+<kerrigan> am i to late?
+<grumbel> jpetersen: I commit missing files as we speak
+<Torangan> MatzeB: well, I'm good at coding and no good at design at all but there's still a lot to code left. ;-)
+<Lemmus> 13 minutes late :-)
+--> Dree (~dree@pD9EB7B60.dip.t-dialin.net) has joined #pingus
+<grumbel> last state of 0.7 should be compilable, but not useable
+<kerrigan> oh crap
+<kerrigan> sorry guys
+<MatzeB> grumbel: doesn't compile here although I have pingus and clanlib cvs, I can tell you details later
+<grumbel> might be that recent clanlibcvs broke a few things
+ tobgle Torangan 
+<MatzeB> seems more like files missing in pingus cvs
+<grumbel> that too, commited some files already
+<MatzeB> ah, lemme try again
+ tobgle Torangan 
+<grumbel> Torangan: speaking about pingus0.6.1, how about changing the file extension to something like '.pingus'? would at least resolve the conflict with 0.6-.plf vs 0.4-.plf
+<Lemmus> Good idea.
+<-- Ginge has quit ("ChatZilla 0.9.62dp [Mozilla rv:1.6/20040206]")
+<Torangan> No problem on my side, just a small script.
+<Lemmus> I also - to repeat myself - consider it a really good idea with some guideines for designing levels.
+<grumbel> I am also thinking that it would be a good idea to provide a better framework for user contributed levels, ie. good old contrib-section should be back
+<Torangan> And of course some adaptions to the code. ;-)
+<-- mat (~mat@l03m-14-55.d2.club-internet.fr) has left #pingus ("Illegal Instruction - leaving channel.")
+<Harry> i guess i could do some graphics... any wishes? :)
+<kerrigan> i can be the tester
+<Torangan> grumbel: do you mean a way to select user contributed levels from the game - yes that would be nice.
+<Lemmus> Harry: We need a lot of entrances :-)
+<grumbel> Harry: tune up all animation to be on par with lemmings ;)
+<grumbel> groundpieces stuff is probally best done by myself, after all its the easy part and especially the fun one
+ tobgle Torangan 
+<Harry> hmm... handing over the boring stuff, eh? :)
+<grumbel> Torangan: yep, exactly, a simple menu presenting a list of levels or levelsets dumped to ./pingus/levels/ or so
+<Lemmus> Yep. Especially we need a "real" climber. The miner also needs more "swing" on the hack. Atm it goes up and down at approx the same speed. Needs more kinda slow up, and faaast down.
+<jpetersen> i could do some coding (if another developer is needed)
+<Torangan> Every kind of help is needed I'd say. :-)
+<grumbel> Harry: any good at animations?
+<Harry> never tried in 2d
+<Harry> but i guess i could give it a spinn
+<Lemmus> I have some ideas for additions and improvements in level setup, but is now the right time to discuss this?
+<grumbel> Harry: as Lemmus said we need a new climber and a waiting animation for the bridger
+<Harry> are the anims just drawn right now? no generation from 3d models or some such
+<grumbel> pretty much all the other sprites could need work too, but climber and waiter are most pressing issues
+<grumbel> Harry: all drawn in 2d
+<grumbel> my anim skills are something like: http://pingus.seul.org/~grumbel/tmp/anim2.gif (anim.gif too)
+<Lemmus> We also need some work on the bridger. I am not sure whether this is primarily animation or code that is needed.
+<grumbel> biggest problem that gimp is a pain for animations
+<grumbel> Lemmus: code mainly, the first steps of the bridger would need special handling
+<Lemmus> Yep. And last step. Atm the bridger "lays" an invisible 16th block.
+<MatzeB> did you try filmgimp?
+<MatzeB> isn't that made for animations?
+<grumbel> more for editing movie frames
+<Lemmus> ("atm" being 0.6.0, sorry)
+<grumbel> havn't tried it however
+<Harry> any ideas how a good 2d animation tool would work?
+--> tuxipuxi (~tuxipuxi@pD95528A8.dip.t-dialin.net) has joined #pingus
+<grumbel> Harry: like deluxpaint
+<Harry> could code one first if that'd make the job easier :)
+<grumbel> Harry: probally with additional stuff to overlay next/previous frame transparently
+<MatzeB> Harry: in 1 month?
+<Harry> one evening :)
+<Torangan> Harry: go offline and show us your result later? ;-)
+<grumbel> Harry: I have some plans on how my drawing-app of choice would look like, but it could take a bit longer to explain
+--> gervase (gervase@modem-958.giraffe.dialup.pol.co.uk) has joined #pingus
+<grumbel> jpetersen: if you would like to do some coding I could offer some more or less boring things that need fixup inside clanlib
+<Harry> lets try the gimp first anyways :)
+<-- Dree has quit (Remote closed the connection)
+<MatzeB> grumbel: what's the state of the networking and splitscreen plans?
+<MatzeB> that sounds like a task for me :)
+<grumbel> MatzeB: for networking I don't have any plans at all at the moment, might be good to have, but splitscreen has priority
+<Lemmus> grumbel: Splitscreen without networking needs support for two mice. Do clanlib have this?
+<grumbel> Lemmus: yes, clanlib 0.7 has support for that
+* MatzeB also wonders how to do that. X only supports 1 mouse I think
+<grumbel> Lemmus: at least on linux, works by reading directly from /dev/input/mouseX
+<Torangan> You don't need X to query a mouse.
+<MatzeB> ah nice
+<grumbel> can/should probally rewritten to support /dev/input/eventX too, not sure which one causes less throuble and if linux2.6 breaks that
+<-- eats_only_heads has quit ("ChatZilla 0.9.52B [Mozilla rv:1.6/20040113]")
+<Torangan> What modes should splitscreen have? Cooperative play, two players race against each other on same level, ?
+ tobgle Torangan 
+<grumbel> Torangan: coop and vs
+ tobgle Torangan 
+<Lemmus> We need the same 2plr mode as in lemmings.
+<jpetersen> grumbel: ok
+<perica_> MatzeB: X supports multiple mice
+<grumbel> Torangan: in both one would just have normal game player, but each player only controlling its own lemmings
+ tobgle Torangan 
+<MatzeB> perica_: but not multiple pointers AFAIK
+<perica_> MatzeB: correct
+<Harry> grumbel: what version should i work with?
+<grumbel> Torangan: only the counting would be different really, ie. in coop you need X pingus to make it to next level, in vs you need more pingus to win
+<MatzeB> a coop in which 1 people control 1 set of lemmings would also be interesting...
+<Harry> anims still done the same in cvs and 0.6.0?
+<MatzeB> a coop in which 2 people control 1 set of lemmings would also be interesting...
+<grumbel> I never found the 2player mode of lemmings much interesting, kind of always ended up being rather random
+<Torangan> grumbel: yes, I see what you mean and it shouldn't be too hard to implement
+ tobgle Torangan 
+<Lemmus> Random???
+<MatzeB> Torangan: you wanna work on that too?
+<Torangan> cvs and 0.6.0 don't differ much, cvs is only partly ported to ClanLib 0.7
+<Harry> ok
+<perica_> grumbel: 2 player mode was great, much more fun than single player, because you can't use the Pause
+<Torangan> MatzeB: I'm usually working on quite everything I've got the skill for. Over time that set seems to grow. ;-)
+<grumbel> Lemmus: since the actions are all 'passive' at the moment it just ended up one player blowing the other away and such, the end result was more random than determined by skill
+<Lemmus> 2 player was SOOO cool. But both playsers need to be rather skilled.
+<Lemmus> I don't agree.
+<MatzeB> Torangan: well 2 people working on the same area might not be easy
+<MatzeB> Torangan: maybe I should just do levels then...
+<MatzeB> or some other coding
+<grumbel> Harry: yep, anims are still the same
+<Torangan> MatzeB: if you want to do this, don't worry, I'll find other things :-)
+<grumbel> Harry: use whatever you prefer, ie. multiple layers for anims or multiple files or whatever
+<grumbel> Harry: some script-fu/python-fu should be able to convert it
+<grumbel> one of the first goals for 0.7 will be to finish the port to clanlib 0.7
+<MatzeB> data/images/fonts/pingus_small-2.png seems to be missing in cvs
+<Torangan> perica_: if you don't want to be tempted to use pause, just define no key for it *g*
+<perica_> I do use it in single player, since the number of saved pingus counts
+<grumbel> could somebody give me an idea of what the fun part of lemmings 2 player mode is, ie. what stops it from ending up pretty boring (place a stoper, player2 destroys the stopper, place another stopper, p2 destroys it again, vice. verse, etc.)? 
+<Torangan> grumbel: Well that would be 2 players in coop mode playing vs ;-)
+<MatzeB> maybe just the fact that you had a reason to meet your friend :)
+<Lemmus> grumbel: "destrying" the opponents stopper is not so easy - because you can only give orders to your own pingus.
+<Lemmus> In order to get your own stoppers to stop the opponents pingus you need to make him turn around and visit the opponents half of the screen.
+<grumbel> Lemmus: place a stopper beside the other players stopper, blow your stopper away
+<Lemmus> Yes, ofcourse.
+<grumbel> it all sounds more than chaos than fun
+<perica_> grumbel: you have green and blue pingus, each belonging to one player. You can only control yours.
+<Lemmus> But you don't have unlimited amount of stoppers.
+<perica_> It is a chaotic fun :)
+<Lemmus> Yep.
+<Torangan> grumbel: I guess we should implement it if some people have fun playing that way. Must not be me or you. :-)
+<grumbel> perica_: yes, I know how it works, I just have a hard time imagine it to be fun for more than a few minutes
+<Lemmus> Well. I have played it for hours and hours.
+<grumbel> I compared to worms there are just far less possiblites
+<perica_> well, you have _your_ exit and you have to move yours and opponents pingus there, and he has to stop you and try the opposite at the same time
+<Lemmus> Worms is boring.
+<grumbel> with a lot of additional actions, especially designed for multiplayer it might get interesting, but still due to the lack of direct controlls it would feel a bit weird
+<Torangan> Well, nothing is going to stop us from adding worms like actions. Why use a basher? Use your bazooka Pingu. ;-)
+<perica_> Worms is boring only because it's turn based... pingus is a action game :)
+<grumbel> Lemmus: watching some pro-gamers doing some rope-action is already interesting enough :)
+<tuxipuxi> worms is nice
+<perica_> we turn the rope off when playing, and turn time is set to 20sec
+<Torangan> On the other hand - do we want to see those cute little Pingus use weapons?
+<tuxipuxi> no!
+ tobgle Torangan 
+<perica_> otherwise you can die of boredom while you wait your turn
+<grumbel> Torangan: for multiplayer they kind of have to
+ tobgle Torangan 
+<grumbel> Torangan: one could always do it 'paintball-style'
+<tuxipuxi> grumbel: good idea
+<Lemmus> grumbel: no.
+<grumbel> no need to spread blood across the screen
+<tuxipuxi> but i don't want to see dying tuxis :)
+<Lemmus> Killing your opponent is a bad idea. Stealing them is better.
+<Torangan> I'd say no blood for sure, won't fit the game IMHO.
+<tuxipuxi> i agree
+<Torangan> Weapons that change the color of your opponents Pingu and make them yours? Yes, I like that idea more.
+<perica_> Lemmus: stealing is the best :)
+<grumbel> Lemmus: the problem is that stealing is boring, no sneaking etc., stealing them is rather obvious
+<Lemmus> Yep. This way they count "double".
+ tobgle Torangan 
+<grumbel> Torangan: yep, something like that, the posibilty to place traps and such would be nice too
+<grumbel> one would also need runners and/or teleporters to speed up gameplay a bit
+<Lemmus> Obvious, but dangerous, because if you steal them then you have to force them to go to your half of the screen - and hence give the other player lots of possibilities of doing harm.
+<Torangan> No one said that stolen Pingu must be easy to save. ;-)
+<Lemmus> Exactly.
+<perica_> grumbel: have you ever played lemmings in two. Nothing needs to speed it up, it goes too fast, since you have another *human* intervening
+<grumbel> perica_: yes, I have and it was never much fun 
+<perica_> well, I guess different people have different tastes
+<MatzeB> well with such special multiplayer options it could be fun
+<MatzeB> also I think for some people a cooperative mode would be good...
+<Lemmus> Yep. And really, this discussion is rather silly. Because as soon as we have support for two mice and two colours of pingus, then implementing all sorts of multiplayer games will be really easy.
+<MatzeB> well this discussion has to happen sometime, but I agree not now :)
+<grumbel> Lemmus: implementing to colour pingus was already done in the past, but got stripped out again due to it being rather useless
+<grumbel> cooperative-vs mode could be interesting, ie. player needing to help each other, while still fighting for the most pingus in the goal
+<MatzeB> that sounds strange to me...
+<Torangan> depend on your enemy, yes that's an interesting challenge
+<Lemmus> grumbel: I am not sure that I understand. Isn't this the same as "real" vs mode. Just with a different type of level?
+<MatzeB> we could have some kind of fog like in strategy games
+<grumbel> Lemmus: would also need special traps and such, else you could always to stuff yourself
+<MatzeB> so that you can't see the turns of your opponents directly
+<MatzeB> in this case traps and all this stuff would make sense again
+<Lemmus> Matze: That I do not understand.
+<MatzeB> Lemmus: it's simple you only see what your pingus see
+<MatzeB> Lemmus: the rest is grayed out
+<grumbel> MatzeB: would be a bit weird in splitscreen, but for network it would surly be a great thing
+<MatzeB> ie. you see the map but not the opponent...
+<MatzeB> yes on splitscreen it's not usefull
+<Lemmus> Oh. But if the opponent is working on your half of the screen then you would see him nevertheless.
+<MatzeB> Lemmus: yep
+<MatzeB> Lemmus: but maybe then it's too late ;-)
+<perica_> One player could have only one type of actions, and other other type, so they have to help each other
+<Lemmus> ???
+<Lemmus> What do you mean - I really don't understand.
+<Zombie> What is the parameter to specify the output of a tarball again?
+<grumbel> perica_: could get impossible to balance that way
+<Lemmus> As long as the opponent is on his own half then he cannot do anything that is dangerous to you. As soon as he enters your half then you see him.
+<perica_> IMO, lemmus is right
+<MatzeB> well I assume these multiplayer options are not a goal for this month?
+<Zombie> And is it possible to have more than one  species in Pingus?
+<MatzeB> I think we should first concentrate on cooperative and race mode, shouldn't we?
+<grumbel> MatzeB: yep, since thats what we get pretty much for 'free'
+<Torangan> Zombie: what do you want to achieve?
+<MatzeB> well I have an exam on 6.th but after that I should have some time to work on the splitscreen and then network mode
+<Zombie> I just want to recustively tar directory into directory.tar.gz
+<MatzeB> grumbel: so I'll come back to that later
+<grumbel> Zombie: tar czvf foo.tar.gz foo/
+<Zombie> okay I had it backwards
+<Harry> anybody tried gimp gap (GIMP Animation Package)? seems to be a new thing in 2.0 (or >=1.3.5)
+<grumbel> Harry: its a huge ugly hack
+<grumbel> and slow too
+<Harry> heh, ok :)
+<Lemmus> Here comes an idea: How about adding an optional colour-field to each worldobject.
+<Lemmus> Problem is that different worlds have different shade.
+--> JDaly (~JDaly@pD9541686.dip.t-dialin.net) has joined #pingus
+<grumbel> Lemmus: worldobjs don't really need different colors for that
+<Lemmus> I.e. jungle have to be sort-of green, and hellmouth have to be sort of brown.
+<grumbel> either they are specifcly designed for a world (which is the case for entrances/exits) or they arn't
+<MatzeB> pingus cvs crashs in editor and in the worldmap there's no pingu running around
+<grumbel> in the later case a different color wouldn't help
+<MatzeB> and I can't seem to start levels
+<Lemmus> This way you would be able to do much more recycling on world-object than what you are today.
+<grumbel> MatzeB: thats expected, still a lot of stuff #ifdef'ed out to get it through the compiler
+<MatzeB> ah ok
+<grumbel> Lemmus: drawing new worldobjects is relativly 'cheap', so no need for recycling
+<Lemmus> I.e. take a look at the jungle level that I did submit a week ago. The stone wall looks awfully gray.
+<jpetersen> grumbel: and there seems to be some problems with the sprite definintions in data/data/*.xml
+<Lemmus> Yep. Drawing is cheap, but harddisk space is expensive.
+<grumbel> Lemmus: hard disk space is even more cheap
+<grumbel> close to be 'for free'
+<Lemmus> I don't agree.
+<perica_> download size is not cheap
+<MatzeB> adding complexity in code to save harddisk space really isn't worth it IMO
+<grumbel> Lemmus: you get a gigabyte for something like 1EUR
+<Torangan> grumbel: be carefull, some people don't have access to resources like hard disk space or download as we.
+<Lemmus> grumbel: Not in a laptop.
+<grumbel> Lemmus: make it 2EUR there
+<Torangan> We should remember that the groundpiece grafics are in KB area.
+<Lemmus> And downloading a gigabyte is - with my internet connection - 15 euros.
+<perica_> 1GB is still far from what Pingus will need
+<grumbel> 1gb is still 50 times larger than pingus is currently
+<Torangan> Avoiding unnecessary downloads is a good idea - for 0.6.1 the .ogg music which is not used in tutorial world will be in an extra package intend for level designers.
+<Torangan> Going into great pain to save it isn't worth the time though.
+<jpetersen> grumbel: what need to be fixed in libclan?
+<Lemmus> I cannot really see that it is "great pain". The possibility is already there for backgrounds.
+<Lemmus> It would just be copying a bit of code.
+<grumbel> jpetersen: seemlessly switching from fullscree to windowed mode and back
+<jpetersen> grumbel: ok, i'll look at it
+<grumbel> jpetersen: in general the whole fullscreen stuff looks a lot less robust than sdl, so simply copy&pasting from sdl might already help
+<Harry> is that climber limited to 90deg. walls?
+<MatzeB> why not using SDL?
+<grumbel> Harry: pretty much at the moment
+<grumbel> MatzeB: clanlib0.7 uses sdl for software rendering
+<Lemmus> Harry: We need gfx for changes between walking and climing.
+<grumbel> for opengl however its plain glx at the moment
+<MatzeB> maybe you should change that then
+<MatzeB> as for windows you can't use glx too
+<grumbel> MatzeB: for windows it has its own wgl stuff
+<Lemmus> Harry: This way you would also be able to do some sensible climbs on less than 90 degree walls.
+<Lemmus> Harry: Have you seen the orig. Lemmings gfx?
+<grumbel> Harry: climbing should be more traditional climbing, ie. not just walking rotated 90 degree
+<Torangan> Lemmus: you'd also need some code to make a non 90 degree climb possible.
+<Harry> i'm sure i have, but it's been a while :)
+<grumbel> climbing should be a bit tollerant, but it shouldn't allow non-90 degree climbs
+<Harry> if it was a real climbing like thing it could be rotated for some angles
+<Torangan> I guess for climbing we could use something like a 90 degree turned walker mode - where a walker would change to a faller, the climber changes to a walker.
+<Harry> say 50, 60, 70, 80, 90
+<Harry> and those stored as sprites
+<Lemmus> Harry: Ok. In lemmings you only had 90 degree climbs. If slope was greater than 90degrees then lemming would fall down. If it was smaller then lemming would "pull itself up" on the single pixel, and then it would continue to climb from there.
+--> wansti (~wansti@p5086F2DD.dip.t-dialin.net) has joined #pingus
+<grumbel> different topic, I plan to convert the pingus cvs repository to svn in the very near future
+<grumbel> should make renames and such far easier than with cvs
+<Zombie> As in Svannah?
+<Lemmus> HArry: Problem in that would be the coding part. The background is just stored as a pix-map, so making the code "see" the slope of a wall would not be trivial.
+<Torangan> As in subversion
+<MatzeB> grumbel: will it be more stable now than what you had with windstille?
+<grumbel> Zombie: svn as in http://subversion.tigris.org/
+<MatzeB> grumbel: I remember the windstille repo was broken 2 times... in a month
+<grumbel> MatzeB: will be 1.0 svn
+<MatzeB> if it stable then it'll be nice
+<Zombie> By the way.
+<Zombie> Can we please do soething about muzak in Wargus?
+<Torangan> lemmus: making a Pingu see the next few pixels isn't that difficult. It's not as if you'd have to see a large way up front and the climber won't even start if it can't finish.
+<Zombie> WRong query
+<Lemmus> Torangan: Well if you think that <90o climbs is worth it then ok. But personally I think that the "lemmings solution" would be ok.
+--- #pingus :No such nick/channel
+<Torangan> I don't need other degrees than 90, it's more a question for level designers. Is there substantial gain in such a feature?
+ tobgle Torangan 
+ tobgle Torangan 
+<grumbel> Torangan: a 'walking on the roof' like action could be usefull
+<grumbel> generic climbing however not so much
+<Lemmus> Well. Ofcourse a pingu should be able to "climb" any <90o surface. I just think that the "lemmings way of doing it" looks good enough.
+--> zz|sergant (user@ip67-25.dialup.wplus.net) has joined #pingus
+<Torangan> grumbel: if you'd explain what you mean
+ tobgle Torangan 
+<Lemmus> grumbel: Yeah, like the moon booter in lemmingsII the tribes.
+<grumbel> Torangan: inverse gravitiy and have the pingu walk on the other side
+<Torangan> grumbel: Ah yes, that's an ability with more potential.
+<Torangan> Allows for completely different tactics.
+<Torangan> grumbel: can you give an outline of what's to do to get cvs version to produce a working binary?
+ tobgle Torangan 
+ tobgle Torangan 
+<Torangan> I guess that's the first step before we should implement new features. :-)
+<MatzeB> the cvs version doesn't work currently
+<zz|sergant> Can't find a win32 version of pingus. Is there any working win32 version ? :)
+<grumbel> Torangan: checkout Libs/ClanLib-0.7, checkout Games/Pingus/, configure && make
+<grumbel> zz|sergant: no, but you can compile one yourself
+<Torangan> grumbel: sure, I have all that on disk
+<grumbel> on the code side one needs to fill out all the #ifdef CLANLIB_0_6 stuff and convert it to clanlib0.7
+<zz|sergant> grumbel: ok
+<Torangan> grumbel: with working binary, I meant a playable without those #ifdef
+<grumbel> basically replacing a few names here and there and moving some of the hardcoded Sprite-classes stuff into CL_Sprites and resource files
+ tobgle Torangan 
+<MatzeB> well I can't work on pingus until 7. or 8. Apr anyway, hope that'll be fixed until then :)
+<grumbel> speaking about single player, what do people expect?
+<grumbel> I thought about having two new island, each ~20 levels
+<MatzeB> yep 2-4 new islands :)
+<MatzeB> depending on how much we get done
+<grumbel> both stone and hellmouth/volcano could/should be used
+<Torangan> first levels of 2 world with some ice, later on mostly stone?
+<MatzeB> I can't see volcano on the worlds page
+ tobgle Torangan 
+<grumbel> Torangan: first world should be a mix of stones and ice/snow
+<Lemmus> That's the same as hellmouth
+ tobgle Torangan 
+ tobgle Torangan 
+<MatzeB> ah
+<MatzeB> volcano and stone look very much similar
+<MatzeB> on the other side that's probably less work for artists
+<Torangan> I guess the third world (counting tutorial as first) should then be the volcano - gradually getting hotter.
+<perica_> lava is hot under north pole too
+<MatzeB> I like the Sortie and Desert themes most from a first look...
+<Torangan> The surrounding area of lava isn't exactly frozen most of the time.
+<MatzeB> some diversity in theme would make things more interesting IMO
+<grumbel> MatzeB: sortie currently sucks from a level designers point of view
+<-- wansti has quit (Remote closed the connection)
+<perica_> there are many playable levels, why not just use them? When 1.0 is out, then all worlds will have to be sorted in logical order, IMHO
+<Torangan> and desert would be a hard jump from the ice of tutorial.
+<grumbel> ie. its almost impossible to build levels with sortie at the moment due to the lack of gfx
+<MatzeB> Torangan: that's why I like it :)
+<grumbel> desert however is good and already has a handfull of nice levels
+<MatzeB> Torangan: after playing 20 ice levels I wanna see new stuff
+<MatzeB> kind of rewarding when you mastered a world, then you see new nice graphics
+<Torangan> MatzeB: don't forget that we've got a story line and mastering tutorial island isn't exactly difficult.
+<grumbel> perica_: a lot of those levels have quite variing quality
+<grumbel> perica_: beside that they don't fit the theme, etc.
+<Torangan> If we find levels in playable that can be used for a world, nothing prevents us from doing so.
+<perica_> well, then add a level-browser so anyone can pick a random level from directory... and have a mark (whether the player made it or not)
+<Lemmus> grumbel: Desert imho have 5 nice levels. desert2.plf desert3-tflavel.plf desert5-tflavel.plf desert7-grumbel.plf desert-crawl-timpany.plf - some of them needs a bit of work, but not much.
+<MatzeB> a automatically generated worldmap for the contrib levels would be a cool idea
+<perica_> after few days I forgot which levels I tried...
+<Torangan> Generating a worldmap for the contrib levels would require for all of them to be rated with regards to diffculty I'd say.
+<grumbel> Lemmus: there is also the indiana-yingwan.plf and probally a few more other from yingwan, I think desert1-5.plf are good too
+<MatzeB> Torangan: just a plain field or so
+ tobgle Torangan 
+<MatzeB> Torangan: so that you can play them all, it just would match the style nicely IMO
+<grumbel> Torangan: just a list for random contrib-levels will do
+<Lemmus> Grunbel. Hmm. They need some work.
+<MatzeB> well I gotta go
+<MatzeB> bye
+<Torangan> grumbel: do you intend such a list for 0.6.1?
+ tobgle Torangan 
+<MatzeB> will someone post a log somewhere later?
+<grumbel> Torangan: yep
+<Torangan> grumbel: I think that's a good idea. Perhaps we can get back to the idea of using a worlds like mode for 0.7.
+<Torangan> Having a way to select them from the game is an improvement in any case.
+<-- MatzeB has quit ()
+<-- jpetersen has quit ("Client exiting")
+<-- perica_ has quit ()
+<Torangan> grumbel: Do you have a date in mind to get 0.6.1 out?
+<grumbel> should be doable to get it out in one or two weeks
+<Torangan> Yes, I considered mid april to be a good date - enough time for the translators still working to finish their work.
+<grumbel> Lemmus: don't see much wrong with desert1-7-{grumbel}.plf actually
+<Torangan> Anything not finished by then won't have to wait long before 0.7 get's out hopefully.
+<grumbel> Lemmus: they would of course need some resorting due to difficulty, but thats it
+<Lemmus> grumbel: Let's take the discussion on the maling list.
+<Torangan> And let's decide wheter we want desert to be one of the first worlds - would need an interesting continue for the story line IMHO.
+--> jpetersen (~jpetersen@pD95FA923.dip.t-dialin.net) has joined #pingus
+<Lemmus> I also think that desert should wait. Primarily because the backgrounds are soo cool that it should be quite easy to make some interresting difficult levels. A shame to use it for an early world.
+<grumbel> even so I really like desert, from a story point of view I would prefer to have it later on
+<Torangan> Glad that we agree to have desert later on in the story line.
+<grumbel> ie. ice->stone->hellmouth->industrial->foliage/jungle->desert->space
+<grumbel> with candy and crystal mixed into that somewhere
+<Torangan> perhaps hellmouth->crystal->industrial and space->candy
+<Lemmus> Another kick-in in the debate: It would be cool to formalize the testing of levels, and what a "level needs" to be marked as playable. How is testing done between versions to secure that old levels keep their difficulty.
+<Torangan> I guess if you want to formally mark that a level is playable, attach a demo in which it gets solved.
+<grumbel> Lemmus: by playing them through
+<grumbel> Lemmus: since we have demo-recording having the levels be played back automatically however is relativly easy
+<Lemmus> Yeah, ok. But who should do that? Who decides the difficulty?
+--> Zino (peter@as16-3-1.lk.bonet.se) has joined #pingus
+<grumbel> Lemmus: the one that creates the world, which would most likly be me
+<Lemmus> Yeah. The demorecorder is cool. But do we have an "official" place to store the "official" solutions for levels? What if sby. comes up with a solution that is easier than the "official"?
+<grumbel> comments are of course welcome and reordering the levels is quite painless
+<Lemmus> Ok.
+<grumbel> Lemmus: then the level is a) broken or b) cool, since it allows multiple solutions
+<Torangan> I'm going to install an official place for level comments.
+<Lemmus> Torangan: Ok. Will that include space for demo-records?
+<Torangan> Official solutions should probably be placed only in CVS, why hold them in front of players.
+--- Zino is now known as PBortas
+<Lemmus> Torangan: I agree.
+--- PBortas is now known as Zino
+<zz|sergant> is pingus allready use cl 0.7.x or it still use cl 0.6.x ?
+<grumbel> Lemmus: data/demos/*.xml already has a few recordings
+<grumbel> zz|sergant: both, depends on which pingus version 
+<Lemmus> Ah. Sorry.
+<grumbel> file extension should change however
+<zz|sergant> grumbel: I chechout cvs right now
+<Torangan> I'll do that monday or tuesday.
+ Zino Zombie zz|sergant 
+<grumbel> zz|sergant: clanlib0.7 then
+<Torangan> (I'll be away over the weekend.)
+<zz|sergant> grumbel: ok, thx
+<grumbel> just for the record, I'll will be busy the next days with supertux, so not much progress from me either
+<grumbel> anybody around who would like to cleanup/write a level building tutorial?
+<Torangan> grumbel: could you add the new version of the font? This would help somewhat.
+<grumbel> pingus0.6.1 should kind of end up as a level-building-edition
+ tobgle Torangan 
+<grumbel> Torangan: I can try...
+<Lemmus> I only see two demos in the demos-dir. One of which is not xml.
+<Torangan> Is anyone planning on getting the #ifdef out of the cvs version?
+ tobgle Torangan 
+<grumbel> Torangan: unless somebody volunteers that would be me
+<grumbel> but that might take a few days
+<Torangan> grumbel: I hope to get someone to voluteer, I've got some things to do for 0.6.1 first and you're occupied with SuperTux still.
+<Torangan> It's probably even a good task to get familar with the structure of the source.
+<grumbel> since 0.6.1 is basically working and should be enough for content creation 0.7 doesn't even need to be done 'real soon now'
+<Lemmus> ... And the other demo-file is for an inplayable level (with no gfx)
+<Torangan> I imagine 0.7 somewhere in may.
+ tobgle Torangan 
+<grumbel> Torangan: 0.7 -> 1. May
+<grumbel> thats the target, if we can hold it is another story
+<Torangan> I'd even see it a little bit later, maybe 15. May but we should strive for 1. May surely.
+<Harry> http://www.ratol.fi/~hstorbac/tmp/climber.png
+<Harry> hows that?
+ tobgle Torangan 
+<Torangan> With a little luck it should be possible to get 0.6.1 out at ~10. April.
+<Lemmus> That is cute. I like the helmet :-)
+<grumbel> Torangan: the new island itself should be no problem till 1.may, multiplayer and a new level editor is of course a different story
+<grumbel> Harry: great :)
+<grumbel> especially the helmet is good, since it adds as a marker for pingus that have the climbing ability but are still in a walk
+<Torangan> A lot better then the current one. ;-)
+<Lemmus> grumbel: Yeah, I din't think about that. Though, then we need all pingus in 4 versions. With and without propeller, and with and without helmet.
+<Torangan> grumbel: if need be we can put the new levels even into a 0.6.2 at 1. May to show the progress of GoTM while getting the other stuff finished.
+--> Chilling_Silence (~josiah@203-118-165-183.adsl.ihug.co.nz) has joined #pingus
+<Harry> shouldn't be too hard to animate either, just make the arms (wings or whatever) and feet move a bit
+<Torangan> You mean with nothing, helmet, propeller or helmet+propeller?
+<grumbel> Lemmus: the propeller is  just a overlay over the sprite, no need for a new sprite
+<Harry> maybe a little swing on the head
+* Chilling_Silence greets #pingus
+<Lemmus> Torangan: yes.
+<Lemmus> grumbel: ok.
+<Torangan> Using another overlay shouldn't complicate matters much, maybe we need another propellor for the climber + floater case.
+<Torangan> Harry: maybe make the white area of the Climber a little bit larger? 
+<Torangan> Harry: it looks a little bit too heavy for climbing :-)
+<grumbel> something different, who is interested in building levels?
+<Lemmus> Me :-)
+<Lemmus> I am just out of ideas, but hopefully will come up with some more levels soon.
+<Torangan> That reminds me, I haven't mentioned my favorite pet: anyone here who'd like to do another translation? :-)
+<Lemmus> Ofcourse, if 0.7.0 is meant to include new faller code, and new climber code, then all previous levels would need revisions.
+<grumbel> Lemmus: the code will stay pretty much the same
+<Harry> Torangan: the size of the white area should prolly change depending on which hand is up
+<grumbel> at most it will get a little bit more tolerant about one-pixel things
+<Lemmus> Yep, but perhaps the timing will change a bit.
+<Harry> like in normal walk cycle
+<Torangan> Harry: maybe it would be even better to simply reduce the amount of black and thus have the white a little further from the ground/wall
+<grumbel> Lemmus: maybe, but nothing that can't be fixed in a few seconds per level
+<Lemmus> Discussion is dying. Is this the end, for now?
+<grumbel> anyway, stone and hellmouth graphics are currently allowed for levels, everything else could need a bit more discussion first
+<Torangan> Harry: this would also leave more room for the animated part but I'm far from beeing a designer myself. ;-)
+<grumbel> Lemmus: kind of, next meeting will be Saturday April 10th I guess
+<Lemmus> Ok.
+<grumbel> goal till then would be a useable 0.7 and probally a contrib screen for 0.6
+<Lemmus> I will look at some stone-levels 'till then.
+<Torangan> If we get the contrib screen and the font done fast enough, it could even be the date for a 0.6.1 release. That would surely draw more people to the IRC meeting. ;-)
+<Lemmus> See you!
+<-- Lemmus (~rz@3E6B15CB.rev.stofanet.dk) has left #pingus
+<-- JDaly has quit ("Verlassend")
+<Harry> http://www.ratol.fi/~hstorbac/tmp/climber2.png
+<Harry> i like the fatter one more myself
+<grumbel> Harry: me too, fat is good, looks more like the penguins linux people are used to
+--> blacksheep (~rick2@213-205-68-138.nr.ip.pt) has joined #pingus
+<Torangan> Well, it seems like Tux must always stay fat. So be it. :-)
+<blacksheep> hey!
+<blacksheep> damn, missed the meeting :((

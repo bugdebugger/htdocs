@@ -1,0 +1,203 @@
+Nov 02 15:43:42 -->	You are now talking on #pingus
+Nov 02 16:23:25 -->	henri (~hfmanson@cc286660-a.ensch1.ov.home.nl) has joined #pingus
+Nov 02 16:23:37 <henri>	hallo
+Nov 02 16:24:28 <--	henri has quit (Client Quit)
+Nov 02 18:27:13 ---	You have new mail (1 messages, 1118 bytes total).
+Nov 02 18:54:12 -->	ginge (ginge@modem-1236.zebra.dialup.pol.co.uk) has joined #pingus
+Nov 02 18:54:19 <grumbel>	hi
+Nov 02 18:58:28 -->	henri (~hfmanson@cc286660-a.ensch1.ov.home.nl) has joined #pingus
+Nov 02 18:58:48 <grumbel>	hi henri
+Nov 02 18:58:55 -->	gervase (gervase@modem-2043.python.dialup.pol.co.uk) has joined #pingus
+Nov 02 18:58:58 <henri>	hello 
+Nov 02 18:59:26 <henri>	at 19.00 West European time is's going to start?
+Nov 02 18:59:30 <gervase>	Hi!
+Nov 02 18:59:43 <ginge>	about 5 mins time by my computer clock
+Nov 02 19:00:28 <grumbel>	its getting fuller :)
+Nov 02 19:00:54 <gervase>	Would it be best to start with a general introduction of who each of us are?
+Nov 02 19:01:22 <henri>	I'm Henri Manson, I've been busy removing memory leaks in pingus
+Nov 02 19:01:57 <grumbel>	henri: ah, still haven't commited your patch
+Nov 02 19:02:22 <gervase>	I'm Gervase Lam.  I've mostly been trying to remove the playability bugs.  But I would just like to get the bug list down.
+Nov 02 19:02:42 >grumbel<	 <algorithm>?  is missing in button_panel.cxx
+Nov 02 19:03:58 <ginge>	I'm Neil Mitchell, and I use Windows, so have been doing Win specific things
+Nov 02 19:04:14 <henri>	If anyone else is also using VC++ I've implemented a memory allocation hook function so you can find where
+Nov 02 19:04:37 <henri>	the memory was allocated one a leak is detected when terminating Pingus
+Nov 02 19:05:06 <ginge>	I've also got my own leak detector, I just haven't run it with Pingus
+Nov 02 19:05:55 <henri>	I've also noticed that some functions return complete objects instead of references to them.
+Nov 02 19:06:06 <henri>	that costs overhead
+Nov 02 19:06:09 <ginge>	aren't there really good memory leak/access error detectors for Linux, that are much better than Windows ones?
+Nov 02 19:08:02 <grumbel>	ginge: valgrind should be good, but I havn't really used it myself
+Nov 02 19:08:44 <gervase>	Is there a vague agenda to this meeting?!
+Nov 02 19:08:47 <grumbel>	henri: there are quite a few objects in ClanLib that are refcounted, so that shouldn't be such a big problem
+Nov 02 19:09:06 <grumbel>	gervase: no.
+Nov 02 19:11:21 <henri>	I have a question. As a pingus beginner is there some documentation available about the design of pingus?
+Nov 02 19:11:30 <henri>	classes etc..
+Nov 02 19:12:19 <grumbel>	henri: http://pingus.seul.org/development.html
+Nov 02 19:12:32 <grumbel>	henri: that contains a bit, but most likly quite a bit outdated
+Nov 02 19:12:47 <henri>	thanks
+Nov 02 19:14:05 <grumbel>	henri: http://pingus.seul.org/sourcecodestructure.html
+Nov 02 19:14:14 <grumbel>	henri: but this one was written before the big cleanup
+Nov 02 19:14:15 <gervase>	What is the plan with regards to getting out the next release?
+Nov 02 19:14:44 <grumbel>	gervase: tutorial island + a few normal levels should be 100% working
+Nov 02 19:14:56 <grumbel>	gervase: sound and music also needs to be working correctly
+Nov 02 19:15:20 <grumbel>	gervase: and actions should be finished
+Nov 02 19:15:41 <grumbel>	gervase: level editor also needs to get a bit polished
+Nov 02 19:16:30 <henri>	I've made some changes so the sound works again in Windows. The music is still hardcode in pingus. is the file
+Nov 02 19:16:52 <henri>	format still .it. Why is MIDI not used?
+Nov 02 19:17:19 <gervase>	It sounds like there is a long way to go.  For example, one of the "bugs" needs to be sorted are Sliders.  The problem is that there is still transitional animation for Sliders.
+Nov 02 19:18:50 <gervase>	The (Linux) software cursor problem is also on the list for the next release 0.5.0.  Is this a ClanLib problem?
+Nov 02 19:20:03 <henri>	Much memory leaks are caused by the ::instance construct which initialises a static object variable with "the" object
+Nov 02 19:20:21 <henri>	but that static variable is never freed.
+Nov 02 19:20:55 <gervase>	With regards to MIDI, aren't we going with WAV files because they are more flexible?
+Nov 02 19:22:49 <henri>	Another question. Why isn't the pingus project included in SourceForge?
+Nov 02 19:23:09 <henri>	It can be handy to assign tasks to volunteers.
+Nov 02 19:25:26 -->	grumbel_ (~grumbel@pD9E1122B.dip.t-dialin.net) has joined #pingus
+Nov 02 19:25:38 <gervase>	Well, the mailing lists (only) used to be on SourceForge.  But because of the 'poor' functionality they have, we moved this summer.
+Nov 02 19:26:16 <gervase>	I think one of the problems was one of the "Reply" fields?  Correct me on all counts if I am wrong.
+Nov 02 19:26:20 <grumbel_>	hm, my xchat client staled again... looks like I missed the last five minutes or so, could somebody copy&paste them to me?
+Nov 02 19:27:00 <henri>	do you want to have to story so far?
+Nov 02 19:27:11 <gervase>	How would you like this to be done?  Could look confusing on the screen.
+Nov 02 19:28:02 grumbel grumbel_ Nov 02 19:28:11 >grumbel_<	test 
+Nov 02 19:29:56 <grumbel_>	henri: clanlib doesn't have midi support and midi support in general under linux is quite ugly
+Nov 02 19:29:56 <grumbel_>	beside that mod's sound a lot better, while not wasting that much space as .ogg files which we also support
+Nov 02 19:29:56 <grumbel_>	but most important, .it was the format which the musican used to create the music
+Nov 02 19:29:56 <grumbel_>	does anybody know how I can dump a backtrace from within the programm without launching gdb?
+Nov 02 19:29:56 <grumbel_>	IIRC there was some function/library to do it
+Nov 02 19:29:57 <grumbel_>	but I can't remember which one
+Nov 02 19:29:59 <grumbel_>	I am going to clean up the PingusMain/GenericMain/AbstractMain mess a bit
+Nov 02 19:30:01 <grumbel_>	ginge: could you compile a new win32-binary?
+Nov 02 19:31:32 <ginge>	sure, I have one that is pre-tutorial world, but with no major bugs
+Nov 02 19:31:54 <ginge>	I can do another one, but at the moment I can't run pingus (recent reformat), so I can't check it works first
+Nov 02 19:32:13 <grumbel_>	henri: all those singleton instance() things should probally get replaced with ::init()/::deinit() stuff
+Nov 02 19:32:48 <ginge>	How shall I "move" the file to Pingus?
+Nov 02 19:33:56 <grumbel_>	ginge: you should be able to use tha savanna account to upload files
+Nov 02 19:34:06 <--	grumbel has quit (Read error: 110 (Connection timed out))
+Nov 02 19:34:26 -->	grumbel (~grumbel@pD9E1122B.dip.t-dialin.net) has joined #pingus
+Nov 02 19:34:52 <ginge>	that isn't very easy using Windows, it is really setup for Linux, any easier way?
+Nov 02 19:35:33 <grumbel_>	ginge: no
+Nov 02 19:35:44 <grumbel_>	ginge: aren't there ftp clients that can speak sftp?
+Nov 02 19:37:45 <grumbel_>	ginge: you basically just need a key pair and an client that speaks sftp, thats all
+Nov 02 19:37:51 <grumbel_>	http://www.chiark.greenend.org.uk/~sgtatham/putty/
+Nov 02 19:38:12 <ginge>	not that I have on me, I'll look into it again, I have putty already, but before it just "didn't work"
+Nov 02 19:39:09 <grumbel_>	if sftp fails, try plain scp, that should work 
+Nov 02 19:41:47 <grumbel>	gervase: the slider action can be left out for the next release, its still to unfinished
+Nov 02 19:42:54 <ginge>	what is currently happening with the website?
+Nov 02 19:44:43 <grumbel_>	ginge: webpage is in savannas-html-CVS, subdirectory redesign/
+Nov 02 19:45:05 <ginge>	alright, I'll look into that - is it my XML one?
+Nov 02 19:46:32 <ginge>	and what needs to be done for it to go from redesign -> real
+Nov 02 19:47:20 <grumbel_>	ginge: its your xml stuff
+Nov 02 19:47:29 <grumbel_>	ginge: we need new content
+Nov 02 19:47:46 <grumbel_>	ginge: and we should probally make the change together with the new release
+Nov 02 19:50:37 <ginge>	good idea
+Nov 02 19:52:36 <grumbel_>	http://savannah.nongnu.org/bugs/index.php?group_id=2184&set=custom&advsrch=1&msort=0&report_id=110&category_id%5B%5D=0&bug_group_id%5B%5D=0&assigned_to%5B%5D=0&platform_version_id%5B%5D=0&status_id%5B%5D=1&release_id%5B%5D=0&plan_release_id%5B%5D=101&SUBMIT=Browse&chunksz=50
+Nov 02 19:52:49 <grumbel_>	that should be the bugs that needs to get fixed before the next release
+Nov 02 19:59:02 <henri>	Niel: can you mail me (hfmanson@home.nl) what your activities are in windows?
+Nov 02 19:59:30 <ginge>	activities? - you mean like my skills?
+Nov 02 20:01:29 <ginge>	grumbel: Do you want people to work on the website as anon then submit patches to the mailing list?
+Nov 02 20:02:30 <grumbel_>	best would be if we could get a seperate maintainer for the webpage
+Nov 02 20:02:39 <grumbel_>	but patches should do for the moment
+Nov 02 20:03:03 <grumbel_>	all people with a savanna account should also be able to write directly to the html-CVS tree
+Nov 02 20:07:46 <ginge>	but do you want us to commit directly or patch to the mailing list?
+Nov 02 20:08:17 <grumbel>	you can commit directly
+Nov 02 20:08:31 <grumbel>	but if you want to do a larger change, discuss at the mailinglist first
+Nov 02 20:08:33 -->	ItsMeHarry (~simcon@host213-122-143-139.in-addr.btopenworld.com) has joined #pingus
+Nov 02 20:09:31 <--	ItsMeHarry (~simcon@host213-122-143-139.in-addr.btopenworld.com) has left #pingus
+Nov 02 20:24:53 <grumbel>	we sooner or later need a start-up application for pingus
+Nov 02 20:25:11 <grumbel>	which allows player to select resolution, fullscreen or not and things like that
+Nov 02 20:25:40 <grumbel>	does anybody want to take that job?
+Nov 02 20:26:40 <gervase>	How platform independent could this be?
+Nov 02 20:27:13 <grumbel>	not sure
+Nov 02 20:27:35 <grumbel>	either we write two seperate ones for linux and win32 or we use wxwindows or something like that
+Nov 02 20:28:08 <gervase>	I suppose dialog boxes like that used in the Editor could be used.
+Nov 02 20:28:28 <grumbel>	no
+Nov 02 20:28:45 <grumbel>	thats already 'too late'
+Nov 02 20:29:00 <grumbel>	the startup-app should use the native system GUI tools
+Nov 02 20:29:14 <grumbel>	since it should be used to avoid clanlib throuble
+Nov 02 20:30:06 <ginge>	basically an options dialog that writes out to a settings file?
+Nov 02 20:31:21 <gnutzel>	Maybe we could try wxwin Stuff?
+Nov 02 20:32:03 <gervase>	If Pingus is going to use a system abstraction class so that it is platform independent, it would be daft to have a platform dependent start-up application.
+Nov 02 20:33:58 <gnutzel>	Hm, I thought it would be good for a quick standalone `Configurator` application.
+Nov 02 20:34:01 <grumbel_>	gervase: getting 100% abstract from the platform will never work
+Nov 02 20:34:29 <grumbel_>	for example one might to chose the opengl driver to use or things like that
+Nov 02 20:34:35 <henri>	ginge: I'm back, I meant what you are doing right now for the pingus project
+Nov 02 20:34:52 <grumbel_>	ginge: yep, something like that
+Nov 02 20:35:01 <grumbel_>	ginge: doesn't have to be very complicated
+Nov 02 20:35:24 <grumbel_>	ginge: but could of course be a bit more sophisticated to write down error logs and things like that
+Nov 02 20:35:41 <grumbel_>	ginge: so that people can easily copy&paste stuff when they want to write a bug report or things like that
+Nov 02 20:35:54 <ginge>	I can do a system configurator for windows with ease, just give me the stuff that wants doing etc.
+Nov 02 20:36:17 <ginge>	I was also thinking of doing an installer for Pingus on Windows, as most Win users won't want to either unzip or CVS
+Nov 02 20:37:08 <ginge>	henri: nothing at the moment, other than what i've offered in the previous two lines
+Nov 02 20:37:41 <gervase>	Somebody e-mailed the list quite a while back about a platform independent installer.
+Nov 02 20:38:40 <grumbel_>	http://www.nullsoft.com/free/nsis/
+Nov 02 20:38:46 <grumbel_>	this is a free installer application
+Nov 02 20:38:55 <ginge>	That was what I was thinking of using, I have done installers in that before
+Nov 02 20:39:14 <ginge>	i don't think its platform independant though
+Nov 02 20:39:24 <gervase>	The slight problem is that would mean deviating from what is Linux's standard Red Hat Packaging system.
+Nov 02 20:39:55 <gervase>	But then again I have StarOffice on Linux.  And the installer, which is not Red Hat, is fine.
+Nov 02 20:41:05 <grumbel_>	gervase: I don't really like installers for linux
+Nov 02 20:41:19 <grumbel_>	well ok, I don't really like .deb and .rpm either
+Nov 02 20:44:57 <ginge>	g2g, can someone post the whole text of the conversation to the website?
+Nov 02 20:50:57 <grumbel_>	has somebody a complete log?
+Nov 02 20:51:43 <grumbel_>	btw. should we write a worldmap editor or continue to write them by hand?
+Nov 02 20:53:43 grumbel grumbel_ Nov 02 20:53:59 >grumbel<	Ich haette eins von **** BEGIN LOGGING AT Sat Nov  2 15:43:42 2002
+Nov 02 20:55:22 <grumbel>	henri: I commited your memleak patch now
+Nov 02 20:55:33 -->	ItsMeHarry (~simcon@host213-122-143-139.in-addr.btopenworld.com) has joined #pingus
+Nov 02 20:55:34 <grumbel>	henri: but I changed quite a few things in it
+Nov 02 20:55:52 <henri>	I have a log of the conversation so for, should I send it?
+Nov 02 20:56:30 <henri>	grumbel: I'll update CVS this evening, what have you changed?
+Nov 02 20:56:54 <grumbel>	added destructor in controller and init/deinit for PingusResource
+Nov 02 20:57:07 <grumbel>	I also cleaned up the Pingus/Abstract/GenericMain stuff
+Nov 02 20:57:34 <henri>	grumbel: on what platform are you working?
+Nov 02 20:57:50 <grumbel_>	linux
+Nov 02 20:58:08 <ItsMeHarry>	why are there 2 grumbels?
+Nov 02 20:58:34 <ItsMeHarry>	ich verstehe nicht
+Nov 02 20:58:49 <grumbel_>	cause I have to xchats up and running
+Nov 02 20:59:01 <ItsMeHarry>	two, ok :)
+Nov 02 21:03:05 <henri>	when I use cvs update, must I also update clanlib?
+Nov 02 21:05:18 <grumbel_>	henri: no
+Nov 02 21:06:05 <grumbel_>	henri: clanlib0.6 is pretty much staled, if somebody important gets added i'll post it to the mailinglist
+Nov 02 21:08:09 -->	y (gervase@modem-2723.python.dialup.pol.co.uk) has joined #pingus
+Nov 02 21:09:25 <--	gervase has quit (Read error: 110 (Connection timed out))
+Nov 02 21:09:55 <--	y has quit (Client Quit)
+Nov 02 21:10:27 -->	gervase (gervase@modem-2723.python.dialup.pol.co.uk) has joined #pingus
+Nov 02 21:12:14 <gervase>	I've just had a look at the wxwin site <http://www.wxwindows.org/>.  It's a "cross platform GUI framework" system.
+Nov 02 21:13:30 ---	ChanServ has changed the topic to: Pingus - http://pingus.seul.org
+Nov 02 21:14:13 <--	ginge has quit (Read error: 113 (No route to host))
+Nov 02 21:17:21 <henri>	hello, when using should I always use 'checkout' and not 'update'? Now several contains things like '<<<<<<' and then apparently some integration
+Nov 02 21:17:24 <henri>	conflicts...
+Nov 02 21:17:33 <henri>	when using cvs
+Nov 02 21:17:35 <grumbel>	henri: rm the files and update again
+Nov 02 21:17:56 <grumbel>	henri: unless you have something in the files you want to keep, than you have to resolve the conflict manually
+Nov 02 21:18:35 <grumbel>	this always happens if you change something, send a patch, I'll change the patch a bit and commit -> bang, a conflict
+Nov 02 21:18:42 <grumbel>	havn't really found a way to avoid that
+Nov 02 21:22:12 <--	ItsMeHarry has quit (Remote closed the connection)
+Nov 02 21:22:49 <henri>	grumbel: Now I'm regetting the source from CVS...
+Nov 02 21:31:10 <henri>	grumbel: when this meeting is over I can send you the text of it.
+Nov 02 21:31:30 <grumbel>	henri: ok
+Nov 02 21:35:24 <henri>	grumbel: done compiling, only 6 errors! One of them is that generic_main.cxx isn't in the project. Can I remove it from the project?
+Nov 02 21:36:03 <grumbel>	yep, can be removed from project
+Nov 02 21:40:03 <henri>	Here's another one which I already got in the first place:
+Nov 02 21:40:15 <henri>	F:\User\pingus\Games\Pingus\src\worldobj_data_factory.cxx(159) : error C2065: 'XML_ELEMENT_PTR' : undeclared identifier
+Nov 02 21:42:02 <grumbel>	its this XML_GET_LINE() macro which doesn't seem to work under windows (or at least not with some versions of libxml)
+Nov 02 21:42:05 <henri>	BTW: that's the only error left. I added #include <ClanLib/Core/System/console_window.h>
+Nov 02 21:42:07 <grumbel>	I'll add a workaround
+Nov 02 21:42:28 <henri>	in pingus_main.cxx for CL_ConsoleWindow 
+Nov 02 21:48:06 <henri>	now everythings compiles again. In VC++ when linking I add a 'd' to the end of every Clanlib library to indicate it's a debugger
+Nov 02 21:48:09 <henri>	library
+Nov 02 21:48:23 <grumbel_>	commited a fix
+Nov 02 21:50:44 <henri>	grumbel: Do you get a console window automatically in Linux?
+Nov 02 21:53:26 <grumbel_>	you launch stuff from the terminal most of the time
+Nov 02 21:53:33 <grumbel_>	so there is no need for a console window
+Nov 02 21:54:21 <grumbel_>	beside that console window is an empty dummy under linux, it doesn't do anything
+Nov 02 21:54:40 <grumbel>	so the #ifdef isn't really necesarry, I'll remove it
+Nov 02 22:02:00 <henri>	if seen you have created a PingusResource::deinit
+Nov 02 22:02:10 <henri>	when does it get called?
+Nov 02 22:02:34 <grumbel>	woops, I'll hook it up
+Nov 02 22:03:07 <grumbel>	there is quite a bit more that is init()'ed but not deinited() 
+Nov 02 22:04:26 <henri>	I had added a 'delete main_obj' in generic_main.cxx. where has the stuff gone of generic_main.cxx?
+Nov 02 22:05:22 <grumbel>	removed
+Nov 02 22:05:38 <grumbel>	generic main was just wrapper stuff, not really needed
+Nov 03 15:58:18 <henri>	Hello Ingo
+Nov 03 16:15:34 <grumbel>	hi
+Nov 03 16:23:33 <henri>	now the pingus deinit functions are called in pingusMain::main
+Nov 03 16:33:53 <grumbel>	ok
+Nov 03 16:59:28 <--	henri has quit ()
