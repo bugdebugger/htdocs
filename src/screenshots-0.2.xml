@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<page title="Screenshots of Version 0.2">
+  <screenshot-menu/>
+
+  <screenshots>
+    <item file="screen_0.2.4">the new transparent overlay interface</item>
+    <item file="screen_0.2.3">the last shot with the old interface</item>
+    <item file="screen_0.2.2">believe it or not, all levels until 0.3.0 where created with a text editor</item>
+    <item file="screen_0.2.0">more gfx from Joel</item>
+  </screenshots>
+  
+</page>

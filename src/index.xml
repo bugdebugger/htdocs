@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+  <head>
+    <title>Pingus - A journey into the unknown...</title>
+  </head>
+
+  <body text="text" bgcolor="#707f9b" style="margin-top: 20px;">
+    <center>
+    <a href="welcome.html"><img style="border-style: none" src="images/logo_large.jpg"
+    alt="Pingus - A journey into the unknown...
+Click to Enter"/></a>
+    </center>    
+  </body>
+</html>

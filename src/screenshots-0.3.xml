@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<page title="Screenshots of Version 0.3">
+  <screenshot-menu/>
+  
+  <screenshots>
+    <item file="screen_0.3.2">the sweets world, the smallmap appeared</item>
+    <item file="screen_0.3.1_2">a level created with the new editor</item>
+
+    <item file="screen_0.3.1_1">the editor got a button toolbar</item>
+
+    <item file="screen_0.3.0">X-Mas Pingus in action</item>
+    <item file="screen_0.3.0_1">with the appearance of the level editor it was finally possible to build nice looking levels, no more try&amp;error with Emacs</item>
+  </screenshots>
+
+</page>

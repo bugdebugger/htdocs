@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<page title="Screenshots of Version 0.1">
+  <screenshot-menu/>
+
+  <screenshots>
+    <item file="screen_linuxtag_forge">a special level for the LinuxTag 1999</item>
+    <item file="screen_linuxtag_parsec">a special level for the LinuxTag 1999</item>
+    <item file="screen_linuxtag_tag">a special level for the LinuxTag 1999</item>
+    <item file="screen_0.1.2">a level with a solid background, we don't have many of these</item>
+    <item file="screen_0.1.1">the good old restart menu, got striped later on</item>
+    <item file="screen_0.1.0">the useless gimmicks-mode in action</item>
+  </screenshots>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<page title="Screenshots of Version 0.4">
+  <screenshot-menu/>
+
+  <screenshots>
+    <item file="screen_0.4.1-4">the industrial world</item>
+    <item file="screen_0.4.1-3">the sortie world</item>
+    <item file="screen_0.4.1-2">snow particle effects in action</item>
+    <item file="screen_0.4.1-1">a new main menu, got removed again later on</item>
+    <item file="screen_0.4.0"/>
+    <item file="screen_0.4.0-4">the good old 0.4.0 main menu</item>
+    <item file="screen_0.4.0-3">a shot of a complete level</item>
+    <item file="screen_0.4.0-2">a pseudo light effect with transparent groundpieces, never used in the real game for speed issues</item>
+    <item file="screen_0.4.0-1"/>
+  </screenshots>
+
+</page>

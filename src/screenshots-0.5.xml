@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<page title="Screenshots of Version 0.5">
+  <screenshot-menu/>
+  
+  <screenshots>
+    <item file="screen_0.5.0-5">and finally the buttons got a bit improved</item>
+    <item file="screen_0.5.0-4">snow groundpieces also got repainted</item>
+    <item file="screen_0.5.0-3">lots of groundpieces got repainted, to have more detail</item>
+    <item file="screen_0.5.0-2">4 player multiplayer support (got ripped out again later)</item>
+    <item file="screen_0.5.0-1">2 player multiplayer support (got ripped out again later)</item>
+  </screenshots>
+
+</page>

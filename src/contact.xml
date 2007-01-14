@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<page title="Contact">
+  
+  <section title="Mailing Lists">
+    <p>
+      If you want to write a longer comment, send patches or similar
+      thing, the best way is probably by using the pingus-devel
+      mailing lists, subscribe information can be found below, to just
+      send a mail to the list write to <a
+	href="mailto:pingus-devel@mail.freesoftware.fsf.org?subject:[no-member]">pingus-devel@mail.freesoftware.fsf.org</a>.
+    </p>
+
+    <ul>
+      <li>
+        <a href="http://mail.freesoftware.fsf.org/mailman/listinfo/pingus-devel">pingus-devel</a>
+	- Pingus Developer List (for general discussion about the game, the development, etc.).
+      </li>
+
+      <li>
+        <a href="http://mail.freesoftware.fsf.org/mailman/listinfo/pingus-cvs">pingus-cvs</a>
+	- Pingus CVS Commit List (only programmers need this one).
+      </li>
+    </ul>
+    <p>There is currently no pingus-users mailing list due to the lack
+      of traffic, so using the pingus-devel list for questions about the
+      game is perfectly ok.</p>
+  </section>
+
+  
+  <section title="Bug Reports">
+    <p>
+      If you want to submit a bug report about Pingus or simply browse
+      the list of open bugs, you can do so at the <a
+      href="http://savannah.nongnu.org/bugs/?group=pingus">Savannah Bug
+      Tracker</a>. Submitting stuff there should make it sure that it
+      doesn't get lost.
+    </p>
+  </section>
+
+  <section title="IRC">
+    <p>For a quick help you can try the IRC server <tt
+      class="irc">irc.freenode.net:6667</tt> and the channel <tt
+      class="irc">#pingus</tt>, you can find the project maintainer
+      (nick: grumbel) there most of the time. From time to time there
+      will also be IRC Meetings with larger parts of the development
+      team, once such meetings happen, they will get announced in the
+      news section.
+    </p>
+  </section>
+
+
+  <section title="Instant Messaging">
+    <p>
+      If you don't like IRC, there is also the possibility to contact
+      us directly via Instant Messaging.
+    </p>
+
+    <dl>
+      <dt>Ingo Ruhnke (nick: grumbel) [Maintainer/Programmer]</dt>
+      <dd>Jabber: grumbel@jabber.org<br/>
+          ICQ UIN: 59461927</dd>
+
+      <dt>David Philippi (nick: Torangan) [Programmer]</dt>
+      <dd>Jabber: Torangan@charente.de<br/>
+        ICQ UIN: 51850942<br/>
+	AIM: Torangan2</dd>
+    </dl>
+
+  </section>
+</page>

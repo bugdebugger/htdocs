@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<page title="Screenshots of Version 0.6">
+  <screenshot-menu/>
+  
+  <screenshots>
+    <item file="screen_0.6.0-1">First Level in Action</item>
+    <item file="screen_0.6.0-2"/>
+    <item file="screen_0.6.0-3"/>
+    <item file="screen_0.6.0-4">The Editor</item>
+    <item file="screen_0.6.0-5">The Worldmap</item>
+    <item file="screen_0.6.0-6">The Main Menu</item>
+  </screenshots>
+
+</page>

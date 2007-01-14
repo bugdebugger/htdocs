@@ -1,0 +1,447 @@
+<?xml version="1.0" ?>
+<page title="News">
+  <section title="2002">
+    <news>
+      <item date="12. Jan 2002">
+        some larger additions to the <a href="todo/index.html">todo</a> and a <a href="howtocontribute.html">How to contribute guide</a>
+      </item>
+
+      <item date="01. Dec 2001">
+        New ToDo list added <a href="todo/">here</a>.</item>
+      <item date="17. Nov 2001">
+        A short overview over the class structure is
+        available <a
+          href="sourcecodestructure.html">here</a>.</item>
+      
+      <item date="5. Aug 2001">
+        'pingus.cx' is down, so you currently can't reach me via
+        grumbel@gmx.de, try <a
+          href="mailto:grumbel@gmx.de">grumbel@gmx.de</a> instead.
+      </item>
+
+      <item date="28. July 2001">
+        <b>Release 0.5.0pre2 is out</b><br /> You can download it <a
+          href="download.html#devrel">here</a>.
+      </item>
+      
+      <item date="15. July 2001">
+        <b>Pingus is in need for new programmers!</b> As the last
+        month have shown this project is nearly dead, I currently
+        simply lack the time to do anything for Pingus, so I need
+        some help. So when you are at least a bit familiar with C++
+        and have some spare time to offer, please drop <a
+          href="mailto:grumbel@gmx.de">me a mail</a>, so I can
+        coordinate the efforts.
+      </item>
+
+      <item date="16. June 2001">
+        <a href="download.html#devrel">Pingus 0.5.0pre1 is out</a><br
+          /> Finally a new Pingus release is out, but be warned this
+        is a development release (mostly for level designers) and is
+        known to crash. When you want a playable game, this thing
+        won't make you happy.
+      </item>
+
+      <item date="14. Apr 2001">
+        You can find a screenshot of the multiplayer mode <a href="images/screen_0.5.0-1.jpg">here</a>.
+      </item>
+
+      <item date="12. Apr 2001">
+        Multiplayer is on its way!<br /> <a
+          href="mailto:grumbel@gmx.de">I</a> am currently implementing
+        multiplayer support (split-screen, no network support) for
+        Pingus, cooperative and battle modes will be available.
+      </item>
+
+      <item date="4. Apr 2001">
+        Generated some source docs with doxygen, you can find them <a
+          href="http://pingus.seul.org/doxy/index.html">here</a>
+      </item>
+
+      <item date="2. Apr 2001">
+        I cleaned up my Pingus directory tree, commited a bunch of
+        missing images and levels (more to come) and fixed some bugs
+        in the CVS version. Looks like this thing is alife again and a
+        new release might follow soon.
+      </item>
+      
+      <item date="18. Feb 2001">
+        <b>Project suspended for at least another month!</b><br />
+        <p>Due to the lack of time and motivation I will not work on
+          the project for at least another month, so don't expect any
+          updates in that time. In the meantime you can have a look at
+          some of my other projects:</p>
+        <ul>
+          <li><a href="http: //feuerkraft.sourceforge.net">Feuerkraft</a></li>
+          <li><a href="http://advent.sourceforge.net">Advent</a></li>
+        </ul>
+      </item>
+      
+      <item date="5. Nov 2000">
+        <b>Pingus runs now on LinuxPPC!</b><br /> A guide on how to
+        compile Pingus and some PPC Clanlib and Hermes RPMs are
+        available <a
+          href="http://mapage.noos.fr/guillaume.laures/linux/pingus.html">here</a>,
+        but be warned this is only experimental development stuff
+        and it will crash often.
+      </item>
+
+      <item date="24. Oct 2000">
+        <a href="info@linuxdoos.com">Arnold van Rooij</a> wrote a
+        dutch <a href="http://pingus.linuxdoos.com">level editing
+          howto</a>
+      </item>
+      
+      <item date="13. Sep 2000">
+        We have now an "official" IRC channel at:<br /> Server:
+        <tt>irc.openprojects.net</tt><br /> Channel: <tt>#pingus</tt>
+      </item>
+
+      <item date="11. Aug 2000">
+        Some more photos of the LinuxTag are available <a
+          href="http://pingus.seul.org/~grumbel/pingus/linuxtag/">here</a>
+      </item>
+
+      <item date="7. Aug 2000">
+        A Windows port of Pingus 0.4.0 is available in the <a
+          href="download.html#win32">download section</a>
+      </item>
+
+      <item date="5. Aug 2000">
+        Added another <a href="screenshots.html">screenshot</a> of the
+        new menu and a screenshot of the new weather effects
+      </item>
+
+      <item date="27. Jul 2000">
+        Added a <a href="screenshots.html">screenshot</a> of the new
+        menu, comments welcome.
+      </item>
+      
+      <item date="16. Jul 2000">
+        <b>Pingus Release 0.4.0</b><br /> A new
+        release of Pingus is out, its main features
+        are a set of fully playable levels, a lot of
+        new gfx for the level designers and it comes
+        as a <strong>static linked binary</strong>, <em>no</em> extra
+        libraries are required - it will run
+        <em>out-of-the-box</em>. Its as always
+        available in the <a
+          href="download.html">download section</a>.
+      </item>
+
+      <item date="16. Jul 2000">
+        <b><a href="levels.html">Level building tutorial</a></b><br />
+        I have written a short level building
+        tutorial, which explains the basics of level
+        editing.
+      </item>
+
+      <item date="8. Jul 2000">
+        <a
+          href="http://www.tammura.at/eyemodule/LinuxTag/eyemodule_img.html">Some
+          photos from the LinuxTag are available </a>,
+        thanks to Tamer for providing them.
+      </item>
+
+      <item date="4. Jul 2000">
+        New mailing list: Due to some spam problems with the old
+        list, the <a href="contact.html">Pingus mailing</a> has now
+        moved to <a href="http://sourceforge.net">SourceForge</a>, in
+        addition there are now also announce and users mailing lists.
+      </item>
+      <item date="29. Jun">
+        <a href="http://www.linuxtag.org">LinuxTag 2000</a><br /> As
+        some might already know, Pingus will be present from the
+        29.06-02.07.2000 at the LinuxTag in Stuttgart/Germany
+      </item>
+
+      <item date="19. Jun 2000">
+        <a href="http://pingus.seul.org/doc++/">The doc++
+          documention of the source code is now available.</a>
+      </item>
+
+      <item date="10. Jun 2000">
+        The first prerelease of Pingus 0.4.0pre1 is out, have a look
+        on the pingus-devel list for more instruction. <em>Warrning:
+          prereleases are not meant for the average user, they are meant
+          for testing and debugging, so they are not publicly
+          available</em>.
+      </item>
+
+      <item date="24. Mai 2000">
+        Pingus 0.4.0 still not ready<br /> Pingus has currently some
+        huge bugs, which needs to be fix before the next release, this
+        can take another two weeks or longer, sorry. Use the CVS
+        version for the moment.
+      </item>
+
+      <item date="07. Mai 2000">
+        All older Pingus releases are now available
+        via <a href="ftp://pingus.seul.org/pub/pingus/">FTP</a>.
+      </item>
+
+      <item date="01. Mai 2000">       
+        Added a new <a href="images/screen_0.4.0.jpg">screenshot</a>.
+      </item>
+
+      <item date="25. Apr 2000">       
+        Ever wished that the Pingus could walk over your windows while
+        you are reading you mail? A dream has come true, <a
+          href="mailto:R.J.Hogan@reading.ac.uk">Robin Hogan</a> wrote <a
+          href="http://www.met.rdg.ac.uk/~swrhgnrj/xpenguins/">XPenguins</a>.
+      </item>
+
+      <item date="23. Apr 2000">
+        Pingus 0.4.0 not ready yet<br /> A new version of Pingus will
+        probably released in the next two weeks, for the moment I
+        suggest you to try the CVS version.
+      </item>
+
+      <item date="09. Mar 2000">
+        Pingus 0.3.1 will not work with ClanLib
+        0.4.2, a patch is available <a
+          href="pingus-patch-0.3.1-0.3.1a">here</a>, have
+        also a look at the <a href="faq.html">FAQ</a>.
+      </item>
+
+      <item date="19. Feb 2000">
+        <a href="download.html#rpm">RPMs of Pingus 0.3.1 are ready.</a>
+      </item>
+      
+      <item date="16. Feb 2000">
+        <a href="download.html">Pingus 0.3.1 is released</a>
+      </item>
+      
+      <item date="27. Jan 2000">
+        <a href="download.html#data">A new Pingus Music tarball is
+          ready, it contains two new songs and some older ones are
+          updated.</a>
+      </item>
+
+      <item date="13. Jan 2000">
+        <a href="download.html#cvs">The CVSROOT has
+          changed, if you use the CVS version you need to do a recheckout</a>
+      </item>
+
+      <item date="05. Jan 2000">
+        <a href="download.html#cvs">The Pingus CVS version uses now ClanLib 0.3.1, it will <em>not</em> work with ClanLib 0.2.x.</a>
+      </item>
+
+      <item date="04. Jan 2000">
+        <a href="development.html">Added a level building guide and some Gimp scripts</a>
+      </item>
+
+      <item date="29. Dec 1999">
+        <a
+          href="download.html#data">Released
+          a Pingus music tarball</a>
+      </item>
+
+      <item date="26. Dec 1999">
+        Added <a href="download.html#rpm">RPMs</a> and a new <a
+          href="download.html#source">tarball</a> of Pingus 0.3.0a
+      </item>
+
+      <item date="25. Dec 1999">
+        <a href="download.html">Some levelfiles are missing in Pingus 0.3.0, a patch is available</a>
+      </item>
+
+      <item date="24. Dec 1999">
+        <a href="download.html">Released version 0.3.0</a>
+      </item>
+
+      <item date="11. Nov 1999">
+        <a href="download.html">Released RPMs of Pingus
+          0.2.4</a>
+      </item>
+
+      <item date="8. Nov 1999">
+        <a href="download.html">Released Windows version of
+          0.2.4</a>
+      </item>
+
+      <item date="7. Nov 1999">
+        <a href="download.html">Released version 0.2.4</a>
+      </item>
+
+      <item date="10. Oct 1999">
+        Uploaded new versions of the RPMs, which fix a little bug
+      </item>
+
+      <item date="06. Oct 1999">
+        Binary RPMs of Pingus 0.2.3 are available
+      </item>
+
+      <item date="04. Oct 1999">
+        Source RPMs of Pingus 0.2.3 are available
+      </item>
+
+      <item date="30. Sept 1999">
+        <a href="download.html">Released version
+          0.2.3</a> and first release of the <a
+          href="download.html#win32">Windows port</a>.
+      </item>
+
+      <item date="29. Sept 1999">
+        
+        A good <a
+          href="http://news.tucows.com/ext2/99/09/articles/ext2092719991.shtml">article</a>
+        about Pinugs can be found at ext2.org.
+      </item>
+
+      <item date="26. Sept 1999">
+        Added some documentation to for the
+        <a href="levelformat.txt">levelfile format</a>
+        and <a href="gfx.html">gfx painting</a> to the
+        <a href="development.html">development section</a>
+      </item>
+
+      <item date="18. Sept 1999">
+        <a href="download.html">Source and binary RPMs from version 0.2.2 are available</a>
+      </item>
+
+      <item date="10. Sept 1999">
+        <a href="download.html">Released version 0.2.2</a>
+      </item>
+
+      <item date="31. Aug 1999">
+        Added a link to the <a href="http://dark.x.dtu.dk/~mbn/clanlib/download/snapshots/">daily cvs snapshots</a>
+      </item>
+
+      <item date="25. Aug 1999">
+        Released version 0.2.1
+      </item>
+
+      <item date="22. Aug 1999">
+        Updated the webpage a bit
+      </item>
+
+      <item date="13. Aug 1999">
+        Released Version 0.2.0b
+      </item>
+
+      <item date="12. Aug 1999">
+        Released Version 0.2.0a and a patch for 0.2.0
+      </item>
+
+      <item date="11. Aug 1999">
+        Released Version 0.2.0
+      </item>
+
+      <item date="01. Jul 1999">
+        Released Version 0.1.1
+      </item>
+
+      <item date="28. Jun 1999">
+        Pingus was presented at the <a
+          href="http://www.linuxtag.org">LinuxTag</a>. <a
+          href="mailto:grumbel@gmx.de">Ingo Ruhnke</a>
+        created some special levels there, you can get the
+        complete Special Editon in the <a
+          href="download.html">download section</a>
+      </item>
+
+      <item date="22. Jun 1999">
+        Released <a href="download.html#0.1.0s">version 0.1.0</a>
+      </item>
+
+      <item date="21. Jun 1999">
+        A nice Pingus <a href="images/poster.jpg">poster</a> is now, available.
+      </item>
+
+      <item date="19. Jun 1999">
+        Added infos about <a href="spots.html">Spot Objects</a>
+      </item>
+
+      <item date="30. May 1999">
+        Released pingus version 0.0.15
+      </item>
+
+      <item date="30. May 1999">
+        I have uploaded a new CVS snapshot of ClanLib, checkout the
+        <a href="download.html">download section</a>.
+      </item>
+
+      <item date="13. May 1999">
+        The CVS version is now ready, checkout the <a href="download.html">download section</a>.
+      </item>
+
+      
+      <item date="9. May 1999">
+        Released pingus version 0.0.14
+      </item>
+
+      
+      <item date="7. May 1999">
+        Added some description to the <a
+          href="level.html">development section</a>
+      </item>
+
+      <item date="30. Apr 1999">
+        Changed the layout of the webpage, to be more flexible and extensible.
+      </item>
+
+      <item date="01. Apr 1999">
+        0.0.10: Hotspot, traps, exits and entrances all can now be
+        read from a level file. An example level is included.
+      </item>
+
+      <item date="01. Apr 1999">
+        0.0.9a: Same as the broken 0.0.9, only some bug fixes and
+        clean ups
+      </item>
+
+      <item date="27. Mar 1999">
+        0.0.9pre: Release of a static linked version
+      </item>
+
+      <item date="21. Mar 1999">
+        0.0.8: Rewrite of Pingu class, entrance and exit are ready
+      </item>
+
+      <item date="14. Mar 1999">
+        0.0.7: Compiling should now be easier, make install should
+        work (for /usr/local only). Walker pingu now included.
+      </item>
+
+      <item date="07. Mar 1999">
+        Release of version 0.0.6, more trouble to get it compiled
+      </item>
+
+      <item date="20. Feb 1999">
+        Release of version 0.0.5, better speed (~15fps), basic
+        mouse support and a nice tile map
+      </item>
+
+      <item date="31. Jan 1999">
+        Fourth release, levels are now read from file and
+        support for tile maps is available
+      </item>
+
+      <item date="17. Jan 1999">
+        Third Release, more complete drawing routines
+      </item>
+
+      <item date="10. Jan 1999">
+        Second Release, maybe compilable
+      </item>
+
+      <item date="06. Dec 1998">
+        First version available and added some infos about the
+        level format
+      </item>
+
+      <item date="28. Nov 1998">
+        Changed the GFX-Lib from Allegro to <a href="http://www.clanlib.org">ClanLib</a>
+      </item>
+
+      <item date="07. Nov 1998">
+        Started Programming <strong>Pingus</strong>
+      </item>
+
+      <item date="04. Nov 1998">
+        Got the Idea to start a Lemmings clone
+      </item>
+    </news>
+  </section>
+</page>

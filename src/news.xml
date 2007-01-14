@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<page title="News">
+  <news>
+    <item date="11. Feb 2006">
+      Time for some news, current plans for Pingus look like this:
+
+      <ul>
+        <li>Jave27 is currently trying to get the latest version in a release ready state</li>
+
+        <li>Grumbel opened a new branch in SVN called pingus-sdl, this
+        is supposed to port Pingus to SDL, level file format will
+        switch to S-Expr instead of XML
+        </li>
+      </ul>
+    </item>
+
+    <item date="09. Apr 2004">
+      It's been a long time without any updates, so there's a couple of news to note here.
+      <ul>
+        <li>Pingus got elected GotM for April at <a href="http://www.happypenguin.org">The Linux Game Tome</a> and a 0.7 release with many new features may be expected soon.</li>
+	<li>Pingus CVS was replaced by <a href="http://subversion.tigris.org">Subversion</a></li>
+        <li>There will be a new release on the stable branch (0.6.1) very soon now, planned date is 15.04.2004 - cross your fingers and hope. :-)</li>
+        <li>We've got now a <a href="http://pingus.seul.org/level_comment_tool/index.php">Level Comment Tool</a> where you can rate all levels which are delivered with Pingus.</li>
+      </ul>
+    </item>
+
+    <item date="14. Sep 2003">
+      A added little button in the bottom left corner of the webpage
+          that allows you to <a
+          href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donate
+          via Paypal</a>.
+    </item>
+
+    <item date="16. Apr 2003">
+      Pingus 0.6.0 is finally out, has taken longer as expected, but
+      here it is. It contains one island with 22 playable tutorial
+      levels. This is the first playable release ever of Pingus.
+    </item>
+
+    <item date="12. Apr 2003">
+      A second prerelease of Pingus 0.6.0 is out, named 0.6.0rc2,
+      final 0.6.0 release is expected to be finished this weekend.
+    </item>
+
+    <item date="7. Apr 2003">
+      A first prerelease of Pingus 0.6.0 is out, named 0.6.0rc1
+    </item>
+
+    <item date="21. Mar 2003">
+      After some downtime the Pingus CVS repository is up and running
+      again. But since its now in another CVSROOT people with a
+      checkout need either to re checkout it or editor they
+      <tt>CVS/Root</tt> files a bit, more info is available <a href="http://mail.gnu.org/archive/html/pingus-devel/2003-03/msg00063.html">here</a>.
+    </item>
+
+    <item date="5. Mar 2003">
+      Another IRC Meeting is scheduled for the end of this week (07.
+      Mar 2003) on Friday, 18:00 GMT. Server and channel stay the as
+      with the last one, see below. same. Everybody is welcome.
+    </item>
+
+    <item date="26. Feb 2003">
+      IRC Meeting planed for the next Saturday. For details see below and the <a href="contact.html">Contact Section</a> of this site.<br/><br/>
+      <table>
+        <tr><td>Server:</td><td><a href="http://freenode.net">irc.freenode.net</a> 6667</td></tr>
+        <tr><td>Channel:</td><td>#pingus</td></tr>
+        <tr><td>Date:</td><td>Saturday, 1. March 2003</td></tr>
+        <tr><td>Time:</td><td>21:00 <a href="http://greenwichmeantime.com/">GMT</a></td></tr>
+      </table>
+    </item>
+
+    <item date="22. Dec 2002">
+      Rumour is that a new, finally playable, release will come out in
+      the next days... even so this isn't officially confirmed you
+      might cross your fingers and it will probably happen.
+    </item>
+
+    <item date="21. Dec 2002">
+      The Webpage got finally a complete redesign, this took, as
+      always, longer than expected, but anyway here it is. If you want
+      to know how this page is generated you can look at the xml
+      source and the Makefiles in the <a
+      href="http://savannah.nongnu.org/cvs/?group=pingus">Savanna Web
+      CVS tree</a>.
+    </item>
+  </news>
+
+  <p style="text-align: right"><a href="news_old.html">Older News...</a></p>
+</page>
