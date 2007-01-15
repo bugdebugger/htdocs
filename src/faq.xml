@@ -44,11 +44,11 @@
       <faq date="14 Jan 2007">
         <question>Is there a Windows version?</question>
         <answer>
-          An official Windows version of 0.6.0 was never
-          created and probably never will be.  However, we hope to
-          provide a Windows binary with the 0.6.1 release. It will
-          be equal to 0.6.0 plus fixed fonts, corrected text, and a
-          few minor bugfixes.
+          An official Windows version of 0.6.0 was never created and
+          probably never will be. There is however some hope that a
+          Windows version will follow for the next release. If you
+          search the mailing list archives you might also be able to
+          find some unofficial build for Windows.
         </answer>
       </faq>
 
@@ -97,40 +97,6 @@
       </faq>
 
       <faq date="14 Jan 2007">
-        <question>How do I compile Pingus?</question>
-        <answer>
-          Under GNU/Linux run
-           <tt class="command">./configure
-          &amp;&amp; make</tt> in the source directory.
-        </answer>
-      </faq>
-
-      <faq date="14 Jan 2007">
-         <question>What are the required built-time libraries?</question>
-         <answer>
-         Pingus needs specific versions of ClanLib and Hermes. Running the <tt
-         class="command">./configure</tt> script will tell you if you whether
-         your system has them.
-         </answer>
-      </faq>
-
-      <faq date="14 Jan 2007">
-        <question>What do I need for compiling Pingus on a Windows system?</question>
-        <answer>
-         If you want to compile Pingus on Win32, you will need Microsoft Visual
-         C++ Version 6 or higher. Project files are in the Pingus source tree.
-         Again, you need ClanLib and Hermes. Pingus will currently not compile
-         with Cygwin or Mingw, sorry, porting help is, of course, welcome.
-        </answer>
-      </faq>
-      <faq date="14 Jan 2007">
-        <question>Can I run Pingus from the source directory?</question>
-        <answer>
-           Yes
-        </answer>
-      </faq>
-
-      <faq date="14 Jan 2007">
         <question>I tried compiling it, but something didn't work!</question>
         <answer>
           Technically, this isn't a question. You have to be more specific. A
@@ -145,35 +111,11 @@
           Why is Pingus still not done after being in development for so many years?
         </question>
         <answer>
-          There are several factors that contributed to the long
-          development time.  Some of them still cause delays. <br />
-          First of all, Pingus was my first large C++ project. After
-          all this started as a project for learning C++.  As a
-          result, a lot of things have been done wrong, and I needed
-          to rewrite or fix them at a later time.<br /><br />
-
-          Pingus also has the problem of being
-          over-engineered in a few places. There was too much
-          abstraction in places where it doesn't make sense and only
-          caused problems. So during the first two years a lot of
-          cruft accumulated which needed to be cleaned up in the next
-          years. The current code is much cleaner, but it still has
-          some ugly points. They are the focus of the next release.
-          <br /><br />
-
-          Beside the ugly-code issue one also has to realize
-          that Pingus is more complex than it seems. It isn't
-          a small game like a Tetris clone would be. It contains close
-          to 800 unique graphics, 200 levels and 50'000 lines of code.
-          All of that hasn't been created over night. It might have
-          been possible to create this in a year, but motivation comes
-          and goes. As a result, there were month where simply nothing
-          happened and weeks where large parts of the code got
-          restructured or rewritten.<br /><br />
-
-          Besides all that, <em>you</em> can make the
-          development go faster by contributing something to the
-          project.
+          Because <em>you</em> didn't contribute! Joking asside, most
+          of the developers involved with Pingus are also involved
+          with a heap load of other projects, so it takes time to find
+          time to develop on the game. Help is of course always
+          welcome.
         </answer>
       </faq>
       <faq date="14 Jan 2007">
@@ -217,9 +159,9 @@
 
           <tt>pingus -g 640x480</tt><br/><br />
 
-          Thirdly, you can run Pingus in a <em>fast-mode</em>.
-          This mode disables all costly particle effects and the
-          background.  Thus, Pingus will look more ugly, but will
+          Thirdly, you can run Pingus in a <em>fast-mode</em>.  This
+          mode disables all costly particle effects and the
+          background.  Thus, Pingus will look less pretty, but will
           probably be a good amount faster. Fast-mode can be turned on
           with:<br />
 
@@ -237,12 +179,6 @@
           Finally, the 'F11' key can help you a great deal in
           your optimisation process by showing the frame-rate counter.
           <br /><br />
-
-          If you have a good configuration for your system,
-          please mail it to <a href="mailto:grumbel@gmx.de">Ingo
-          Ruhnke</a> along with a description of your system. At a
-          later point all this info could be used to write an
-          auto-detection algorithm for optimizing Pingus.
         </answer>
       </faq>
     </faq-list>
