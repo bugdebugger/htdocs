@@ -2,6 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <page title="News">
   <news>
+    <item date="15. Jan 2007">
+       Porting Pingus to SDL is in progress, some spelling fixes for the FAQ
+    </item>
+    
     <item date="11. Feb 2006">
       Time for some news, current plans for Pingus look like this:
 

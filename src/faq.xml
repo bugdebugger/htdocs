@@ -2,10 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl" ?>
 <page title="FAQ">
   
-  <section title="It doesn't work, what now?">
+  <section title="It doesn't work! What now?">
     <p>
-      The following frequently asked questions along with answers will
-      provide you with some solutions to common errors, problems or
+      The following frequently asked questions (along with answers) will
+      provide you with solutions some to common errors, problems or
       misunderstandings when you try to compile, use or get otherwise
       involved with Pingus.
     </p>
@@ -14,246 +14,235 @@
   <div id="faqtoc"/>
   <section title="FAQs - Frequently Asked Questions (and Answers)">
     <faq-list>
-      <faq date="21. Jul 2003">
-        <question>Where can I find more levels?</question>
+	  <faq date="14 Jan 2007">
+        <question>What is Pingus?</question>
         <answer>
-          <em>Foreword: Every level that isn't reachable via the GUI in
-          Pingus is unsupported and might be completly broken, if you
-          want to try them you are on your own.</em><br /><br />
-
-          Beside the 22 tested and cleaned up levels of the first
-          island that come with Pingus, there are also around 120
-          levels that might be playable and another 100 levels that
-          are incomplete at the moment. These levels can be found in
-          the <tt>data/levels/playable</tt> and
-          <tt>data/levels/wip/</tt> (wip = Work in Progress). The
-          levels in <tt>playable/</tt> might be playable, but there is
-          no guarantee for that, they havn't been tested, might be
-          broken due to engine changes, might be far too easy or far
-          too hard or simply incomplete. The <tt>wip/</tt> directory
-          contains levels that are not playable at all, some of them
-          might even lack entrances or exit, so don't even think of
-          'playing' them, instead they can be used as framework for
-          levels you want to create yourself with the level editor.
-          That said, yep, Pingus contains a fully working level
-          editor, it might not be 100% bug free, but it was used to
-          construct all the levels that you can see in the game. So
-          don't hesitate and try it out and build your own levels.
+        The <a href="welcome.html">Welcome</a> page answers this question.
         </answer>
       </faq>
 
-      <faq date="21. Aug 2003">
-        <question>Where can I find the Windows version?</question>
-
-        <answer>
-          A official Windows version of 0.6.0 got never created and
-          never will be created, but we hope to provide one with
-          0.6.1, which will be equal to 0.6.0, but include fixed
-          fonts, corrected text and a few minor bugfixes.
-        </answer>
-      </faq>
-
-      <faq date="15. Dec 2002">
-        <question>How can I get Pingus?</question>
-        <answer>
-          Pingus is <a
-            href="http://www.gnu.org/philosophy/free-sw.html">Free
-            Software</a> under the <a
-            href="http://www.gnu.org/licenses/gpl.html">GNU GPL</a>,
-          that means everybody can download it, distribute it, modify
-          it and even distribute modified works, as long as the source
-          code is still provided (checkout the GNU GPL itself for more
-          details). That also means that Pingus is available at no
-          cost from this webpage and will be available for no cost
-          from this website in the future. But it also means that
-          Pingus is available from other websites and places, for
-          example most GNU/Linux distributions contain a (sometimes
-          outdated) version of Pingus, there might be some shareware
-          sites which contain a version of Pingus and you can even buy
-          game-packs which contain Pingus.<br /> <br />
-          
-          But the latest version that you can get from this site is
-          the only version that is supported, so if you have another
-          version and have some problem, the only answer you might get
-          is that you should get a new version from this site.
-        </answer>
-      </faq>
-
-      <faq date="14. Sep 2003">
+      <faq date="14 Jan 2007">
         <question>How much does it cost?</question>
         <answer>
-          As the question above answers, Pingus is available at no
-          costs from this webpage. However you are welcome to make <a
-          href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donations
-          to Pingus via Paypal</a>. Pingus is after all a voluntary
-          project and if you don't have the time to help with
-          developing it, you are very welcome to help with a little
-          money.
+        We believe that you should answer this question for yourself.  If you
+        think this game is worth some amount of money, you can <a
+        href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donate
+        to Pingus via Paypal</a>. Otherwise, you can get the game for no
+        monetary cost.  Pingus is <a
+        href="http://www.gnu.org/philosophy/free-sw.html">Free Software</a> and
+        you are not forced to pay any amount of money for this game.
+        </answer>
+      </faq>		
+
+      <faq date="14 Jan 2007">
+        <question>Where can I get Pingus?</question>
+        <answer>
+        You can get Pingus from the <a href="download.html">download</a> section.
         </answer>
       </faq>
 
-      <faq date="15. Dec 2002">
-        <question>Which Pingus version should I use?</question> 
+      <faq date="14 Jan 2007">
+        <question>Is there a Windows version?</question>
         <answer>
-          As the previous answer told you, Pingus is available from a
-          number of places, that also means that not all places will have
-          the most current versions, some will probably ship an outdated
-          version or an not even working version. So if you want the
-          newest version <a href="http://pingus.seul.org">the official
-            Pingus webpage</a> will always be the best place to search for a
-          new one.<br /><br />
-
-          If you are a gamer it is strongly recommended that you use only
-          the version that is marked as playable and stable, all other
-          versions, be it the current CVS or a beta-snapshot release, are
-          not recommended since they will either spoil the story, new
-          levels, gadgets and other things or confuse you with unfinished,
-          buggy features. CVS or beta-snapshots might also delete
-          your savegames, game statistics or do other thing that ruin your
-          fun.<br /><br />
-
-          If you want to test the current development version, want to
-          search for bugs and are prepared to find bugs it is of course
-          recommended that you stick to a current CVS checkout or the
-          beta-snapshots, since testing the stable version will not be
-          of much help a few weeks after the release, since most bugs
-          might already be fixed by then in the development versions.<br
-            /><br />
-
-          If you are a developer and want to look at the code its
-          recommended that you stick to current CVS, it might not always be
-          100% correct and compile correctly, but it should always be pretty
-          close to it. If you encounter problems, just contact one of the
-          authors and the problem might be fixed within a few hours.
+          An official Windows version of 0.6.0 was never
+          created and probably never will be.  However, we hope to
+          provide a Windows binary with the 0.6.1 release. It will
+          be equal to 0.6.0 plus fixed fonts, corrected text, and a
+          few minor bugfixes.
         </answer>
       </faq>
 
-      <faq date="15. Dec 2002">
-        <question>How to compiling Pingus?</question>
+      <faq date="14 Jan 2007">
+        <question>Where can I find more levels?</question>
         <answer>
-          Under GNU/Linux Pingus should compile like most other
-          software, a simple <tt class="command">./configure
-          &amp;&amp; make</tt> should do. To install Pingus type <tt
-          class="command">make install</tt>, but that is not recommended
-          with the development versions, since it might not work or
-          worse do ugly things to your file system layout, you can just
-          run Pingus directly from the source tree, so there is no
-          need to install it.<br /><br />
+          <em>Foreword: Every level that isn't reachable via the GUI in Pingus
+          is unsupported and might be completely broken. If you want to try
+          them you are on your own.</em> <br /><br />
 
-          But be warned, Pingus need ClanLib and Hermes to be correctly
-          installed and to have the right version, so it might
-          <em>not</em> be really trivial. Unless you are a developer or
-          beta tester it is therefore strongly recommended that you stick
-          with the binaries that are provided in the <a
-            href="download.html">download section</a> of this site.
-
-          If you want to compile Pingus on Win32, you will need
-          Microsoft Visual C++ Version 6 or higher, project files are in
-          the Pingus source tree. But again, you need ClanLib and
-          Hermes, so it might not be really a trivial task. Pingus will
-          currently not compile with Cygwin or Mingw, sorry, porting
-          help is of course welcome.
+          Besides the 22 tested and cleaned up levels of the first island that
+          come with Pingus. There are also around 120 levels that might be
+          playable and another 100 levels that are incomplete at the moment.
+          These levels can be found in the <tt>data/levels/playable</tt> and
+          <tt>data/levels/wip/</tt> (wip = work in progress). The levels in the
+          <tt>playable/</tt> directory might be playable, but there is no
+          guarantee for that. They haven't been tested. They might be broken
+          due to engine changes.  They might be far too easy or far too hard or
+          simply incomplete. The <tt>wip/</tt> directory contains levels that
+          are not playable at all. Some of them might even lack entrances
+          and/or exits. Don't be surprised that you can't play them. Instead,
+          these levels  can be used as framework for levels you want to create
+          yourself with the level editor.  Yes, you heard it right, Pingus
+          comes with a fully working level editor. It might not be 100% bug
+          free, but it was used to construct all the levels that you see in the
+          game, so don't hesitate to try it out and build your own levels.
         </answer>
       </faq>
 
-      <faq date="15. Dec 2002">
-        <question>I tried compiling it, but something didn't work</question>
+
+      <faq date="14 Jan 2007">
+        <question>What does it mean for Pingus to be Free Software?</question>
         <answer>
-          First of all try to find out at which point it 'didn't work'.
-          If it failed at the <tt>./configure</tt> step, you might be
-          missing a correctly installed Hermes or ClanLib, the file
-          <tt>config.log</tt> might provide you with more information. If it
-          fails at <tt>make</tt> time it is most likely a bug in the
-          source, such as some C++ construct that requires a g++ larger
-          than 3.0, some simple typo, a missing include or other things
-          that might not show up on the developers machine, a bug report
-          is very welcome in such cases. Make sure that you include the
-          exact error message and version of Pingus and ClanLib in your
-          bug report.<br /><br />
-          
-          If Pingus compiled fine, but failed at startup with a message
-          like <tt>Couldn't open libsomething.so</tt>, you most likely
-          haven't run <tt>ldconfig</tt> after installing ClanLib or
-          <tt>/usr/local/lib</tt> is missing from your
-          <tt>/etc/ld.so.conf</tt>, in that case <tt>ldconfig</tt> won't
-          look at the correct places to find the libraries.
+          Pingus is licensed under a <a
+          href="http://www.gnu.org/philosophy/free-sw.html">Free/Libre
+          Software</a> license called <a
+          href="http://www.gnu.org/licenses/gpl.html">GNU GPL</a>.
+          Basically, this means that everybody is free to download,
+          distribute, and modify it. Moreover, anyone can distribute
+          modified works of Pingus, as long as those works are
+          disributed under a <a
+          href="http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses">GPL
+          compatible license</a>. In other words, Pingus respects your
+          software freedoms.
+        </answer>
+      </faq>
+
+      <faq date="14 Jan 2007">
+        <question>How do I compile Pingus?</question>
+        <answer>
+          Under GNU/Linux run
+           <tt class="command">./configure
+          &amp;&amp; make</tt> in the source directory.
+        </answer>
+      </faq>
+
+      <faq date="14 Jan 2007">
+         <question>What are the required built-time libraries?</question>
+         <answer>
+         Pingus needs specific versions of ClanLib and Hermes. Running the <tt
+         class="command">./configure</tt> script will tell you if you whether
+         your system has them.
+         </answer>
+      </faq>
+
+      <faq date="14 Jan 2007">
+        <question>What do I need for compiling Pingus on a Windows system?</question>
+        <answer>
+         If you want to compile Pingus on Win32, you will need Microsoft Visual
+         C++ Version 6 or higher. Project files are in the Pingus source tree.
+         Again, you need ClanLib and Hermes. Pingus will currently not compile
+         with Cygwin or Mingw, sorry, porting help is, of course, welcome.
+        </answer>
+      </faq>
+      <faq date="14 Jan 2007">
+        <question>Can I run Pingus from the source directory?</question>
+        <answer>
+           Yes
+        </answer>
+      </faq>
+
+      <faq date="14 Jan 2007">
+        <question>I tried compiling it, but something didn't work!</question>
+        <answer>
+          Technically, this isn't a question. You have to be more specific. A
+          general suggestion is to search the <a
+          href="http://savannah.nongnu.org/bugs/?group=pingus">But Tracker</a>
+          for similar problems.
         </answer>
       </faq>
       
-      <faq date="22. Dec 2002">
-        <question>Why is Pingus still not done? Many years have past and
-          it can't be that difficult to write a simple Lemmings clone, can
-          it?</question>
+      <faq date="14 Jan 2007">
+        <question>
+          Why is Pingus still not done after being in development for so many years?
+        </question>
+        <answer>
+          There are several factors that contributed to the long
+          development time.  Some of them still cause delays. <br />
+          First of all, Pingus was my first large C++ project. After
+          all this started as a project for learning C++.  As a
+          result, a lot of things have been done wrong, and I needed
+          to rewrite or fix them at a later time.<br /><br />
 
-        <answer>Well, there are several factors which took Pingus to
-          take that long and still cause many delays. First of all Pingus
-          was my first larger C++ project, so it was after all a project
-          for myself to learn C++, but that also caused a lot of things to
-          be done wrong which I needed to rewrite or fix at a later point.
-          Pingus also as the problem of being over-engineered at a few
-          points, to much abstraction at places way it doesn't make sense
-          and only causes problems. So in the end there was lot of cruft
-          collected in the first two years which needed to be cleaned up
-          in the next years. At this point the code is a lot cleaner than
-          back than, but still has some ugly points in it which needs to
-          be fixed before the next release.<br />
+          Pingus also has the problem of being
+          over-engineered in a few places. There was too much
+          abstraction in places where it doesn't make sense and only
+          caused problems. So during the first two years a lot of
+          cruft accumulated which needed to be cleaned up in the next
+          years. The current code is much cleaner, but it still has
+          some ugly points. They are the focus of the next release.
+          <br /><br />
 
-          Beside the ugly-code issue one also has to see that Pingus is
-          a huge game, it isn't a small game like a simple Tetris clone.
-          It contains close to 800 unique graphics, 200 levels and 50'000
-          lines of code, all these aren't created over night. It might
-          have been possible to create this in a year, but motivation
-          comes and goes and so there where month were simply nothing
-          happens and weeks were large parts of the code got
-          restructured or rewritten.<br />
-          
-          Beside all that its <em>you</em> that could make the
+          Beside the ugly-code issue one also has to realize
+          that Pingus is more complex than it seems. It isn't
+          a small game like a Tetris clone would be. It contains close
+          to 800 unique graphics, 200 levels and 50'000 lines of code.
+          All of that hasn't been created over night. It might have
+          been possible to create this in a year, but motivation comes
+          and goes. As a result, there were month where simply nothing
+          happened and weeks where large parts of the code got
+          restructured or rewritten.<br /><br />
+
+          Besides all that, <em>you</em> can make the
           development go faster by contributing something to the
-          project. You don't need coding skills for that, play testing
-          the beta versions alone could be a big help if you send in
-          helpful comments.
+          project.
+        </answer>
+      </faq>
+      <faq date="14 Jan 2007">
+        <question>How can I help the development of Pingus?</question>
+        <answer> This project needs help in the following areas:
+          <ul>
+            <li>Writing documentation</li>
+            <li>Writing stories</li>
+            <li>Programming
+              <ul>
+              <li>debugging the editor</li>
+              <li>making code 64-bit friendly</li>
+              <li>allowing for cygwin/mingw compilation</li>
+              <li>porting from Clanlib to SDL</li>
+              </ul>
+            </li>
+            <li>Play testing</li>
+          </ul>
         </answer>
       </faq>
 
-      <faq date="22. Dec 2002">
+      <faq date="14 Jan 2007">
         <question>
-          Pingus runs to slowly, any way to make it faster?
+          Pingus runs too slow. Is there any way to make it faster?
         </question>
 
         <answer>
-          There are multiple ways to tune Pingus speed. First of if your
-          computer is to slow and runs at 24 or 32bit color depth
-          switching it down to 16bit might give you a boost of around
-          50% percent, depending on your hardware. X11 doesn't allow
-          switching color depth at run time, so well this is a bit
-          ugly.<br/>
+          There are multiple ways to tune the running speed of
+          Pingus. <br /> Firstly, reducing the screen colour
+          depth (to 16bit, for example) on a slower computer might
+          give you a boost of around 50% percent, depending on your
+          hardware. X11 doesn't allow switching color depth at run
+          time, and the exact instructions for doing this are outside
+          of the scope of this FAQ. Consult your distribution
+          documentation for more information.<br /><br />
 
-          If you can't switch down the color depth, don't want to or it
-          is still to slow you can switch down Pingus to 640x480, that
-          can be done by starting it via:<br/>
-          
-          <tt>pingus -g 640x480</tt><br/>
+          Secondly, a gain in speed can be achieved by
+          reducing the display resolution of Pingus. For example, if
+          you want to run Pingus at 640x480 you can do this with the
+          following command:<br />
 
-          If that still doesn't help you can run Pingus in
-          <em>fast-mode</em>, it disables all costly particle effects
-          and the background, thus Pingus will look more ugly, but will
-          probably be a good amount faster. Fast-mode can be turned on with:<br/>
+          <tt>pingus -g 640x480</tt><br/><br />
 
-          <tt>pingus --fast-mode</tt><br/>
+          Thirdly, you can run Pingus in a <em>fast-mode</em>.
+          This mode disables all costly particle effects and the
+          background.  Thus, Pingus will look more ugly, but will
+          probably be a good amount faster. Fast-mode can be turned on
+          with:<br />
 
-          You might also play with the <tt>min-frame-skip</tt> and
-          <tt>max-frame-skip</tt> options, both should result in a more
-          uniform frame-rate, even so it will be a bit more jerky, but
-          playability can be increased by that non the less.<br/>
+          <tt>pingus --fast-mode</tt><br/> Remember, the
+          <em>fast-mode</em> has lots of room for improvement. If it
+          doesn't help you make Pingus run fast enough, not all is
+          lost. <br /><br />
 
-          You can also of course combine all the above and with 'F11'
-          you can enable the frame-counter which should help you
-          optimising the game. If you have a good configuration for your
-          system, please mail it to <a href="mailto:grumbel@gmx.de">Ingo
-            Ruhnke</a> along with a description of your system. At a later
-          point all this might probably get auto-detected and the
-          fast-mode also contains lots of room for optimizations, so if
-          it is still not fast enough not all is lost.
+          If that is not enough, you might also want to play
+          with the <tt>min-frame-skip</tt> and <tt>max-frame-skip</tt>
+          options.  Both should result in a more uniform frame-rate.
+          This can make the game jerky, but playability can be
+          improved nonetheless.<br /><br />
+
+          Finally, the 'F11' key can help you a great deal in
+          your optimisation process by showing the frame-rate counter.
+          <br /><br />
+
+          If you have a good configuration for your system,
+          please mail it to <a href="mailto:grumbel@gmx.de">Ingo
+          Ruhnke</a> along with a description of your system. At a
+          later point all this info could be used to write an
+          auto-detection algorithm for optimizing Pingus.
         </answer>
       </faq>
     </faq-list>

@@ -57,6 +57,5 @@
 	SRC="http://de.nedstat.net/scripts/nedstat.dll?name=pingus"
 	WIDTH="22" HEIGHT="22" BORDER="0" ALT="" ALIGN="right"></A>-->
 
-    <netstat-image />
   </section>
 </page>
