@@ -2,6 +2,14 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <page title="News">
   <news>
+    <item date="25. Jun 2007">
+      Pingus goes multi-touch, some people at the RWTH Aachen used
+      Pingus gfx in the creation of their Table Lemmings game, you can find screenshots 
+      at <a href="http://www.flickr.com/photos/davidh/567995242/">Flickr</a> and at their page at the 
+      <a href="http://media.informatik.rwth-aachen.de/tiki-index.php?page=table-lemmings">RWTH
+      Aachen</a>.
+    </item>
+
     <item date="15. Jan 2007">
        Porting Pingus to SDL is in progress, some spelling fixes for the FAQ
     </item>

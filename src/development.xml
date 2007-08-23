@@ -18,9 +18,23 @@
     documentation, a todo with stuff that needs to be done and
     unfinished game elements that might need you to finish them.
     </p>
+
+    <p>
+      Short summary for those who just want the source:
+    </p>
+    
+    <p>
+      SDL Branch<br/>
+      <tt>svn co svn://svn.berlios.de/pingus/branches/pingus_sdl/</tt><br/>
+    </p>
+    
+    <p>ClanLib Branch:<br/>
+      <tt>svn co svn://svn.berlios.de/pingus/trunk/</tt><br/>
+    </p>
     
     <p class="warning" style="text-align: center">
-      <a href="development/welcome.html">Enter Development Section!</a>
+      <a href="http://www.cmhousing.net/pingus/wiki/">Enter Development Section!</a>
     </p>
+
   </section>
 </page>
