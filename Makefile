@@ -45,13 +45,9 @@ build/%.html :: %.xml default.xsl Makefile
 
 upload: all
 	(cd ..; \
-	rsync --checksum --exclude "old/" --cvs-exclude -rv . \
+	rsync --checksum --exclude "old/" --cvs-exclude -rv build/. \
           grumbel@pingus.seul.org:/home/pingus/public_html/ \
 	)
-
-commit: all
-	(cd ..; \
-	cvs commit -m "automatic commit" )
 
 #tidy -asxml -indent -quiet -modify $@
 
