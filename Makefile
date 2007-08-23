@@ -19,7 +19,15 @@ OUTPUTFILES = \
  build/manual.html \
  build/press.html
 
+.PHONY : images
+
 all : $(OUTPUTFILES)
+	mkdir -p build/
+
+images :
+	mkdir -p build/images/
+	cp -v images/*.png build/images/
+	cp -v images/*.jpg build/images/
 
 clean :
 	rm -vf $(OUTPUTFILES)
