@@ -138,7 +138,7 @@
               </div>
               
               <div style="font-size: smaller; text-align: right; background-color: gray; padding: 5px; border-style: solid; border-color: black; border-width: thin; margin-top: 8px;">
-                Copyright &#169; 1998-2003 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
+                Copyright &#169; 1998-2007 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
               </div>
             </td>
           </tr>
@@ -211,7 +211,9 @@
   <xsl:template match="screenshot-menu">
     <p style="text-align: center;">
       [ 
-      <a href="screenshots.html">0.6</a>
+      <a href="screenshots.html">0.7</a>
+      |
+      <a href="screenshots-0.6.html">0.6</a>
       |
       <a href="screenshots-0.5.html">0.5</a>
       |

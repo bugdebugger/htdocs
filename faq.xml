@@ -101,7 +101,7 @@
         <answer>
           Technically, this isn't a question. You have to be more specific. A
           general suggestion is to search the <a
-          href="http://savannah.nongnu.org/bugs/?group=pingus">But Tracker</a>
+          href="http://savannah.nongnu.org/bugs/?group=pingus">Bug Tracker</a>
           for similar problems.
         </answer>
       </faq>
@@ -127,9 +127,7 @@
             <li>Programming
               <ul>
               <li>debugging the editor</li>
-              <li>making code 64-bit friendly</li>
               <li>allowing for cygwin/mingw compilation</li>
-              <li>porting from Clanlib to SDL</li>
               </ul>
             </li>
             <li>Play testing</li>

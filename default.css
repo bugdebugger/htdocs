@@ -141,7 +141,7 @@ img.screenshot {
 }
 
 a img.screenshot {
-        border-color: red;
+        border-color: gray;
 }
 
 a:visited img.screenshot {

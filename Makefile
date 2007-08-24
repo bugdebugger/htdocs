@@ -14,6 +14,7 @@ OUTPUTFILES = \
  build/screenshots-0.3.html \
  build/screenshots-0.4.html \
  build/screenshots-0.5.html \
+ build/screenshots-0.6.html \
  build/levelbuilding-tutorial.html \
  build/development.html \
  build/manual.html \
@@ -41,7 +42,7 @@ build/index.html : index.html
 build/%.html :: %.xml default.xsl Makefile
 	FILENAME=$<; \
 	echo $${FILENAME%%.xml}; \
-	xalan -param filename "'$${FILENAME%%.xml}'" -in $< -out $@ -xsl default.xsl
+	xsltproc -param filename "'$${FILENAME%%.xml}'" --output $@ default.xsl $<
 
 upload: all
 	(cd ..; \
