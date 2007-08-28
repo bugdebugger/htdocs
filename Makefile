@@ -45,10 +45,8 @@ build/%.html :: %.xml default.xsl Makefile
 	xsltproc -param filename "'$${FILENAME%%.xml}'" --output $@ default.xsl $<
 
 upload: all
-	(cd ..; \
-	rsync --checksum --exclude "old/" --cvs-exclude -rv build/. \
-          grumbel@pingus.seul.org:/home/pingus/public_html/ \
-	)
+	rsync --checksum --exclude "old/" --cvs-exclude -rv build/ \
+          grumbel@pingus.seul.org:/home/pingus/public_html/
 
 #tidy -asxml -indent -quiet -modify $@
 

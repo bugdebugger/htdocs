@@ -2,27 +2,37 @@
 
 <page title="Download">
   <section title="Playable Versions - Stable">
-    <subsection title="GNU/Linux">
+<!--    <subsection title="GNU/Linux">
       <ul>
         <li>GNU/Linux (i386) - <dlink href="http://pingus.seul.org/files/pingus-0.6.0-binary-linux-i386.tar.bz2"/>
           [11 Mb]<br />
         </li>
       </ul>
     </subsection>
+-->
 
     <subsection title="Win32">
-      <p>Sorry, currently no stable Win32 versions available.</p>
+      <ul>
+        <li><dlink href="http://pingus.seul.org/files/pingus-0.7.0.exe"/>
+          [13 Mb]<br />
+        </li>
+      </ul>
     </subsection>
 
     <subsection title="Source">
       <ul>
-        <li><dlink href="http://pingus.seul.org/files/pingus-0.6.0.tar.bz2"/>
-          [9.2 Mb]<br />
+        <li><dlink href="http://pingus.seul.org/files/pingus-0.7.0.tar.bz2"/>
+          [9.9 Mb]<br />
         </li>
       </ul>
     </subsection>
   </section>
 
+  <section title="Development Versions">
+    <p>
+      <tt>svn co svn://svn.berlios.de/pingus/trunk/pingus/</tt><br/>
+    </p>
+  </section>
 <!--
   <hr/>
 

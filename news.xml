@@ -2,16 +2,34 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <page title="News">
   <news>
+    <item date="25. Aug 2007">
+      Pingus 0.7.0 is released, this is the first working version of
+      Pingus that is based on SDL. New things in this release:
+      
+      <ul>
+        <li>switch from ClanLib to SDL</li>
+        <li>new anti-aliased fonts</li>
+        <li>better support for resolutions larger then 800x600 (see --geometry WxH option)</li>
+        <li>s-expression based file format (converter scripts are available)</li>
+        <li>PPC and 64bit support</li>
+        <li>language support for Czech, German, Finish, Italian, Norwegian,
+          Serbian, Turkish, Danish, Dutch, Spanish, Fench and Polish</li>
+        <li>level editor temporarly removed</li>
+        <li>a little less fps then the ClanLib version</li>
+        <li>no new levels or other main features</li>
+      </ul>
+    </item>
+
     <item date="25. Jun 2007">
       Pingus goes multi-touch, some people at the RWTH Aachen used
       Pingus gfx in the creation of their Table Lemmings game, you can find screenshots 
       at <a href="http://www.flickr.com/photos/davidh/567995242/">Flickr</a> and at their page at the 
       <a href="http://media.informatik.rwth-aachen.de/tiki-index.php?page=table-lemmings">RWTH
-      Aachen</a>.
+        Aachen</a>.
     </item>
 
     <item date="15. Jan 2007">
-       Porting Pingus to SDL is in progress, some spelling fixes for the FAQ
+      Porting Pingus to SDL is in progress, some spelling fixes for the FAQ
     </item>
     
     <item date="11. Feb 2006">
@@ -21,8 +39,8 @@
         <li>Jave27 is currently trying to get the latest version in a release ready state</li>
 
         <li>Grumbel opened a new branch in SVN called pingus-sdl, this
-        is supposed to port Pingus to SDL, level file format will
-        switch to S-Expr instead of XML
+          is supposed to port Pingus to SDL, level file format will
+          switch to S-Expr instead of XML
         </li>
       </ul>
     </item>
@@ -39,9 +57,9 @@
 
     <item date="14. Sep 2003">
       A added little button in the bottom left corner of the webpage
-          that allows you to <a
-          href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donate
-          via Paypal</a>.
+      that allows you to <a
+                            href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donate
+        via Paypal</a>.
     </item>
 
     <item date="16. Apr 2003">
@@ -93,8 +111,8 @@
       always, longer than expected, but anyway here it is. If you want
       to know how this page is generated you can look at the xml
       source and the Makefiles in the <a
-      href="http://savannah.nongnu.org/cvs/?group=pingus">Savanna Web
-      CVS tree</a>.
+                                         href="http://savannah.nongnu.org/cvs/?group=pingus">Savanna Web
+        CVS tree</a>.
     </item>
   </news>
 
