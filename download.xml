@@ -2,36 +2,41 @@
 
 <page title="Download">
   <section title="Playable Versions - Stable">
-<!--    <subsection title="GNU/Linux">
+    <subsection title="Windows">
       <ul>
-        <li>GNU/Linux (i386) - <dlink href="http://pingus.seul.org/files/pingus-0.6.0-binary-linux-i386.tar.bz2"/>
-          [11 Mb]<br />
+        <li><a href="http://pingus.seul.org/files/pingus-0.7.2.exe">pingus-0.7.2.exe</a> [13 Mb]<br />
         </li>
       </ul>
     </subsection>
--->
 
-    <subsection title="Win32">
+    <subsection title="MacOSX">
+      <p>There are two unofficial ports to MacOSX, which can be found at:</p>
       <ul>
-        <li><dlink href="http://pingus.seul.org/files/pingus-0.7.0.exe"/>
-          [13 Mb]<br />
-        </li>
+        <li><a href="http://community.games4mac.de/index.php?showtopic=17290">Pingus 0.7.0 for PPC Macs</a> [58MB]</li>
+        <li><a href="http://www.apple.com/downloads/macosx/unix_open_source/pingus.html">Pingus 0.7.2 for Intel Macs</a> [14MB]</li>
       </ul>
     </subsection>
 
     <subsection title="Source">
       <ul>
-        <li><dlink href="http://pingus.seul.org/files/pingus-0.7.0.tar.bz2"/>
-          [9.9 Mb]<br />
+        <li><a href="http://pingus.seul.org/files/pingus-0.7.2.tar.bz2">pingus-0.7.2.tar.bz2</a>
+          [11 Mb]<br />
         </li>
       </ul>
     </subsection>
   </section>
 
   <section title="Development Versions">
-    <p>
-      <tt>svn co svn://svn.berlios.de/pingus/trunk/pingus/</tt><br/>
-    </p>
+    <ul>
+      <li><tt>svn co svn://svn.berlios.de/pingus/trunk/pingus/</tt></li>
+    </ul>
+  </section>
+
+  <section title="Old Stuff">
+    <p>Older released can be found at:</p>
+    <ul>
+      <li><a href="http://pingus.seul.org/files/">http://pingus.seul.org/files/</a></li>
+    </ul>
   </section>
 <!--
   <hr/>

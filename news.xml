@@ -2,6 +2,40 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <page title="News">
   <news>
+    <item date="31. Oct 2007">
+      Pingus 0.7.2 is released, this release features 8 brand new
+      Halloween levels along with numerous smaller bug fixes.
+
+      <ul>
+        <li>added support for levelsets</li>
+        <li>added 8 new levels in the form of a halloween levelset</li>
+        <li>added window resize support to the editor (use --allow-resize)</li>
+        <li>added minimap to the editor</li>
+        <li>scroll wheel support to change the actions</li>
+        <li>right and middle button now both scroll</li>
+        <li>'jumper dying on landing' bug fixed</li>
+        <li>numerous other small bug fixes</li>
+      </ul>
+    </item>
+
+    <item date="23. Sep 2007">
+      Pingus 0.7.1 is released, this is the second release based on
+      SDL and among some small bug fixes, it also contains a brand new
+      level editor rewritten from scratch. Other new things in this
+      release:
+
+      <ul>
+        <li>faster sprite drawing, so more overall fps</li>
+        <li>level editor rewritten from scratch</li>
+        <li>level loading from command line fixed</li>
+        <li>numerous other command line parsing bugs fixed</li>
+        <li>separate images for gfx and colmap are used again</li>
+        <li>input subsystem rewritten from scratch, supports now gamepads,
+          usbmice, wiimote (some of those might unfinished and not enabled by
+          default)</li>
+      </ul>
+    </item>
+
     <item date="25. Aug 2007">
       Pingus 0.7.0 is released, this is the first working version of
       Pingus that is based on SDL. New things in this release:
