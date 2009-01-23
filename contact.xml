@@ -7,17 +7,17 @@
       thing, the best way is probably by using the pingus-devel
       mailing lists, subscribe information can be found below, to just
       send a mail to the list write to <a
-	href="mailto:pingus-devel@mail.freesoftware.fsf.org?subject:[no-member]">pingus-devel@mail.freesoftware.fsf.org</a>.
+	href="mailto:pingus-devel@nongnu.org?subject:[non-member]">pingus-devel@nongnu.org</a>.
     </p>
 
     <ul>
       <li>
-        <a href="http://mail.freesoftware.fsf.org/mailman/listinfo/pingus-devel">pingus-devel</a>
+        <a href="http://lists.nongnu.org/mailman/listinfo/pingus-devel">pingus-devel</a>
 	- Pingus Developer List (for general discussion about the game, the development, etc.).
       </li>
 
       <li>
-        <a href="http://mail.freesoftware.fsf.org/mailman/listinfo/pingus-cvs">pingus-cvs</a>
+        <a href="http://lists.nongnu.org/mailman/listinfo/pingus-cvs">pingus-cvs</a>
 	- Pingus CVS Commit List (only programmers need this one).
       </li>
     </ul>
