@@ -42,17 +42,6 @@
       </faq>
 
       <faq date="14 Jan 2007">
-        <question>Is there a Windows version?</question>
-        <answer>
-          An official Windows version of 0.6.0 was never created and
-          probably never will be. There is however some hope that a
-          Windows version will follow for the next release. If you
-          search the mailing list archives you might also be able to
-          find some unofficial build for Windows.
-        </answer>
-      </faq>
-
-      <faq date="14 Jan 2007">
         <question>Where can I find more levels?</question>
         <answer>
           <em>Foreword: Every level that isn't reachable via the GUI in Pingus
