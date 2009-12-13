@@ -95,19 +95,19 @@
         </answer>
       </faq>
       
-      <faq date="14 Jan 2007">
+      <faq date="13 Dec 2009">
         <question>
           Why is Pingus still not done after being in development for so many years?
         </question>
         <answer>
-          Because <em>you</em> didn't contribute! Joking asside, most
+          Because <em>you</em> didn't contribute! Joking aside, most
           of the developers involved with Pingus are also involved
           with a heap load of other projects, so it takes time to find
-          time to develop on the game. Help is of course always
+          time to develop on the game. Help is, of course, always
           welcome.
         </answer>
       </faq>
-      <faq date="14 Jan 2007">
+      <faq date="13 Dec 2009">
         <question>How can I help the development of Pingus?</question>
         <answer> This project needs help in the following areas:
           <ul>
@@ -122,7 +122,7 @@
             <li>Play testing</li>
           </ul>
           <p>
-            The fasted way to join development is to join the
+            The fastest way to join development is to join the
             development stuff on IRC at <tt>irc.freenode.net</tt> in
             channel <tt><a href="irc://freenode.net/#pingus">#pingus</a></tt>.
           </p>
@@ -172,6 +172,18 @@
           your optimisation process by showing the frame-rate counter.
           <br /><br />
         </answer>
+      </faq>
+      <faq date="13 Dec 2009">
+        <question>
+          MacOS: How do I open other levels on a mac? './pingus mylevel.pingus' doesn't work?
+        </question>
+        <answer>
+	  You might be using an older, broken, version of the
+	  game. Make sure you are using at least 0.7.2.<br /><br />
+	  Alternatively, you can open any level through the editor
+	  <br /><br />
+        </answer>
+      </faq>
       </faq>
     </faq-list>
   </section>
