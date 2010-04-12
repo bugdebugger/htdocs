@@ -2,6 +2,11 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <page title="News">
   <news>
+    <item date="18. Mar 2010">
+      Pingus 0.7.3 is released, nothing new in terms of gameplay, just
+      some fixes to make it work with newer incarnations of GCC.
+    </item>
+
     <item date="31. Oct 2007">
       Pingus 0.7.2 is released, this release features 8 brand new
       Halloween levels along with numerous smaller bug fixes.
