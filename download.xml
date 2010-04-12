@@ -12,23 +12,29 @@
     <subsection title="MacOSX">
       <p>There are two unofficial ports to MacOSX, which can be found at:</p>
       <ul>
-         <li><a href="http://community.games4mac.de/index.php?showtopic=17290">Pingus 0.7.0 for PPC Macs</a> [58MB]</li>
-         <li><a href="http://www.apple.com/downloads/macosx/games/cards_puzzle/pingus.html">Pingus 0.7.2 for Intel Macs</a> [14MB]</li>
+         <li><a href="http://www.apple.com/downloads/macosx/games/cards_puzzle/pingus.html">Pingus 0.7.2 for Intel Macs</a> [15MB]</li>
+         <li><a href="http://community.games4mac.de/index.php?showtopic=17290">Pingus 0.7.0 for PPC Macs</a> [60MB]</li>
       </ul>
     </subsection>
 
-    <subsection title="Source">
+    <subsection title="Linux / Source">
       <ul>
         <li><a href="http://pingus.seul.org/files/pingus-0.7.3.tar.bz2">pingus-0.7.3.tar.bz2</a>
-          [11 Mb]<br />
+          [11 MB]<br />
         </li>
       </ul>
     </subsection>
   </section>
 
   <section title="Development Versions">
+    <p>The SVN tree can be checked out via:</p>
     <ul>
       <li><tt>svn co svn://svn.berlios.de/pingus/trunk/pingus/</tt></li>
+    </ul>
+
+    <p>The Savannah Project Page can be found at:</p>
+    <ul>
+      <li><a href="http://savannah.nongnu.org/projects/pingus/">http://savannah.nongnu.org/projects/pingus/</a></li>
     </ul>
   </section>
 

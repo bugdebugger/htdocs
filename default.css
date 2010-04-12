@@ -10,6 +10,13 @@ body
   /* desert #cdb09e; */
 }
 
+#title
+{ 
+  text-align: center;
+  padding: 0;
+  margin:  0;
+}
+
 #pagebody
 { 
   width: 70em;

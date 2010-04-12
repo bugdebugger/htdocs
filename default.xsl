@@ -70,46 +70,46 @@
       </head>
       <body>
         <div id="pagebody">
-        <div style="float: right; margin: 0; padding: 0;">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-            <div style="margin: 0px; padding: 0px;">
-              <input type="hidden" name="cmd" value="_xclick" />
-              <input type="hidden" name="business" value="grumbel@gmx.de" />
-              <input type="hidden" name="item_name" value="Pingus donation" />
-              <input type="hidden" name="no_note" value="1" />
-              <input type="hidden" name="currency_code" value="EUR" />
-              <input type="hidden" name="tax" value="0" />
-              <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="donate via PayPal" />
+          <div id="title">
+            <div style="display: inline; float: right; margin: 0; padding: 0; position: absolute; right: 1em; top: 1em;">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <div style="margin: 0px; padding: 0px;">
+                  <input type="hidden" name="cmd" value="_xclick" />
+                  <input type="hidden" name="business" value="grumbel@gmx.de" />
+                  <input type="hidden" name="item_name" value="Pingus donation" />
+                  <input type="hidden" name="no_note" value="1" />
+                  <input type="hidden" name="currency_code" value="EUR" />
+                  <input type="hidden" name="tax" value="0" />
+                  <input type="image" src="http://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="donate via PayPal" />
+                </div>
+              </form>
             </div>
-          </form>
-        </div>
 
-        <div style="width: 100%; text-align: center;">
-        <a href="http://pingus.seul.org"><img src="images/logo_pingus.png" alt="Pingus" /></a>
-        </div>
+            <a href="http://pingus.seul.org"><img src="images/logo_pingus.png" alt="Pingus" /></a>
+          </div>
 
-        <div class="nav">
-          <ul>
-            <li><a class="menuitem" href="news.html">News</a></li>
-            <li><a class="menuitem" href="welcome.html">Welcome</a></li>
-            <li><a class="menuitem" href="download.html">Download</a></li>
-            <li><a class="menuitem" href="faq.html">FAQ</a></li>
-            <li><a class="menuitem" href="contact.html">Contact</a></li>
-            <li><a class="menuitem" href="screenshots.html">Screenshots</a></li>
-            <!-- <li><a class="menuitem" href="level_comment_tool/index.php">Level Comment Tool</a></li> -->
-            <!-- <li><a class="menuitem" href="development.html">Development</a></li> -->
-            <li><a class="menuitem" href="press.html">Press</a></li>
-            <li><a class="menuitem" href="http://savannah.nongnu.org/projects/pingus/">Development</a></li>
-          </ul>
-        </div>
-        
-        <h1><xsl:value-of select="@title"/></h1>
-        <div class="mainbody">
-          <xsl:apply-templates />
-        </div>             
-        <div class="footer">
-          Copyright &#169; 1998-2010 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
-        </div>
+          <div class="nav">
+            <ul>
+              <li><a class="menuitem" href="news.html">News</a></li>
+              <li><a class="menuitem" href="welcome.html">Welcome</a></li>
+              <li><a class="menuitem" href="download.html">Download</a></li>
+              <li><a class="menuitem" href="faq.html">FAQ</a></li>
+              <li><a class="menuitem" href="contact.html">Contact</a></li>
+              <li><a class="menuitem" href="screenshots.html">Screenshots</a></li>
+              <!-- <li><a class="menuitem" href="level_comment_tool/index.php">Level Comment Tool</a></li> -->
+              <!-- <li><a class="menuitem" href="development.html">Development</a></li> -->
+              <li><a class="menuitem" href="press.html">Press</a></li>
+              <!-- <li><a class="menuitem" href="http://savannah.nongnu.org/projects/pingus/">Development</a></li> -->
+            </ul>
+          </div>
+          
+          <h1><xsl:value-of select="@title"/></h1>
+          <div class="mainbody">
+            <xsl:apply-templates />
+          </div>             
+          <div class="footer">
+            Copyright &#169; 1998-2010 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
+          </div>
           <p style="text-align: center;">
             <a href="http://validator.w3.org/check/referer">html4</a>/
             <a href="http://jigsaw.w3.org/css-validator/">css2</a>
