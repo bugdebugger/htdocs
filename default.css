@@ -1,3 +1,10 @@
+#pagebody
+{ 
+  width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1,h2,h3,h4
 {
   font-family: sans;
@@ -16,14 +23,15 @@ h1
 {
   -moz-border-radius:    0.5em 0.5em 0em 0em;
   -webkit-border-radius: 0.5em 0.5em 0em 0em;
-  background: #607f9b;
+  background: #809fbb;
   color: white;
   border-style: solid solid none solid;
   border-color: black;
   border-width: thin;
   padding-left: 1em;
-  margin-top: 1em;
-  margin-bottom: 0em;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
 }
 
 p { 
@@ -32,20 +40,32 @@ p {
 
 div.nav
 {
-  width: 205px;
-  margin-top: 10px;
+  width: 100%;
+  margin-top: 0.5em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  position: relative;
+  top: 0.4em;
 }
 
 div.nav a
 {
   text-decoration: none;
+  margin-left:  0.25em;
+  margin-right: 0.25em;
+  padding-bottom: 1.5em;
 }
 
 div.nav ul
 { 
-  padding: 0;
-  margin:  0;
   list-style-type: none
+  padding: 0;
+  margin-bottom: 0;
+}
+
+div.nav ul li
+{ 
+  display: inline;
 }
 
 div.newsitem { 
@@ -69,6 +89,8 @@ a.menuitem:hover
 {
   color: black;
   background-color: #E0FfFF;
+  position: relative;
+  top: -0.25em;
 }
 
 a.menuitem:visited
@@ -76,54 +98,27 @@ a.menuitem:visited
   color: black;
 }
 
-a.currentmenuitem:hover
-{
-  color: black;
-}
-
-
-a.currentmenuitem:visited
-{
-  color: black;
-}
-
-
-a.currentmenuitem
-{
-  font-size: 18px;
-  font-family: Sans-Serif;
-  text-align: center;
-  border-color: black;
-  border-style: solid;
-  border-width: thin;
-  background-color: #FFFFFF;
-  background-repeat: repeat-y;
-  color: black;        
-  padding: 5px 0px 5px 0px;
-  display: block;
-  margin: 10px 15px 10px 15px;
-}
-
 a.menuitem
 {
   color: black;        
 
-  -moz-border-radius:    0.5em;
-  -webkit-border-radius: 0.5em;
+  -moz-border-radius:    0.5em 0.5em 0 0;
+  -webkit-border-radius: 0.5em 0.5em 0 0;
 
-  font-size: 18px;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.25em 1em 0.25em 1em;
+
   font-family: Sans-Serif;
   text-align: center;
 
   border-color: black;
-  border-style: solid;
+  border-style: solid solid none solid;
   border-width: thin;
   background-color: #607f9b;
   /*	background-image: url(images/menubackground.png);*/
   background-repeat: repeat-y;
-  padding: 5px 0px 5px 0px;
-  display: block;
-  margin: 10px 15px 10px 15px;
+  display: inline;
 }
 
 div.mainbody
@@ -133,7 +128,7 @@ div.mainbody
   border-color: black;
   border-style: none solid none solid;
   border-width: thin;
-  padding: 1em;
+  padding: 2em 4em 2em 4em;
 }
 
 p.warning {

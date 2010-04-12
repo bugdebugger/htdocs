@@ -68,80 +68,53 @@
         <link rel="stylesheet" type="text/css" href="default.css" />
         <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
       </head>
-      <body style="margin:0px;">
-        <table summary="" cellpadding="0" cellspacing="0" border="0" width="100%">
-          <colgroup width="215" />
-          <tr>
-            <td valign="top" align="center">
-              <a href="http://pingus.seul.org"><img src="images/logo_pingus.png" alt="Pingus" /></a>
+      <body>
+        <div id="pagebody">
+        <div style="float: right; margin: 0; padding: 0;">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <div style="margin: 0px; padding: 0px;">
+              <input type="hidden" name="cmd" value="_xclick" />
+              <input type="hidden" name="business" value="grumbel@gmx.de" />
+              <input type="hidden" name="item_name" value="Pingus donation" />
+              <input type="hidden" name="no_note" value="1" />
+              <input type="hidden" name="currency_code" value="EUR" />
+              <input type="hidden" name="tax" value="0" />
+              <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="donate via PayPal" />
+            </div>
+          </form>
+        </div>
 
-              <div class="nav">
-                <ul>
-                  <li><a class="menuitem" href="news.html">News</a></li>
-                  <li><a class="menuitem" href="welcome.html">Welcome</a></li>
-                  <li><a class="menuitem" href="download.html">Download</a></li>
-                  <li><a class="menuitem" href="faq.html">FAQ</a></li>
-                  <li><a class="menuitem" href="contact.html">Contact</a></li>
-                  <li><a class="menuitem" href="screenshots.html">Screenshots</a></li>
-                  <!-- <li><a class="menuitem" href="level_comment_tool/index.php">Level Comment Tool</a></li> -->
-                  <!-- <li><a class="menuitem" href="development.html">Development</a></li> -->
-                  <li><a class="menuitem" href="press.html">Press</a></li>
-                  <br /> 
-                  <li><a class="menuitem" href="http://savannah.nongnu.org/projects/pingus/">Savannah Project Page</a></li>
-                </ul>
+        <div style="width: 100%; text-align: center;">
+        <a href="http://pingus.seul.org"><img src="images/logo_pingus.png" alt="Pingus" /></a>
+        </div>
 
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                  <div style="margin: 0px; padding: 0px;">
-                    <input type="hidden" name="cmd" value="_xclick" />
-                    <input type="hidden" name="business" value="grumbel@gmx.de" />
-                    <input type="hidden" name="item_name" value="Pingus donation" />
-                    <input type="hidden" name="no_note" value="1" />
-                    <input type="hidden" name="currency_code" value="EUR" />
-                    <input type="hidden" name="tax" value="0" />
-                    <input type="image" src="https://www.paypal.com/images/x-click-but04.gif" name="submit" alt="donate via PayPal" />
-                  </div>
-                </form>
-              </div>
-
-              <p>
-                <a href="http://validator.w3.org/check/referer">html4</a>/
-                <a href="http://jigsaw.w3.org/css-validator/">css2</a>
-
-                <!-- <img
-                        src="http://www.w3.org/Icons/valid-html401"
-                        alt="Valid HTML 4.01!" height="31" width="88" /> -->
-                <!-- <img style="border:0;width:88px;height:31px"
-                          src="http://jigsaw.w3.org/css-validator/images/vcss" 
-                          alt="Valid CSS!" /> -->
-
-              </p>
-            </td>
-            <td valign="top" style="padding:20px;">
-              <!--
-                 <table  summary="" border="0" width="100%" cellpadding="0" cellspacing="0">
-                   <tr>
-                     <td align="left" valign="bottom">
-                       <h1><xsl:value-of select="@title"/></h1>
-                     </td><td align="right">
-                       <img alt="" src="images/walking.png"/>
-                     </td>
-                   </tr>
-                 </table>
-                 <br />
-                 -->
-              
-              <h1><xsl:value-of select="@title"/></h1>
-
-              <div class="mainbody">
-                <xsl:apply-templates />
-              </div>
-              
-              <div class="footer">
-                Copyright &#169; 1998-2010 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
-              </div>
-            </td>
-          </tr>
-        </table>
+        <div class="nav">
+          <ul>
+            <li><a class="menuitem" href="news.html">News</a></li>
+            <li><a class="menuitem" href="welcome.html">Welcome</a></li>
+            <li><a class="menuitem" href="download.html">Download</a></li>
+            <li><a class="menuitem" href="faq.html">FAQ</a></li>
+            <li><a class="menuitem" href="contact.html">Contact</a></li>
+            <li><a class="menuitem" href="screenshots.html">Screenshots</a></li>
+            <!-- <li><a class="menuitem" href="level_comment_tool/index.php">Level Comment Tool</a></li> -->
+            <!-- <li><a class="menuitem" href="development.html">Development</a></li> -->
+            <li><a class="menuitem" href="press.html">Press</a></li>
+            <li><a class="menuitem" href="http://savannah.nongnu.org/projects/pingus/">Development</a></li>
+          </ul>
+        </div>
+        
+        <h1><xsl:value-of select="@title"/></h1>
+        <div class="mainbody">
+          <xsl:apply-templates />
+        </div>             
+        <div class="footer">
+          Copyright &#169; 1998-2010 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
+        </div>
+          <p style="text-align: center;">
+            <a href="http://validator.w3.org/check/referer">html4</a>/
+            <a href="http://jigsaw.w3.org/css-validator/">css2</a>
+          </p>
+        </div>
       </body>
     </html>
   </xsl:template>
