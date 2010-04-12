@@ -68,7 +68,7 @@ h2,h3,h4
 { 
   border-bottom-style: solid;
   border-bottom-width: thin;
-  border-bottom-color: lightgrey;
+  border-bottom-color: lightgray;
   padding-left: 0.5em;
 }
 
@@ -81,7 +81,7 @@ h1
   border-style: solid solid none solid;
   border-color: black;
   border-width: thin;
-  padding-left: 1em;
+  padding-left: 3em;
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
@@ -109,7 +109,7 @@ div.nav a
 
 div.nav ul
 { 
-  list-style-type: none
+  list-style-type: none;
   padding: 0;
   margin-bottom: 0;
 }
@@ -127,7 +127,7 @@ div.newsdate {
   font-weight: bold;
   border-bottom-style: solid;
   border-bottom-width: thin;
-  border-bottom-color: lightgrey;
+  border-bottom-color: lightgray;
   padding-bottom: 0.25em;
 }
 
@@ -205,18 +205,8 @@ p.warning a {
   color: red;
 }
 
-table.question {
-  font-family: Sans-Serif;
-  background: #607f9b;
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
-  color: white;
-  padding-left: 1em;
-}
-
-P.answer {
-  color: black;
+div.answer {
+  margin-bottom: 1.5em;
 }
 
 TT.irc {

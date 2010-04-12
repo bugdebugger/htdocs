@@ -12,6 +12,7 @@
   </section>
 
   <div id="faqtoc"/>
+
   <section title="FAQs - Frequently Asked Questions (and Answers)">
     <faq-list>
       <faq date="14 Jan 2007">
@@ -112,42 +113,42 @@
         </question>
 
         <answer>
-          There are multiple ways to tune the running speed of
-          Pingus. <br /> Firstly, reducing the screen colour
-          depth (to 16bit, for example) on a slower computer might
-          give you a boost of around 50% percent, depending on your
-          hardware. X11 doesn't allow switching color depth at run
-          time, and the exact instructions for doing this are outside
-          of the scope of this FAQ. Consult your distribution
-          documentation for more information.<br /><br />
+          <p>There are multiple ways to tune the running speed of
+            Pingus. <br /> Firstly, reducing the screen colour
+            depth (to 16bit, for example) on a slower computer might
+            give you a boost of around 50% percent, depending on your
+            hardware. X11 doesn't allow switching color depth at run
+            time, and the exact instructions for doing this are outside
+            of the scope of this FAQ. Consult your distribution
+            documentation for more information.</p>
 
-          Secondly, a gain in speed can be achieved by
-          reducing the display resolution of Pingus. For example, if
-          you want to run Pingus at 640x480 you can do this with the
-          following command:<br />
+          <p>Secondly, a gain in speed can be achieved by
+            reducing the display resolution of Pingus. For example, if
+            you want to run Pingus at 640x480 you can do this with the
+            following command:</p>
 
-          <tt>pingus -g 640x480</tt><br/><br />
+          <p><code>pingus -g 640x480</code></p>
 
-          Thirdly, you can run Pingus in a <em>fast-mode</em>.  This
-          mode disables all costly particle effects and the
-          background.  Thus, Pingus will look less pretty, but will
-          probably be a good amount faster. Fast-mode can be turned on
-          with:<br />
+          <p>Thirdly, you can run Pingus in a <em>fast-mode</em>.  This
+            mode disables all costly particle effects and the
+            background.  Thus, Pingus will look less pretty, but will
+            probably be a good amount faster. Fast-mode can be turned on
+            with:</p>
 
-          <tt>pingus --fast-mode</tt><br/> Remember, the
-          <em>fast-mode</em> has lots of room for improvement. If it
-          doesn't help you make Pingus run fast enough, not all is
-          lost. <br /><br />
+          <p><code>pingus --fast-mode</code></p>
+          
+          <p>Remember, the <em>fast-mode</em> has lots of room for
+            improvement. If it doesn't help you make Pingus run fast
+            enough, not all is lost.</p>
+          
+          <p>If that is not enough, you might also want to play
+            with the <tt>min-frame-skip</tt> and <tt>max-frame-skip</tt>
+            options.  Both should result in a more uniform frame-rate.
+            This can make the game jerky, but playability can be
+            improved nonetheless.</p>
 
-          If that is not enough, you might also want to play
-          with the <tt>min-frame-skip</tt> and <tt>max-frame-skip</tt>
-          options.  Both should result in a more uniform frame-rate.
-          This can make the game jerky, but playability can be
-          improved nonetheless.<br /><br />
-
-          Finally, the 'F11' key can help you a great deal in
-          your optimisation process by showing the frame-rate counter.
-          <br /><br />
+          <p>Finally, the 'F11' key can help you a great deal in
+            your optimisation process by showing the frame-rate counter.</p>
         </answer>
       </faq>
       <faq date="13 Dec 2009">

@@ -104,10 +104,6 @@
           <div class="footer">
             Copyright &#169; 1998-2010 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
           </div>
-          <p style="text-align: center;">
-            <a href="http://validator.w3.org/check/referer">html4</a>/
-            <a href="http://jigsaw.w3.org/css-validator/">css2</a>
-          </p>
         </div>
       </body>
     </html>
@@ -227,29 +223,17 @@
             <xsl:apply-templates/></a></li>
       </xsl:for-each>
     </ul>
-    <hr/>
+
     <xsl:apply-templates/>
   </xsl:template>
 
   <xsl:template match="faq">
-    <p></p>
-    <table width="100%"  class="question">
-      <colgroup width="60%" />
-      <tr><td valign="top">
-          <div id="faq{generate-id(question)}">
-            <xsl:apply-templates select="question/node()"/>
-          </div>
-        </td>
-        
-        
-        <td align="right" valign="top">
-          <small>Last update:<xsl:value-of select="@date"/></small>
-          [<small><a href="#faqtoc">Up</a></small>]
-        </td>
-      </tr>
-    </table>
-
-    <p class="answer"><xsl:apply-templates select="answer/node()"/> </p>
+    <div style="float: right;">
+      <small><xsl:value-of select="@date"/></small>
+      [<small><a href="#faqtoc">Up</a></small>]
+    </div>
+    <h3 id="faq{generate-id(question)}"><xsl:apply-templates select="question/node()"/></h3> 
+    <div class="answer"><xsl:apply-templates select="answer/node()"/></div>
   </xsl:template>
 
   <xsl:template match="news">
