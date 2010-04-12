@@ -181,25 +181,16 @@
   </xsl:template>
 
   <xsl:template match="screenshot-menu">
-    <p style="text-align: center; margin-top: 0em;">
-      [ 
-      <a href="screenshots.html">0.7</a>
-      |
-      <a href="screenshots-0.6.html">0.6</a>
-      |
-      <a href="screenshots-0.5.html">0.5</a>
-      |
-      <a href="screenshots-0.4.html">0.4</a>
-      |
-      <a href="screenshots-0.3.html">0.3</a>
-      |
-      <a href="screenshots-0.2.html">0.2</a>
-      |
-      <a href="screenshots-0.1.html">0.1</a>
-      |
-      <a href="screenshots-0.0.html">0.0</a>
-      ]
-    </p>
+    <ul class="screenshotmenu">
+      <li><a href="screenshots.html">0.7</a></li>
+      <li><a href="screenshots-0.6.html">0.6</a></li>
+      <li><a href="screenshots-0.5.html">0.5</a></li>
+      <li><a href="screenshots-0.4.html">0.4</a></li>
+      <li><a href="screenshots-0.3.html">0.3</a></li>
+      <li><a href="screenshots-0.2.html">0.2</a></li>
+      <li><a href="screenshots-0.1.html">0.1</a></li>
+      <li><a href="screenshots-0.0.html">0.0</a></li>
+    </ul>
   </xsl:template>
 
   <xsl:template match="netstat-image">

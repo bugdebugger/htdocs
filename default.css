@@ -24,6 +24,37 @@ body
   margin-right: auto;
 }
 
+ul.screenshotmenu
+{
+  display: block;
+  width: 35em;
+  margin: 0 auto 1.5em auto;
+  padding: 0.25em 0em;
+  text-align: center;
+  background-color: #809fbb;
+  border-style: solid;
+  border-width: thin;
+  -moz-border-radius:    1em;
+  -webkit-border-radius: 1em;
+}
+
+ul.screenshotmenu li
+{
+  display: inline;
+  list-style-type: none;
+}
+
+ul.screenshotmenu li a
+{ 
+  padding: 0.25em 1em;
+  text-decoration: none;
+}
+
+ul.screenshotmenu li a:hover
+{ 
+  background-color: white;
+}
+
 h1,h2,h3,h4
 {
   font-family: sans;
