@@ -15,55 +15,32 @@
   <section title="FAQs - Frequently Asked Questions (and Answers)">
     <faq-list>
       <faq date="14 Jan 2007">
-        <question>What is Pingus?</question>
-        <answer>
-          The <a href="welcome.html">Welcome</a> page answers this question.
-        </answer>
-      </faq>
-
-      <faq date="14 Jan 2007">
-        <question>How much does it cost?</question>
-        <answer>
-          We believe that you should answer this question for yourself.  If you
-          think this game is worth some amount of money, you can <a
-                                                                    href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donate
-            to Pingus via Paypal</a>. Otherwise, you can get the game for no
-          monetary cost.  Pingus is <a
-                                       href="http://www.gnu.org/philosophy/free-sw.html">Free Software</a> and
-          you are not forced to pay any amount of money for this game.
-        </answer>
-      </faq>		
-
-      <faq date="14 Jan 2007">
-        <question>Where can I get Pingus?</question>
-        <answer>
-          You can get Pingus from the <a href="download.html">download</a> section.
-        </answer>
-      </faq>
-
-      <faq date="14 Jan 2007">
         <question>Where can I find more levels?</question>
         <answer>
-          <em>Foreword: Every level that isn't reachable via the GUI in Pingus
-            is unsupported and might be completely broken. If you want to try
-            them you are on your own.</em> <br /><br />
+          <p>
+            <em>Foreword: Every level that isn't reachable via the GUI in Pingus
+              is unsupported and might be completely broken. If you want to try
+              them you are on your own.</em>
+          </p>
 
-          Besides the 22 tested and cleaned up levels of the first island that
-          come with Pingus. There are also around 120 levels that might be
-          playable and another 100 levels that are incomplete at the moment.
-          These levels can be found in the <tt>data/levels/playable</tt> and
-          <tt>data/levels/wip/</tt> (wip = work in progress). The levels in the
-          <tt>playable/</tt> directory might be playable, but there is no
-          guarantee for that. They haven't been tested. They might be broken
-          due to engine changes.  They might be far too easy or far too hard or
-          simply incomplete. The <tt>wip/</tt> directory contains levels that
-          are not playable at all. Some of them might even lack entrances
-          and/or exits. Don't be surprised that you can't play them. Instead,
-          these levels  can be used as framework for levels you want to create
-          yourself with the level editor.  Yes, you heard it right, Pingus
-          comes with a fully working level editor. It might not be 100% bug
-          free, but it was used to construct all the levels that you see in the
-          game, so don't hesitate to try it out and build your own levels.
+          <p>
+            Besides the 22 tested and cleaned up levels of the first island that
+            come with Pingus. There are also around 120 levels that might be
+            playable and another 100 levels that are incomplete at the moment.
+            These levels can be found in the <tt>data/levels/playable</tt> and
+            <tt>data/levels/wip/</tt> (wip = work in progress). The levels in the
+            <tt>playable/</tt> directory might be playable, but there is no
+            guarantee for that. They haven't been tested. They might be broken
+            due to engine changes.  They might be far too easy or far too hard or
+            simply incomplete. The <tt>wip/</tt> directory contains levels that
+            are not playable at all. Some of them might even lack entrances
+            and/or exits. Don't be surprised that you can't play them. Instead,
+            these levels  can be used as framework for levels you want to create
+            yourself with the level editor.  Yes, you heard it right, Pingus
+            comes with a fully working level editor. It might not be 100% bug
+            free, but it was used to construct all the levels that you see in the
+            game, so don't hesitate to try it out and build your own levels.
+          </p>
         </answer>
       </faq>
 
@@ -178,10 +155,11 @@
           MacOS: How do I open other levels on a mac? './pingus mylevel.pingus' doesn't work?
         </question>
         <answer>
-	  You might be using an older, broken, version of the
-	  game. Make sure you are using at least 0.7.2.<br /><br />
-	  Alternatively, you can open any level through the editor
-	  <br /><br />
+	  <p>
+            You might be using an older, broken, version of the
+	    game. Make sure you are using at least 0.7.2.<br /><br />
+	    Alternatively, you can open any level through the editor
+          </p>
         </answer>
       </faq>
     </faq-list>
