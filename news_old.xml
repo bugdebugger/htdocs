@@ -1,18 +1,105 @@
 <?xml version="1.0" ?>
-<page title="News">
+<page title="Archived News">
   <section title="2002">
     <news>
+      <item date="15. Jan 2007">
+        Porting Pingus to SDL is in progress, some spelling fixes for the FAQ
+      </item>
+      
+      <item date="11. Feb 2006">
+        Time for some news, current plans for Pingus look like this:
+
+        <ul>
+          <li>Jave27 is currently trying to get the latest version in a release ready state</li>
+
+          <li>Grumbel opened a new branch in SVN called pingus-sdl, this
+            is supposed to port Pingus to SDL, level file format will
+            switch to S-Expr instead of XML
+          </li>
+        </ul>
+      </item>
+
+      <item date="09. Apr 2004">
+        It's been a long time without any updates, so there's a couple of news to note here.
+        <ul>
+          <li>Pingus got elected GotM for April at <a href="http://www.happypenguin.org">The Linux Game Tome</a> and a 0.7 release with many new features may be expected soon.</li>
+	  <li>Pingus CVS was replaced by <a href="http://subversion.tigris.org">Subversion</a></li>
+          <li>There will be a new release on the stable branch (0.6.1) very soon now, planned date is 15.04.2004 - cross your fingers and hope. :-)</li>
+          <li>We've got now a <a href="http://pingus.seul.org/level_comment_tool/index.php">Level Comment Tool</a> where you can rate all levels which are delivered with Pingus.</li>
+        </ul>
+      </item>
+
+      <item date="14. Sep 2003">
+        A added little button in the bottom left corner of the webpage
+        that allows you to <a
+                              href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donate
+          via Paypal</a>.
+      </item>
+
+      <item date="16. Apr 2003">
+        Pingus 0.6.0 is finally out, has taken longer as expected, but
+        here it is. It contains one island with 22 playable tutorial
+        levels. This is the first playable release ever of Pingus.
+      </item>
+
+      <item date="12. Apr 2003">
+        A second prerelease of Pingus 0.6.0 is out, named 0.6.0rc2,
+        final 0.6.0 release is expected to be finished this weekend.
+      </item>
+
+      <item date="7. Apr 2003">
+        A first prerelease of Pingus 0.6.0 is out, named 0.6.0rc1
+      </item>
+
+      <item date="21. Mar 2003">
+        After some downtime the Pingus CVS repository is up and running
+        again. But since its now in another CVSROOT people with a
+        checkout need either to re checkout it or editor they
+        <tt>CVS/Root</tt> files a bit, more info is available <a href="http://mail.gnu.org/archive/html/pingus-devel/2003-03/msg00063.html">here</a>.
+      </item>
+
+      <item date="5. Mar 2003">
+        Another IRC Meeting is scheduled for the end of this week (07.
+        Mar 2003) on Friday, 18:00 GMT. Server and channel stay the as
+        with the last one, see below. same. Everybody is welcome.
+      </item>
+
+      <item date="26. Feb 2003">
+        IRC Meeting planed for the next Saturday. For details see below and the <a href="contact.html">Contact Section</a> of this site.<br/><br/>
+        <table>
+          <tr><td>Server:</td><td><a href="http://freenode.net">irc.freenode.net</a> 6667</td></tr>
+          <tr><td>Channel:</td><td>#pingus</td></tr>
+          <tr><td>Date:</td><td>Saturday, 1. March 2003</td></tr>
+          <tr><td>Time:</td><td>21:00 <a href="http://greenwichmeantime.com/">GMT</a></td></tr>
+        </table>
+      </item>
+
+      <item date="22. Dec 2002">
+        Rumour is that a new, finally playable, release will come out in
+        the next days... even so this isn't officially confirmed you
+        might cross your fingers and it will probably happen.
+      </item>
+
+      <item date="21. Dec 2002">
+        The Webpage got finally a complete redesign, this took, as
+        always, longer than expected, but anyway here it is. If you want
+        to know how this page is generated you can look at the xml
+        source and the Makefiles in the <a
+                                           href="http://savannah.nongnu.org/cvs/?group=pingus">Savanna Web
+          CVS tree</a>.
+      </item>
+
       <item date="28. July 2002">
         <a
-          href="http://www.blender3d.com/">Blender</a>, a
+           href="http://www.blender3d.com/">Blender</a>, a
         very powerfull 3D modelling software, might
         become Free Software, but to accomplish that
         they need to collect 100'000EUR. So if you want
         to help Pingus and many other free game
         projects, donate something to the Blender Foundation please.<br/> <a
-          href="http://www.blender3d.com/"><img
-            src="http://www.blender3d.com/but150.gif"
-            alt="Donate now, Blender3D" /></a><br />
+                                                                             href="http://www.blender3d.com/"><img
+                                                                                                                 src="http://www.blender3d.com/but150.gif"
+                                                                                                                 alt="Donate now, Blender3D" /></a><br />
         [Update: Blender now is Free Software, thanks to all donators!]
       </item>
       
@@ -20,7 +107,7 @@
         Updates are still not done, but we are
         working on it... in the meantime you can go to
         the <a
-          href="http://savannah.gnu.org/bugs/?func=addbug&amp;group_id=2184">bugtracker</a>
+               href="http://savannah.gnu.org/bugs/?func=addbug&amp;group_id=2184">bugtracker</a>
         and submit your favorit bugs in Pingus.</item>
 
       <item date="5. June 2002">
@@ -28,7 +115,7 @@
         
         The bugtracking and mailing lists are on there
         move to <a
-          href="https://savannah.gnu.org/projects/pingus/">http://savannah.gnu.org/projects/pingus/</a>.
+                   href="https://savannah.gnu.org/projects/pingus/">http://savannah.gnu.org/projects/pingus/</a>.
         Some of the info on this webpage will
         therefore be out dated and needs some
         updating, this should be done in a day or two.
@@ -37,7 +124,7 @@
       <item date="2. June 2002">
         The source for many Pingus images (.xcf, etc.) is now
         available at <a
-          href="ftp://pingus.seul.org/pub/pingus/contrib/">ftp://pingus.seul.org/pub/pingus/contrib/</a>.
+                        href="ftp://pingus.seul.org/pub/pingus/contrib/">ftp://pingus.seul.org/pub/pingus/contrib/</a>.
         That directory contains everything that I used
         in the development process, which is not
         included in the official source tarball.
@@ -45,25 +132,25 @@
 
       <item date="28. May 2002">
         I have submitted Pingus to <a
-          href="http://unmaintained.sourceforge.net/">http://unmaintained.sourceforge.net/</a>
+                                      href="http://unmaintained.sourceforge.net/">http://unmaintained.sourceforge.net/</a>
         now. Sorry, but I simply lack the time and
         motivation to continue this project. So if
         anybody wants to help coordinating this
         project, they are more than welcome. Please
         drop a mail to <a
-          href="http://lists.sourceforge.net/lists/listinfo/pingus-devel">pingus-devel</a>
+                          href="http://lists.sourceforge.net/lists/listinfo/pingus-devel">pingus-devel</a>
         in case you are interested to help.</item>
 
       <item date="18. Feb 2002">
         <b>Call for
           help!</b><br/> Pingus has currently 140 levels in
-          the XML format and another 40 levels in the old
-          PLF/PSM format, all these need to get reviewed,
-          rated, fixed and/or converted. So if you have
-          some spare time, its now a good point to help!
-          For a first overview you can get a list of all levels <a href="alllevels.html">here</a>.
-          More detailed instructions on what you can do will follow
-          soon.
+        the XML format and another 40 levels in the old
+        PLF/PSM format, all these need to get reviewed,
+        rated, fixed and/or converted. So if you have
+        some spare time, its now a good point to help!
+        For a first overview you can get a list of all levels <a href="alllevels.html">here</a>.
+        More detailed instructions on what you can do will follow
+        soon.
       </item>
 
       <item date="12. Jan 2002">
@@ -72,23 +159,23 @@
     </news>
   </section>
   <section title="2001">
-      <news>
+    <news>
       <item date="01. Dec 2001">
         New ToDo list added <a href="todo/">here</a>.</item>
       <item date="17. Nov 2001">
         A short overview over the class structure is
         available <a
-          href="sourcecodestructure.html">here</a>.</item>
+                     href="sourcecodestructure.html">here</a>.</item>
       
       <item date="5. Aug 2001">
         'pingus.cx' is down, so you currently can't reach me via
         grumbel@gmx.de, try <a
-          href="mailto:grumbel@gmx.de">grumbel@gmx.de</a> instead.
+                               href="mailto:grumbel@gmx.de">grumbel@gmx.de</a> instead.
       </item>
 
       <item date="28. July 2001">
         <b>Release 0.5.0pre2 is out</b><br /> You can download it <a
-          href="download.html#devrel">here</a>.
+                                                                     href="download.html#devrel">here</a>.
       </item>
       
       <item date="15. July 2001">
@@ -97,13 +184,13 @@
         simply lack the time to do anything for Pingus, so I need
         some help. So when you are at least a bit familiar with C++
         and have some spare time to offer, please drop <a
-          href="mailto:grumbel@gmx.de">me a mail</a>, so I can
+                                                          href="mailto:grumbel@gmx.de">me a mail</a>, so I can
         coordinate the efforts.
       </item>
 
       <item date="16. June 2001">
         <a href="download.html#devrel">Pingus 0.5.0pre1 is out</a><br
-          /> Finally a new Pingus release is out, but be warned this
+                                                                     /> Finally a new Pingus release is out, but be warned this
         is a development release (mostly for level designers) and is
         known to crash. When you want a playable game, this thing
         won't make you happy.
@@ -115,14 +202,14 @@
 
       <item date="12. Apr 2001">
         Multiplayer is on its way!<br /> <a
-          href="mailto:grumbel@gmx.de">I</a> am currently implementing
+                                            href="mailto:grumbel@gmx.de">I</a> am currently implementing
         multiplayer support (split-screen, no network support) for
         Pingus, cooperative and battle modes will be available.
       </item>
 
       <item date="4. Apr 2001">
         Generated some source docs with doxygen, you can find them <a
-          href="http://pingus.seul.org/doxy/index.html">here</a>
+                                                                      href="http://pingus.seul.org/doxy/index.html">here</a>
       </item>
 
       <item date="2. Apr 2001">
@@ -143,7 +230,7 @@
           <li><a href="http://advent.sourceforge.net">Advent</a></li>
         </ul>
       </item>
-      </news></section>
+  </news></section>
   
   <section title="2000">
     <news>
@@ -151,7 +238,7 @@
         <b>Pingus runs now on LinuxPPC!</b><br /> A guide on how to
         compile Pingus and some PPC Clanlib and Hermes RPMs are
         available <a
-          href="http://mapage.noos.fr/guillaume.laures/linux/pingus.html">here</a>,
+                     href="http://mapage.noos.fr/guillaume.laures/linux/pingus.html">here</a>,
         but be warned this is only experimental development stuff
         and it will crash often.
       </item>
@@ -169,12 +256,12 @@
 
       <item date="11. Aug 2000">
         Some more photos of the LinuxTag are available <a
-          href="http://pingus.seul.org/~grumbel/pingus/linuxtag/">here</a>
+                                                          href="http://pingus.seul.org/~grumbel/pingus/linuxtag/">here</a>
       </item>
 
       <item date="7. Aug 2000">
         A Windows port of Pingus 0.4.0 is available in the <a
-          href="download.html#win32">download section</a>
+                                                              href="download.html#win32">download section</a>
       </item>
 
       <item date="5. Aug 2000">
@@ -196,7 +283,7 @@
         libraries are required - it will run
         <em>out-of-the-box</em>. Its as always
         available in the <a
-          href="download.html">download section</a>.
+                            href="download.html">download section</a>.
       </item>
 
       <item date="16. Jul 2000">
@@ -208,7 +295,7 @@
 
       <item date="8. Jul 2000">
         <a
-          href="http://www.tammura.at/eyemodule/LinuxTag/eyemodule_img.html">Some
+           href="http://www.tammura.at/eyemodule/LinuxTag/eyemodule_img.html">Some
           photos from the LinuxTag are available </a>,
         thanks to Tamer for providing them.
       </item>
@@ -257,8 +344,8 @@
       <item date="25. Apr 2000">       
         Ever wished that the Pingus could walk over your windows while
         you are reading you mail? A dream has come true, <a
-          href="mailto:R.J.Hogan@reading.ac.uk">Robin Hogan</a> wrote <a
-          href="http://www.met.rdg.ac.uk/~swrhgnrj/xpenguins/">XPenguins</a>.
+                                                            href="mailto:R.J.Hogan@reading.ac.uk">Robin Hogan</a> wrote <a
+                                                                                                                           href="http://www.met.rdg.ac.uk/~swrhgnrj/xpenguins/">XPenguins</a>.
       </item>
 
       <item date="23. Apr 2000">
@@ -270,7 +357,7 @@
       <item date="09. Mar 2000">
         Pingus 0.3.1 will not work with ClanLib
         0.4.2, a patch is available <a
-          href="pingus-patch-0.3.1-0.3.1a">here</a>, have
+                                       href="pingus-patch-0.3.1-0.3.1a">here</a>, have
         also a look at the <a href="faq.html">FAQ</a>.
       </item>
 
@@ -301,18 +388,18 @@
         <a href="development.html">Added a level building guide and some Gimp scripts</a>
       </item>
 
-      </news></section>
+  </news></section>
   <section title="1999">
     <news>
       <item date="29. Dec 1999">
         <a
-          href="download.html#data">Released
+           href="download.html#data">Released
           a Pingus music tarball</a>
       </item>
 
       <item date="26. Dec 1999">
         Added <a href="download.html#rpm">RPMs</a> and a new <a
-          href="download.html#source">tarball</a> of Pingus 0.3.0a
+                                                                href="download.html#source">tarball</a> of Pingus 0.3.0a
       </item>
 
       <item date="25. Dec 1999">
@@ -352,13 +439,13 @@
       <item date="30. Sept 1999">
         <a href="download.html">Released version
           0.2.3</a> and first release of the <a
-          href="download.html#win32">Windows port</a>.
+                                                href="download.html#win32">Windows port</a>.
       </item>
 
       <item date="29. Sept 1999">
         
         A good <a
-          href="http://news.tucows.com/ext2/99/09/articles/ext2092719991.shtml">article</a>
+                  href="http://news.tucows.com/ext2/99/09/articles/ext2092719991.shtml">article</a>
         about Pinugs can be found at ext2.org.
       </item>
 
@@ -407,11 +494,11 @@
 
       <item date="28. Jun 1999">
         Pingus was presented at the <a
-          href="http://www.linuxtag.org">LinuxTag</a>. <a
-          href="mailto:grumbel@gmx.de">Ingo Ruhnke</a>
+                                       href="http://www.linuxtag.org">LinuxTag</a>. <a
+                                                                                       href="mailto:grumbel@gmx.de">Ingo Ruhnke</a>
         created some special levels there, you can get the
         complete Special Editon in the <a
-          href="download.html">download section</a>
+                                          href="download.html">download section</a>
       </item>
 
       <item date="22. Jun 1999">
@@ -447,7 +534,7 @@
       
       <item date="7. May 1999">
         Added some description to the <a
-          href="level.html">development section</a>
+                                         href="level.html">development section</a>
       </item>
 
       <item date="30. Apr 1999">

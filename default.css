@@ -26,6 +26,7 @@ body
 
 ul.screenshotmenu
 {
+  font-weight: bold;
   display: block;
   width: 35em;
   margin: 0 auto 1.5em auto;
@@ -53,6 +54,8 @@ ul.screenshotmenu li a
 ul.screenshotmenu li a:hover
 { 
   background-color: white;
+  -moz-border-radius:    1em;
+  -webkit-border-radius: 1em;
 }
 
 h1,h2,h3,h4
@@ -93,9 +96,7 @@ div.nav
   width: 100%;
   margin-top: 0.5em;
   text-align: center;
-  margin-bottom: 0.5em;
-  position: relative;
-  top: 0.4em;
+  margin-bottom: 0.25em;
 }
 
 div.nav a
@@ -103,7 +104,7 @@ div.nav a
   text-decoration: none;
   margin-left:  0.25em;
   margin-right: 0.25em;
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
 }
 
 div.nav ul
@@ -135,14 +136,6 @@ div.newsbody {
   padding-left: 1em;
 }
 
-a.menuitem:hover
-{
-  color: black;
-  background-color: #E0FfFF;
-  position: relative;
-  top: -0.25em;
-}
-
 a.menuitem:visited
 {
   color: black;
@@ -169,6 +162,23 @@ a.menuitem
   /*	background-image: url(images/menubackground.png);*/
   background-repeat: repeat-y;
   display: inline;
+}
+
+a.menuitemcurrent
+{ 
+  background-color: #809fbb;
+  border-bottom-style: solid;
+  border-bottom-color: #809fbb;
+  border-bottom-width: 2px;
+  position: relative;
+  top: -4px;
+  z-index: 1;
+}
+
+a.menuitem:hover
+{
+  color: black;
+  background-color: #E0FfFF;
 }
 
 div.mainbody

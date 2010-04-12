@@ -47,16 +47,21 @@
     <a href="{@href}"><xsl:value-of select="@href" /></a>
   </xsl:template> 
 
-  <xsl:template name="menuitem">
-    <xsl:param name="name"/>    
-    <xsl:param name="lowername"/>
+  <xsl:template match="menu">
+    <ul>
+      <xsl:apply-templates />
+    </ul>
+  </xsl:template>
+
+  <xsl:template match="menu/item">
+    <xsl:param name="name"/>
 
     <xsl:choose>
-      <xsl:when test="$filename = $lowername">
-        <div><a class="currentmenuitem" href="{.}.html"><xsl:value-of select="."/></a></div>
+      <xsl:when test="$filename = @name">
+        <li><a class="menuitemcurrent menuitem" href="{@name}.html"><xsl:value-of select="."/></a></li>
       </xsl:when>
       <xsl:otherwise>
-        <div><a class="menuitem" href="{.}.html"><xsl:value-of select="."/></a></div>
+        <li><a class="menuitem" href="{@name}.html"><xsl:value-of select="."/></a></li>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -89,18 +94,7 @@
           </div>
 
           <div class="nav">
-            <ul>
-              <li><a class="menuitem" href="news.html">News</a></li>
-              <li><a class="menuitem" href="welcome.html">Welcome</a></li>
-              <li><a class="menuitem" href="download.html">Download</a></li>
-              <li><a class="menuitem" href="faq.html">FAQ</a></li>
-              <li><a class="menuitem" href="contact.html">Contact</a></li>
-              <li><a class="menuitem" href="screenshots.html">Screenshots</a></li>
-              <!-- <li><a class="menuitem" href="level_comment_tool/index.php">Level Comment Tool</a></li> -->
-              <!-- <li><a class="menuitem" href="development.html">Development</a></li> -->
-              <li><a class="menuitem" href="press.html">Press</a></li>
-              <!-- <li><a class="menuitem" href="http://savannah.nongnu.org/projects/pingus/">Development</a></li> -->
-            </ul>
+            <xsl:apply-templates select="document('menu.xml')" />
           </div>
           
           <h1><xsl:value-of select="@title"/></h1>
