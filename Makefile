@@ -1,5 +1,7 @@
 OUTPUTFILES = \
  build/default.css \
+ build/desert.css \
+ build/snow.css \
  build/index.html      \
  build/welcome.html  \
  build/news.html  \
@@ -33,16 +35,24 @@ images :
 clean :
 	rm -vf $(OUTPUTFILES)
 
-build/default.css : default.css
-	cp -v $< $@
+build/default.css : default.css default.css.sed
+	sed -f "default.css.sed" $< > $@
+
+build/snow.css : default.css default.css.sed
+	sed -f "default.css.sed" $< > $@
+
+build/desert.css : default.css desert.css.sed
+	sed -f "desert.css.sed" $< > $@
 
 build/index.html : index.html
 	cp -v $< $@
 
 build/%.html :: %.xml default.xsl Makefile
+	@echo "----------------------------------------------------------------------------"
 	FILENAME=$<; \
 	echo $${FILENAME%%.xml}; \
-	xsltproc -param filename "'$${FILENAME%%.xml}'" --output $@ default.xsl $<
+	xsltproc -param filename "'$${FILENAME%%.xml}'" --output $@ default.xsl $<; \
+	tidy -modify -quiet -ashtml $@
 
 upload: all
 	rsync --checksum --exclude "old/" --cvs-exclude -rv build/ \

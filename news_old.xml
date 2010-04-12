@@ -1,14 +1,17 @@
 <?xml version="1.0" ?>
 <page title="Archived News">
-  <section title="2002">
+  <section title="2007">
     <news>
       <item date="15. Jan 2007">
         Porting Pingus to SDL is in progress, some spelling fixes for the FAQ
       </item>
-      
+    </news>
+  </section>
+
+  <section title="2006">
+    <news>      
       <item date="11. Feb 2006">
         Time for some news, current plans for Pingus look like this:
-
         <ul>
           <li>Jave27 is currently trying to get the latest version in a release ready state</li>
 
@@ -18,7 +21,11 @@
           </li>
         </ul>
       </item>
+    </news>
+  </section>
 
+  <section title="2004">
+    <news>
       <item date="09. Apr 2004">
         It's been a long time without any updates, so there's a couple of news to note here.
         <ul>
@@ -28,7 +35,11 @@
           <li>We've got now a <a href="http://pingus.seul.org/level_comment_tool/index.php">Level Comment Tool</a> where you can rate all levels which are delivered with Pingus.</li>
         </ul>
       </item>
+    </news>
+  </section>
 
+  <section title="2003">
+    <news>
       <item date="14. Sep 2003">
         A added little button in the bottom left corner of the webpage
         that allows you to <a
@@ -66,14 +77,18 @@
 
       <item date="26. Feb 2003">
         IRC Meeting planed for the next Saturday. For details see below and the <a href="contact.html">Contact Section</a> of this site.<br/><br/>
-        <table>
+        <table summary="">
           <tr><td>Server:</td><td><a href="http://freenode.net">irc.freenode.net</a> 6667</td></tr>
           <tr><td>Channel:</td><td>#pingus</td></tr>
           <tr><td>Date:</td><td>Saturday, 1. March 2003</td></tr>
           <tr><td>Time:</td><td>21:00 <a href="http://greenwichmeantime.com/">GMT</a></td></tr>
         </table>
       </item>
+    </news>
+  </section>
 
+  <section title="2002">
+    <news>
       <item date="22. Dec 2002">
         Rumour is that a new, finally playable, release will come out in
         the next days... even so this isn't officially confirmed you

@@ -1,16 +1,15 @@
 body
 {
-  font-family: sans;
+  font-family: sans-serif;
   background-position: left top;
-  background-image: url("images/snow_background.jpg");
+  background-image: url($BACKGROUND-IMAGE$);
   background-repeat: repeat-x;
-  background-color: black;
+  background-color: $COLOR-BACKGROUND$;
   background-attachment:fixed;
   color: black;
-  /* desert #cdb09e; */
 }
 
-#title
+#logo
 { 
   text-align: center;
   padding: 0;
@@ -19,9 +18,30 @@ body
 
 #pagebody
 { 
-  width: 70em;
+  width: 60em;
   margin-left: auto;
   margin-right: auto;
+}
+
+#footer {
+  color: black;
+  font-size: smaller;
+  font-family: sans-serif;
+
+  text-align: right;
+  background: $COLOR-PAGEHEADER$;
+  padding: 5px;
+  border-style: none solid solid solid; 
+  border-color: COLOR-BACKGROUND;
+  border-width: 1px; 
+  margin-top: 0;
+
+  -moz-border-radius:    0em 0em 0.5em 0.5em;
+  -webkit-border-radius: 0em 0em 0.5em 0.5em;
+}
+
+#footer a { 
+  text-decoration: none;
 }
 
 ul.screenshotmenu
@@ -32,11 +52,12 @@ ul.screenshotmenu
   margin: 0 auto 1.5em auto;
   padding: 0.25em 0em;
   text-align: center;
-  background-color: #809fbb;
+  background-color: $COLOR-PAGEHEADER$;
   border-style: solid;
   border-width: 1px;
   -moz-border-radius:    1em;
   -webkit-border-radius: 1em;
+  border-radius: 1em;
 }
 
 ul.screenshotmenu li
@@ -56,11 +77,12 @@ ul.screenshotmenu li a:hover
   background-color: white;
   -moz-border-radius:    1em;
   -webkit-border-radius: 1em;
+  border-radius: 1em;
 }
 
 h1,h2,h3,h4
 {
-  font-family: sans;
+  font-family: sans-serif;
   margin-top: 0px;
 }
 
@@ -72,16 +94,19 @@ h2,h3,h4
   padding-left: 0.5em;
 }
 
-h1
+#pagetitle
 {
+  border-radius:    0.5em 0.5em 0em 0em;
   -moz-border-radius:    0.5em 0.5em 0em 0em;
   -webkit-border-radius: 0.5em 0.5em 0em 0em;
-  background: #809fbb;
+  background: $COLOR-PAGEHEADER$;
   color: white;
   border-style: solid solid none solid;
   border-color: black;
   border-width: 1px;
   padding-left: 3em;
+  padding-top: 0.125em;
+  padding-bottom: 0.125em;
   position: relative;
   margin-top:    0;
   margin-bottom: 0;
@@ -131,14 +156,14 @@ a.menuitem
   font-size: 1em;
   font-weight: bold;
 
-  font-family: sans;
+  font-family: sans-serif;
   text-align: center;
 
   border-color: black;
   border-style: solid solid none solid;
   border-width: 1px;
 
-  background-color: #607f9b;
+  background-color: $COLOR-PAGEHEADER-DIMMED$;
 
   display: inline-block;
   position: relative;
@@ -147,15 +172,15 @@ a.menuitem
 
 a.menuitem:hover
 {
-  background-color: #E0FfFF;
+  background-color: $COLOR-PAGEHEADER-LIGHT$;
 }
 
 a.menuitemcurrent
 { 
-  background-color: #809fbb;
+  background-color: $COLOR-PAGEHEADER$;
 
   border-bottom-style: solid;
-  border-bottom-color: #809fbb;
+  border-bottom-color: $COLOR-PAGEHEADER$;
   border-bottom-width: 1px;
 
   position: relative;
@@ -194,7 +219,7 @@ p.warning {
   font-size: 1.5em;
   color: red;
   background-color: black;
-  font-family: Sans-Serif;
+  font-family: sans-serif;
   border-style: solid;
   border-color: red;
   padding: .3em;
@@ -250,27 +275,6 @@ a:hover {
 
 a {
   color: rgb(50,50,200);
-}
-
-div.footer {  
-  color: black;
-  font-size: smaller;
-  font-family: sans;
-
-  text-align: right;
-  background: #607f9b;
-  padding: 5px;
-  border-style: none solid solid solid; 
-  border-color: black; 
-  border-width: 1px; 
-  margin-top: 0;
-
-  -moz-border-radius:    0em 0em 0.5em 0.5em;
-  -webkit-border-radius: 0em 0em 0.5em 0.5em;
-}
-
-div.footer a { 
-  text-decoration: none;
 }
 
 /* EOF */
