@@ -76,7 +76,7 @@
       <body>
         <div id="pagebody">
           <div id="title">
-            <div style="display: inline; float: right; margin: 0; padding: 0; position: absolute; right: 1em; top: 1em;">
+            <div style="display: inline; float: right; margin: 0; padding: 0; position: absolute; right: 16px; top: 16px;">
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <div style="margin: 0px; padding: 0px;">
                   <input type="hidden" name="cmd" value="_xclick" />
