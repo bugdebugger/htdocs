@@ -66,10 +66,7 @@
       <head>
         <title>Pingus - <xsl:value-of select="@title" /></title>
         <link rel="stylesheet" type="text/css" href="default.css" />
-        <link rel="icon" href="images/favicon.png" type="image/png" />
-        <!--<link REL="help" HREF="faq.html" title="FAQ"/>
-            <link REL="section" HREF="faq.html" title="Intro"/>
-            <link REL="shortcut icon" href="/favicon.ico" type="image/x-icon" />-->
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
       </head>
       <body style="margin:0px;">
         <table summary="" cellpadding="0" cellspacing="0" border="0" width="100%">
@@ -78,18 +75,20 @@
             <td valign="top" align="center">
               <a href="http://pingus.seul.org"><img src="images/logo_pingus.png" alt="Pingus" /></a>
 
-              <div class="menu">
-                <div><a class="menuitem" href="news.html">News</a></div>
-                <div><a class="menuitem" href="welcome.html">Welcome</a></div>
-                <div><a class="menuitem" href="download.html">Download</a></div>
-                <div><a class="menuitem" href="faq.html">FAQ</a></div>
-                <div><a class="menuitem" href="contact.html">Contact</a></div>
-                <div><a class="menuitem" href="screenshots.html">Screenshots</a></div>
-                <!--		<div><a class="menuitem" href="level_comment_tool/index.php">Level Comment Tool</a></div> -->
-                <div><a class="menuitem" href="development.html">Development</a></div>
-                <div><a class="menuitem" href="press.html">Press</a></div>
-                <br /> 
-                <div><a class="menuitem" href="http://savannah.nongnu.org/projects/pingus/">Savannah Project Page</a></div>
+              <div class="nav">
+                <ul>
+                  <li><a class="menuitem" href="news.html">News</a></li>
+                  <li><a class="menuitem" href="welcome.html">Welcome</a></li>
+                  <li><a class="menuitem" href="download.html">Download</a></li>
+                  <li><a class="menuitem" href="faq.html">FAQ</a></li>
+                  <li><a class="menuitem" href="contact.html">Contact</a></li>
+                  <li><a class="menuitem" href="screenshots.html">Screenshots</a></li>
+                  <!-- <li><a class="menuitem" href="level_comment_tool/index.php">Level Comment Tool</a></li> -->
+                  <!-- <li><a class="menuitem" href="development.html">Development</a></li> -->
+                  <li><a class="menuitem" href="press.html">Press</a></li>
+                  <br /> 
+                  <li><a class="menuitem" href="http://savannah.nongnu.org/projects/pingus/">Savannah Project Page</a></li>
+                </ul>
 
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                   <div style="margin: 0px; padding: 0px;">
@@ -109,27 +108,27 @@
                 <a href="http://jigsaw.w3.org/css-validator/">css2</a>
 
                 <!-- <img
-                     src="http://www.w3.org/Icons/valid-html401"
-                     alt="Valid HTML 4.01!" height="31" width="88" /> -->
+                        src="http://www.w3.org/Icons/valid-html401"
+                        alt="Valid HTML 4.01!" height="31" width="88" /> -->
                 <!-- <img style="border:0;width:88px;height:31px"
-                     src="http://jigsaw.w3.org/css-validator/images/vcss" 
-                     alt="Valid CSS!" /> -->
+                          src="http://jigsaw.w3.org/css-validator/images/vcss" 
+                          alt="Valid CSS!" /> -->
 
               </p>
             </td>
             <td valign="top" style="padding:20px;">
               <!--
-                  <table  summary="" border="0" width="100%" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td align="left" valign="bottom">
-                        <h1><xsl:value-of select="@title"/></h1>
-                      </td><td align="right">
-                        <img alt="" src="images/walking.png"/>
-                      </td>
-                    </tr>
-                  </table>
-                  <br />
-                  -->
+                 <table  summary="" border="0" width="100%" cellpadding="0" cellspacing="0">
+                   <tr>
+                     <td align="left" valign="bottom">
+                       <h1><xsl:value-of select="@title"/></h1>
+                     </td><td align="right">
+                       <img alt="" src="images/walking.png"/>
+                     </td>
+                   </tr>
+                 </table>
+                 <br />
+                 -->
               
               <h1><xsl:value-of select="@title"/></h1>
 
@@ -137,8 +136,8 @@
                 <xsl:apply-templates />
               </div>
               
-              <div style="font-size: smaller; text-align: right; background-color: gray; padding: 5px; border-style: solid; border-color: black; border-width: thin; margin-top: 8px;">
-                Copyright &#169; 1998-2007 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
+              <div class="footer">
+                Copyright &#169; 1998-2010 <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a>, &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
               </div>
             </td>
           </tr>
@@ -209,7 +208,7 @@
   </xsl:template>
 
   <xsl:template match="screenshot-menu">
-    <p style="text-align: center;">
+    <p style="text-align: center; margin-top: 0em;">
       [ 
       <a href="screenshots.html">0.7</a>
       |
@@ -296,20 +295,14 @@
   </xsl:template>
 
   <xsl:template match="news">
-    <table border="0" width="100%" cellpadding="5" cellspacing="5">
-      <colgroup width="*"/>
-      <xsl:apply-templates/>
-    </table>
+    <xsl:apply-templates/>
   </xsl:template>
 
   <xsl:template match="news/item">
-    <tr>
-      <td style="border-style: solid; border-width: thin; white-space: nowrap;" align="right" valign="top">
-        <tt><xsl:value-of select="@date"/></tt>
-      </td>
-      
-      <td style="background-color: rgb(180,180,180); color: black;"><xsl:apply-templates/></td>
-    </tr>
+    <div class="newsitem">
+      <div class="newsdate"><xsl:value-of select="@date"/></div>
+      <div class="newsbody"><xsl:apply-templates/></div>
+    </div>
   </xsl:template>
 
   <xsl:template match="german-flag">

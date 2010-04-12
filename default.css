@@ -1,31 +1,68 @@
-/* */
-
 h1,h2,h3,h4
 {
-  font-family: Sans-Serif;
+  font-family: sans;
   margin-top: 0px;
+}
+
+h2,h3,h4
+{ 
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: lightgrey;
+  padding-left: 0.5em;
 }
 
 h1
 {
+  -moz-border-radius:    0.5em 0.5em 0em 0em;
+  -webkit-border-radius: 0.5em 0.5em 0em 0em;
   background: #607f9b;
   color: white;
-  border-style: solid;
+  border-style: solid solid none solid;
   border-color: black;
+  border-width: thin;
   padding-left: 1em;
-  margin-top: 0px;
-  margin-bottom: .5em;
+  margin-top: 1em;
+  margin-bottom: 0em;
 }
 
-div.menu
+p { 
+  text-indent: 1em;
+}
+
+div.nav
 {
   width: 205px;
   margin-top: 10px;
 }
 
-div.menu a
+div.nav a
 {
   text-decoration: none;
+}
+
+div.nav ul
+{ 
+  padding: 0;
+  margin:  0;
+  list-style-type: none
+}
+
+div.newsitem { 
+  margin-bottom: 1.5em;
+}
+
+div.newsdate { 
+  font-weight: bold;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: lightgrey;
+  padding-bottom: 0.25em;
+}
+
+div.newsbody {
+  padding-top: 0.5em;
+  padding-left: 1em;
 }
 
 a.menuitem:hover
@@ -41,13 +78,13 @@ a.menuitem:visited
 
 a.currentmenuitem:hover
 {
-  color:black;
+  color: black;
 }
 
 
 a.currentmenuitem:visited
 {
-  color:black;
+  color: black;
 }
 
 
@@ -69,7 +106,10 @@ a.currentmenuitem
 
 a.menuitem
 {
-  -moz-border-radius: 0.5em;
+  color: black;        
+
+  -moz-border-radius:    0.5em;
+  -webkit-border-radius: 0.5em;
 
   font-size: 18px;
   font-family: Sans-Serif;
@@ -81,7 +121,6 @@ a.menuitem
   background-color: #607f9b;
   /*	background-image: url(images/menubackground.png);*/
   background-repeat: repeat-y;
-  color: black;        
   padding: 5px 0px 5px 0px;
   display: block;
   margin: 10px 15px 10px 15px;
@@ -89,10 +128,11 @@ a.menuitem
 
 div.mainbody
 {
-  background-color: silver;
+  background-color: white;
   color: black;
   border-color: black;
-  border-style: solid;
+  border-style: none solid none solid;
+  border-width: thin;
   padding: 1em;
 }
 
@@ -161,16 +201,37 @@ a:visited {
 }
 
 a:hover {
-  color: white;
+  color: black;
 }
 
 a {
   color: rgb(50,50,200);
 }
 
+div.footer {  
+  color: black;
+  font-size: smaller;
+  font-family: sans;
+
+  text-align: right;
+  background: #607f9b;
+  padding: 5px;
+  border-style: none solid solid solid; 
+  border-color: black; 
+  border-width: thin; 
+  margin-top: 0;
+
+  -moz-border-radius:    0em 0em 0.5em 0.5em;
+  -webkit-border-radius: 0em 0em 0.5em 0.5em;
+}
+
+div.footer a { 
+  text-decoration: none;
+}
 
 body
 {
+  font-family: sans;
   background-position: left top;
   background-image: url(images/snow_background.jpg);
   background-repeat: repeat-x;
@@ -178,3 +239,5 @@ body
   color: black;
   /* desert #cdb09e; */
 }
+
+/* EOF */

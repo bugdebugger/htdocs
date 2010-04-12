@@ -14,30 +14,30 @@
   <div id="faqtoc"/>
   <section title="FAQs - Frequently Asked Questions (and Answers)">
     <faq-list>
-	  <faq date="14 Jan 2007">
+      <faq date="14 Jan 2007">
         <question>What is Pingus?</question>
         <answer>
-        The <a href="welcome.html">Welcome</a> page answers this question.
+          The <a href="welcome.html">Welcome</a> page answers this question.
         </answer>
       </faq>
 
       <faq date="14 Jan 2007">
         <question>How much does it cost?</question>
         <answer>
-        We believe that you should answer this question for yourself.  If you
-        think this game is worth some amount of money, you can <a
-        href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donate
-        to Pingus via Paypal</a>. Otherwise, you can get the game for no
-        monetary cost.  Pingus is <a
-        href="http://www.gnu.org/philosophy/free-sw.html">Free Software</a> and
-        you are not forced to pay any amount of money for this game.
+          We believe that you should answer this question for yourself.  If you
+          think this game is worth some amount of money, you can <a
+                                                                    href="https://www.paypal.com/xclick/business=grumbel%40gmx.de&amp;item_name=Pingus+donation&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">donate
+            to Pingus via Paypal</a>. Otherwise, you can get the game for no
+          monetary cost.  Pingus is <a
+                                       href="http://www.gnu.org/philosophy/free-sw.html">Free Software</a> and
+          you are not forced to pay any amount of money for this game.
         </answer>
       </faq>		
 
       <faq date="14 Jan 2007">
         <question>Where can I get Pingus?</question>
         <answer>
-        You can get Pingus from the <a href="download.html">download</a> section.
+          You can get Pingus from the <a href="download.html">download</a> section.
         </answer>
       </faq>
 
@@ -45,8 +45,8 @@
         <question>Where can I find more levels?</question>
         <answer>
           <em>Foreword: Every level that isn't reachable via the GUI in Pingus
-          is unsupported and might be completely broken. If you want to try
-          them you are on your own.</em> <br /><br />
+            is unsupported and might be completely broken. If you want to try
+            them you are on your own.</em> <br /><br />
 
           Besides the 22 tested and cleaned up levels of the first island that
           come with Pingus. There are also around 120 levels that might be
@@ -72,15 +72,15 @@
         <question>What does it mean for Pingus to be Free Software?</question>
         <answer>
           Pingus is licensed under a <a
-          href="http://www.gnu.org/philosophy/free-sw.html">Free/Libre
-          Software</a> license called <a
-          href="http://www.gnu.org/licenses/gpl.html">GNU GPL</a>.
+                                        href="http://www.gnu.org/philosophy/free-sw.html">Free/Libre
+            Software</a> license called <a
+                                           href="http://www.gnu.org/licenses/gpl.html">GNU GPL</a>.
           Basically, this means that everybody is free to download,
           distribute, and modify it. Moreover, anyone can distribute
           modified works of Pingus, as long as those works are
           disributed under a <a
-          href="http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses">GPL
-          compatible license</a>. In other words, Pingus respects your
+                                href="http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses">GPL
+            compatible license</a>. In other words, Pingus respects your
           software freedoms.
         </answer>
       </faq>
@@ -90,7 +90,7 @@
         <answer>
           Technically, this isn't a question. You have to be more specific. A
           general suggestion is to search the <a
-          href="http://savannah.nongnu.org/bugs/?group=pingus">Bug Tracker</a>
+                                                 href="http://savannah.nongnu.org/bugs/?group=pingus">Bug Tracker</a>
           for similar problems.
         </answer>
       </faq>
@@ -115,8 +115,8 @@
             <li>Writing stories</li>
             <li>Programming
               <ul>
-              <li>debugging the editor</li>
-              <li>allowing for cygwin/mingw compilation</li>
+                <li>debugging the editor</li>
+                <li>allowing for cygwin/mingw compilation</li>
               </ul>
             </li>
             <li>Play testing</li>
@@ -183,7 +183,6 @@
 	  Alternatively, you can open any level through the editor
 	  <br /><br />
         </answer>
-      </faq>
       </faq>
     </faq-list>
   </section>

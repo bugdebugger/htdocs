@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <page title="Screenshots of Version 0.7">
-  <screenshot-menu/>
-  
+  <screenshot-menu/> 
   <screenshots>
     <item file="screen_0.7.0-1">The Main Menu</item>
     <item file="screen_0.7.0-2">The Story</item>
@@ -11,5 +10,4 @@
     <item file="screen_0.7.0-5">The Level Start Screen</item>
     <item file="screen_0.7.0-6">Another Level</item>
   </screenshots>
-
 </page>
