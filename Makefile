@@ -20,7 +20,7 @@ OUTPUTFILES = \
  build/levelbuilding-tutorial.html \
  build/development.html \
  build/manual.html \
- build/press.html
+ build/links.html
 
 .PHONY : images
 
