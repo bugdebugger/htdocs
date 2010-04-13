@@ -44,14 +44,16 @@ body
   text-decoration: none;
 }
 
+div.screenshotmenu-center { 
+  text-align: center;
+}
+
 ul.screenshotmenu
 {
   font-weight: bold;
-  display: block;
-  width: 35em;
+  display: inline-block;
   margin: 0 auto 1.5em auto;
   padding: 0.25em 0em;
-  text-align: center;
   background-color: $COLOR-PAGEHEADER$;
   border-style: solid;
   border-width: 1px;
@@ -275,6 +277,11 @@ a:hover {
 
 a {
   color: rgb(50,50,200);
+}
+
+.youtube { 
+  margin: 0 auto;
+  display: block;
 }
 
 /* EOF */

@@ -14,7 +14,7 @@
   <!-- Copy all html4 elements over to the resulting html page -->
   <xsl:template match=" a | abbr | acronym | address | applet | area | b | base | basefont | 
                        bdo | big | blockquote  | body | br | button | caption | center | cite | code | col | 
-                       colgroup | dd | del | dfn | dir | div | dl | dt | em | fieldset     | font | form | 
+                       colgroup | dd | del | dfn | dir | div | dl | dt | em | embed | fieldset     | font | form | 
                        frame | frameset | h1 | h2 | h3 | h4 | h5 | h6 | head | hr | html | i | iframe | img | 
                        input | ins | isindex    | kbd | label | legend | li | link | map | menu | meta | 
                        noframes | noscript | object | ol | optgroup | option | p     | param | pre | q | s | 
@@ -172,7 +172,9 @@
   </xsl:template>
 
   <xsl:template match="screenshot-menu">
+    <div class="screenshotmenu-center">
     <ul class="screenshotmenu">
+      <li><a href="videos.html">Videos</a></li>
       <li><a href="screenshots.html">0.7</a></li>
       <li><a href="screenshots-0.6.html">0.6</a></li>
       <li><a href="screenshots-0.5.html">0.5</a></li>
@@ -182,6 +184,7 @@
       <li><a href="screenshots-0.1.html">0.1</a></li>
       <li><a href="screenshots-0.0.html">0.0</a></li>
     </ul>
+    </div>
   </xsl:template>
 
   <xsl:template match="section-toc">

@@ -17,6 +17,7 @@ OUTPUTFILES = \
  build/screenshots-0.4.html \
  build/screenshots-0.5.html \
  build/screenshots-0.6.html \
+ build/videos.html \
  build/levelbuilding-tutorial.html \
  build/development.html \
  build/manual.html \
@@ -51,8 +52,8 @@ build/%.html :: %.xml default.xsl Makefile
 	@echo "----------------------------------------------------------------------------"
 	FILENAME=$<; \
 	echo $${FILENAME%%.xml}; \
-	xsltproc -param filename "'$${FILENAME%%.xml}'" --output $@ default.xsl $<; \
-	tidy -modify -quiet -ashtml $@
+	xsltproc -param filename "'$${FILENAME%%.xml}'" --output $@ default.xsl $<
+	# tidy -modify -quiet -ashtml $@
 
 upload: all
 	rsync --checksum --exclude "old/" --cvs-exclude -rv build/ \
