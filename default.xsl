@@ -4,10 +4,10 @@
   
   <xsl:output 
      method="html" 
-     indent="yes" 
-     doctype-public="-//W3C//DTD HTML 4.01//EN" 
-     doctype-system="http://www.w3.org/TR/html4/strict.dtd"
-     encoding="ISO-8859-1" />
+     indent="no" 
+     doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"
+     doctype-system="http://www.w3.org/TR/html4/loose.dtd"
+     encoding="utf-8" />
 
   <xsl:param name="filename"/>
 
@@ -91,14 +91,16 @@
           <a href="http://pingus.seul.org"><img src="images/logo_pingus.png" alt="Pingus" /></a>
         </div>
 
-        <div id="pagebody">
-          <div class="nav">
+        <div id="page">
+          <div id="nav">
             <xsl:apply-templates select="document('menu.xml')" />
           </div>
           
-          <h1 id="pagetitle"><xsl:value-of select="@title"/></h1>
+          <div id="header">
+            <h1><xsl:value-of select="@title"/></h1>
+          </div>
 
-          <div class="mainbody">
+          <div id="body">
             <xsl:apply-templates />
           </div>             
 

@@ -2,9 +2,9 @@
 <menu>
   <item name="welcome">Welcome</item>
   <item name="news">News</item>
+  <item name="screenshots">Screenshots</item>
   <item name="download">Download</item>
   <item name="faq">FAQ</item>
   <item name="contact">Contact</item>
-  <item name="screenshots">Screenshots</item>
   <item name="links">Links</item>
 </menu>

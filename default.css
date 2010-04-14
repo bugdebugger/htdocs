@@ -16,14 +16,46 @@ body
   margin:  0;
 }
 
-#pagebody
+#page
 { 
   width: 60em;
   margin-left: auto;
   margin-right: auto;
 }
 
-#footer {
+#nav
+{
+  text-align: center;
+  margin-bottom:  0;
+  padding: 0;
+  border-width: 0;
+}
+
+#header
+{
+  border-radius:         0.5em 0.5em 0em 0em;
+
+  background: $COLOR-PAGEHEADER$;
+
+  border-style: solid solid none solid;
+  border-color: black;
+  border-width: 1px;
+ 
+  position: relative;
+}
+
+#body
+{
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-style: none solid none solid;
+  border-width: 1px;
+  padding: 2em 4em 2em 4em;
+}
+
+#footer 
+{
   color: black;
   font-size: smaller;
   font-family: sans-serif;
@@ -36,115 +68,41 @@ body
   border-width: 1px; 
   margin-top: 0;
 
-  -moz-border-radius:    0em 0em 0.5em 0.5em;
-  -webkit-border-radius: 0em 0em 0.5em 0.5em;
+  border-radius:    0em 0em 0.5em 0.5em;
 }
 
-#footer a { 
-  text-decoration: none;
-}
-
-div.screenshotmenu-center { 
-  text-align: center;
-}
-
-ul.screenshotmenu
+#header h1
 {
-  font-weight: bold;
-  display: inline-block;
-  margin: 0 auto 1.5em auto;
-  padding: 0.25em 0em;
-  background-color: $COLOR-PAGEHEADER$;
-  border-style: solid;
-  border-width: 1px;
-  -moz-border-radius:    1em;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
-}
-
-ul.screenshotmenu li
-{
-  display: inline;
-  list-style-type: none;
-}
-
-ul.screenshotmenu li a
-{ 
-  padding: 0.25em 1em;
-  text-decoration: none;
-}
-
-ul.screenshotmenu li a:hover
-{ 
-  background-color: white;
-  -moz-border-radius:    1em;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
-}
-
-h1,h2,h3,h4
-{
-  font-family: sans-serif;
-  margin-top: 0px;
-}
-
-h2,h3,h4
-{ 
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: lightgray;
-  padding-left: 0.5em;
-}
-
-#pagetitle
-{
-  border-radius:    0.5em 0.5em 0em 0em;
-  -moz-border-radius:    0.5em 0.5em 0em 0em;
-  -webkit-border-radius: 0.5em 0.5em 0em 0em;
-  background: $COLOR-PAGEHEADER$;
   color: white;
-  border-style: solid solid none solid;
-  border-color: black;
-  border-width: 1px;
-  padding-left: 3em;
-  padding-top: 0.125em;
-  padding-bottom: 0.125em;
-  position: relative;
-  margin-top:    0;
-  margin-bottom: 0;
+
+  margin: 0 3em;
+  padding: 0.125em 0;
 }
 
-p { 
-  text-indent: 1em;
+#footer a 
+{ 
+  text-decoration: none;
 }
 
-div.nav
-{
-  text-align: center;
-  margin-bottom:  0;
-  padding: 0;
-  border-width: 0;
-}
-
-div.nav ul
+#nav ul
 { 
   list-style-type: none;
   margin:  0;
   padding: 0;
 }
 
-div.nav ul li
+#nav ul>li
 { 
   display: inline;
   margin:  0;
   padding: 0;
 }
 
-a.menuitem:visited { 
+#nav a.menuitem:visited { 
   color: black;
 }
 
-a.menuitem
+#nav a.menuitem
 {
   text-decoration: none;
   margin:  0.25em 0.25em 0 0.25em;
@@ -152,8 +110,7 @@ a.menuitem
 
   color: black;        
 
-  -moz-border-radius:    0.5em 0.5em 0 0;
-  -webkit-border-radius: 0.5em 0.5em 0 0;
+  border-radius:         0.5em 0.5em 0 0;
 
   font-size: 1em;
   font-weight: bold;
@@ -172,12 +129,12 @@ a.menuitem
   top: 0.25em;
 }
 
-a.menuitem:hover
+#nav a.menuitem:hover
 {
   background-color: $COLOR-PAGEHEADER-LIGHT$;
 }
 
-a.menuitemcurrent
+#nav a.menuitemcurrent
 { 
   background-color: $COLOR-PAGEHEADER$;
 
@@ -188,6 +145,57 @@ a.menuitemcurrent
   position: relative;
   top: 1px;
   z-index: 1;
+}
+
+div.screenshotmenu-center 
+{ 
+  text-align: center;
+}
+
+ul.screenshotmenu
+{
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 auto 1.5em auto;
+  padding: 0.25em 0em;
+  background-color: $COLOR-PAGEHEADER$;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1em;
+}
+
+ul.screenshotmenu>li
+{
+  display: inline;
+  list-style-type: none;
+}
+
+ul.screenshotmenu>li a
+{ 
+  padding: 0.25em 1em;
+  text-decoration: none;
+}
+
+ul.screenshotmenu>li a:hover
+{ 
+  background-color: white;
+  border-radius: 1em;
+}
+
+
+h2,h3,h4
+{ 
+  font-family: sans-serif;
+  margin-top: 0px;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: lightgray;
+  padding-left: 0.5em;
+}
+
+p { 
+  text-indent: 1em;
 }
 
 div.newsitem { 
@@ -205,30 +213,6 @@ div.newsdate {
 div.newsbody {
   padding-top: 0.5em;
   padding-left: 1em;
-}
-
-div.mainbody
-{
-  background-color: white;
-  color: black;
-  border-color: black;
-  border-style: none solid none solid;
-  border-width: 1px;
-  padding: 2em 4em 2em 4em;
-}
-
-p.warning {
-  font-size: 1.5em;
-  color: red;
-  background-color: black;
-  font-family: sans-serif;
-  border-style: solid;
-  border-color: red;
-  padding: .3em;
-}
-
-p.warning a {
-  color: red;
 }
 
 div.answer {
@@ -261,11 +245,9 @@ a:visited img.screenshot {
   border-color: gray;
 }
 
-
 a:hover img.screenshot {
   border-color: white;
 }
-
 
 a:visited {
   color: rgb(0,0,100);

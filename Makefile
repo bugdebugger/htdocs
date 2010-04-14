@@ -36,14 +36,14 @@ images :
 clean :
 	rm -vf $(OUTPUTFILES)
 
-build/default.css : default.css default.css.sed
-	sed -f "default.css.sed" $< > $@
+build/default.css : default.css default.css.sed compatibility.sed
+	sed -f "compatibility.sed" -f "default.css.sed" $< > $@
 
-build/snow.css : default.css default.css.sed
-	sed -f "default.css.sed" $< > $@
+build/snow.css : default.css default.css.sed compatibility.sed
+	sed -f "compatibility.sed" -f "default.css.sed" $< > $@
 
-build/desert.css : default.css desert.css.sed
-	sed -f "desert.css.sed" $< > $@
+build/desert.css : default.css desert.css.sed compatibility.sed
+	sed -f "compatibility.sed" -f "desert.css.sed" $< > $@
 
 build/index.html : index.html
 	cp -v $< $@
