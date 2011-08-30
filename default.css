@@ -51,7 +51,7 @@ body
   border-color: black;
   border-style: none solid none solid;
   border-width: 1px;
-  padding: 2em 4em 2em 4em;
+  padding: 2em 4em;
 }
 
 #footer 
@@ -64,7 +64,7 @@ body
   background: $COLOR-PAGEHEADER$;
   padding: 5px;
   border-style: none solid solid solid; 
-  border-color: COLOR-BACKGROUND;
+  border-color: black;
   border-width: 1px; 
   margin-top: 0;
 
@@ -191,7 +191,7 @@ h2,h3,h4
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: lightgray;
-  padding-left: 0.5em;
+  padding-left: 1.0em;
 }
 
 p { 
@@ -234,36 +234,41 @@ img
 
 img.screenshot {
   border-style: solid;
-  border-width: medium;
+  border-width: thin;
 }
 
 a img.screenshot {
-  border-color: gray;
+  border-color: black;
+  margin: 1em;
 }
 
 a:visited img.screenshot {
-  border-color: gray;
+  border-color: black;
 }
 
 a:hover img.screenshot {
-  border-color: white;
+  border-color: grey;
 }
 
 a:visited {
-  color: rgb(0,0,100);
+  color: $COLOR-LINK-VISITED$;
 }
 
 a:hover {
-  color: black;
+  color: $COLOR-LINK-HOVER$;
 }
 
 a {
-  color: rgb(50,50,200);
+  color: $COLOR-LINK$;
 }
 
 .youtube { 
   margin: 0 auto;
   display: block;
+}
+
+dd { 
+  margin-bottom: 1em;  
 }
 
 /* EOF */

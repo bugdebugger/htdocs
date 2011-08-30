@@ -23,15 +23,14 @@ OUTPUTFILES = \
  build/manual.html \
  build/links.html
 
-.PHONY : images
 
-all : $(OUTPUTFILES)
+all : build $(OUTPUTFILES) images
+
+build:
 	mkdir -p build/
 
 images :
-	mkdir -p build/images/
-	cp -v images/*.png build/images/
-	cp -v images/*.jpg build/images/
+	rsync -rCtluv images/ build/images/
 
 clean :
 	rm -vf $(OUTPUTFILES)
@@ -53,7 +52,9 @@ build/%.html :: %.xml default.xsl Makefile
 	FILENAME=$<; \
 	echo $${FILENAME%%.xml}; \
 	xsltproc -param filename "'$${FILENAME%%.xml}'" --output $@ default.xsl $<
-	# tidy -modify -quiet -ashtml $@
+	sed -i 's/<!DOCTYPE html PUBLIC "XSLT-compat">/<!DOCTYPE html>/' $@
+	# sed -i 's/<!DOCTYPE html PUBLIC "XSLT-compat" "">/<!DOCTYPE html>/' $@
+	# tidy -modify -indent -wrap 1000 -quiet -ashtml $@ || (if [ $$? -eq 2 ]; then rm -v $@; exit 1; fi)
 
 upload: all
 	rsync --checksum --exclude "old/" --cvs-exclude -rv build/ \
@@ -61,6 +62,6 @@ upload: all
 
 #tidy -asxml -indent -quiet -modify $@
 
-.PHONY: all clean upload
+.PHONY: all clean upload images
 
 # EOF #

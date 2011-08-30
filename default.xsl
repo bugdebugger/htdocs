@@ -3,11 +3,11 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <xsl:output 
+     indent="yes" 
      method="html" 
-     indent="no" 
-     doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"
-     doctype-system="http://www.w3.org/TR/html4/loose.dtd"
-     encoding="utf-8" />
+     doctype-public="XSLT-compat"
+     encoding="UTF-8"
+     />
 
   <xsl:param name="filename"/>
 
@@ -73,7 +73,14 @@
         <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
       </head>
       <body>
-        <div style="display: inline; float: right; margin: 0; padding: 0; position: absolute; right: 16px; top: 16px;">
+        <div style="position: absolute; left: 16px; top: 16px;">
+          <script type="text/javascript">
+	    var flattr_url = 'http://pingus.seul.org';
+          </script>
+          <script src="http://api.flattr.com/button/load.js" type="text/javascript"></script>
+        </div>
+
+        <div style="position: absolute; right: 16px; top: 16px;">
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <div style="margin: 0px; padding: 0px;">
               <input type="hidden" name="cmd" value="_xclick" />
@@ -82,7 +89,7 @@
               <input type="hidden" name="no_note" value="1" />
               <input type="hidden" name="currency_code" value="EUR" />
               <input type="hidden" name="tax" value="0" />
-              <input type="image" src="http://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="donate via PayPal" />
+              <input type="image" src="http://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="donate via PayPal" />
             </div>
           </form>
         </div>

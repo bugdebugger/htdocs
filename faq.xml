@@ -1,126 +1,78 @@
 <?xml version="1.0" ?>
-<?xml-stylesheet type="text/xsl" href="default.xsl" ?>
-<page title="FAQ">
-  
-  <section title="It doesn't work! What now?">
-    <p>
-      The following frequently asked questions (along with answers) will
-      provide you with solutions some to common errors, problems or
-      misunderstandings when you try to compile, use or get otherwise
-      involved with Pingus.
-    </p>
-  </section>
-
+<page title="FAQ"> 
   <div id="faqtoc"/>
 
   <section title="FAQs - Frequently Asked Questions (and Answers)">
     <faq-list>
-      <faq date="14 Jan 2007">
+      <faq date="04 Oct 2010">
         <question>Where can I find more levels?</question>
         <answer>
-          <p>
-            <em>Foreword: Every level that isn't reachable via the GUI in Pingus
-              is unsupported and might be completely broken. If you want to try
-              them you are on your own.</em>
-          </p>
-
           <p>
             Besides the 22 tested and cleaned up levels of the first island that
             come with Pingus. There are also around 120 levels that might be
             playable and another 100 levels that are incomplete at the moment.
             These levels can be found in the <tt>data/levels/playable</tt> and
-            <tt>data/levels/wip/</tt> (wip = work in progress). The levels in the
-            <tt>playable/</tt> directory might be playable, but there is no
-            guarantee for that. They haven't been tested. They might be broken
-            due to engine changes.  They might be far too easy or far too hard or
-            simply incomplete. The <tt>wip/</tt> directory contains levels that
-            are not playable at all. Some of them might even lack entrances
-            and/or exits. Don't be surprised that you can't play them. Instead,
-            these levels  can be used as framework for levels you want to create
-            yourself with the level editor.  Yes, you heard it right, Pingus
-            comes with a fully working level editor. It might not be 100% bug
-            free, but it was used to construct all the levels that you see in the
-            game, so don't hesitate to try it out and build your own levels.
+            <tt>data/levels/wip/</tt> (wip = work in progress)
+            directories:
           </p>
+          <dl>
+            <dt><tt>data/levels/playable/</tt></dt>
+            <dd>
+              The levels in the
+              <tt>playable/</tt> directory might be playable, but there
+              is no guarantee for that. They might been broken due to
+              engine changes, they might be far too easy or far too hard
+              or simply incomplete.
+            </dd>
+
+            <dt><tt>data/levels/wip/</tt></dt>
+            <dd>
+              The <tt>wip/</tt> directory contains
+              levels that are not playable at all. Some of them might
+              even lack entrances and/or exits. Don't be surprised that
+              you can't play them. Instead, these levels can be used as
+              starting points for levels you want to create yourself
+              with the level editor.
+            </dd>
+          </dl>
         </answer>
       </faq>
 
-
-      <faq date="14 Jan 2007">
-        <question>What does it mean for Pingus to be Free Software?</question>
+      <faq date="04 Dec 2010">
+        <question>
+          How do I start the other levels?
+        </question>
         <answer>
-          Pingus is licensed under a <a
-                                        href="http://www.gnu.org/philosophy/free-sw.html">Free/Libre
-            Software</a> license called <a
-                                           href="http://www.gnu.org/licenses/gpl.html">GNU GPL</a>.
-          Basically, this means that everybody is free to download,
-          distribute, and modify it. Moreover, anyone can distribute
-          modified works of Pingus, as long as those works are
-          disributed under a <a
-                                href="http://www.gnu.org/philosophy/license-list.html#GPLCompatibleLicenses">GPL
-            compatible license</a>. In other words, Pingus respects your
-          software freedoms.
-        </answer>
-      </faq>
-
-      <faq date="14 Jan 2007">
-        <question>I tried compiling it, but something didn't work!</question>
-        <answer>
-          Technically, this isn't a question. You have to be more specific. A
-          general suggestion is to search the <a
-                                                 href="http://savannah.nongnu.org/bugs/?group=pingus">Bug Tracker</a>
-          for similar problems.
+	  <p>
+            There are two ways to start the levels. The first one is to do it simply via the command line:
+          </p>
+          <p>
+            <code>pingus data/levels/playable/somelevel.pingus</code>
+          </p>
+          <p>
+            The other, probably more userfriendly, way is to simply
+            load them into the level editor and then click the play
+            button.
+          </p>          
         </answer>
       </faq>
       
-      <faq date="13 Dec 2009">
-        <question>
-          Why is Pingus still not done after being in development for so many years?
-        </question>
-        <answer>
-          Because <em>you</em> didn't contribute! Joking aside, most
-          of the developers involved with Pingus are also involved
-          with a heap load of other projects, so it takes time to find
-          time to develop on the game. Help is, of course, always
-          welcome.
-        </answer>
-      </faq>
-      <faq date="13 Dec 2009">
-        <question>How can I help the development of Pingus?</question>
-        <answer> This project needs help in the following areas:
-          <ul>
-            <li>Writing documentation</li>
-            <li>Writing stories</li>
-            <li>Programming
-              <ul>
-                <li>debugging the editor</li>
-                <li>allowing for cygwin/mingw compilation</li>
-              </ul>
-            </li>
-            <li>Play testing</li>
-          </ul>
-          <p>
-            The fastest way to join development is to join the
-            development stuff on IRC at <tt>irc.freenode.net</tt> in
-            channel <tt><a href="irc://freenode.net/#pingus">#pingus</a></tt>.
-          </p>
-        </answer>
-      </faq>
-
       <faq date="14 Jan 2007">
         <question>
           Pingus runs too slow. Is there any way to make it faster?
         </question>
 
         <answer>
-          <p>There are multiple ways to tune the running speed of
+          <p>
+            There are multiple ways to tune the running speed of
             Pingus. <br /> Firstly, reducing the screen colour
             depth (to 16bit, for example) on a slower computer might
             give you a boost of around 50% percent, depending on your
             hardware. X11 doesn't allow switching color depth at run
             time, and the exact instructions for doing this are outside
             of the scope of this FAQ. Consult your distribution
-            documentation for more information.</p>
+            documentation for more information.
+          </p>
 
           <p>Secondly, a gain in speed can be achieved by
             reducing the display resolution of Pingus. For example, if
@@ -149,18 +101,6 @@
 
           <p>Finally, the 'F11' key can help you a great deal in
             your optimisation process by showing the frame-rate counter.</p>
-        </answer>
-      </faq>
-      <faq date="13 Dec 2009">
-        <question>
-          MacOS: How do I open other levels on a mac? './pingus mylevel.pingus' doesn't work?
-        </question>
-        <answer>
-	  <p>
-            You might be using an older, broken, version of the
-	    game. Make sure you are using at least 0.7.2.<br /><br />
-	    Alternatively, you can open any level through the editor
-          </p>
         </answer>
       </faq>
     </faq-list>
