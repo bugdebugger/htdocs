@@ -27,14 +27,14 @@
   </section>
 
   <section title="Development Versions">
-    <p>The SVN tree can be checked out via:</p>
+    <p>The Git tree can be checked out via:</p>
     <ul>
-      <li><tt>svn co svn://svn.berlios.de/pingus/trunk/pingus/</tt></li>
+      <li><tt>git clone https://code.google.com/p/pingus/</tt></li>
     </ul>
 
-    <p>The Savannah Project Page can be found at:</p>
+    <p>The Google Code project page can be found at:</p>
     <ul>
-      <li><a href="http://savannah.nongnu.org/projects/pingus/">http://savannah.nongnu.org/projects/pingus/</a></li>
+      <li><a href="http://code.google.com/p/pingus/">http://code.google.com/p/pingus/</a></li>
     </ul>
   </section>
 

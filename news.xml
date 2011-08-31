@@ -1,5 +1,14 @@
 <?xml version="1.0" ?>
 <page title="News">
+  <section title="2011">
+    <news>
+      <item date="31. Aug 2011">
+        The Pingus source code repository has been moved to Git and is now located at 
+        <a href="http://code.google.com/p/pingus/source/checkout">code.google.com</a>.
+      </item>
+    </news>
+  </section>
+  
   <section title="2010">
     <news>
       <item date="12. Apr 2010">

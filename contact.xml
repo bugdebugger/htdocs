@@ -15,25 +15,25 @@
         <a href="http://lists.nongnu.org/mailman/listinfo/pingus-devel">pingus-devel</a>
 	- Pingus Developer List (for general discussion about the game, the development, etc.).
       </li>
-
+      <!--
       <li>
         <a href="http://lists.nongnu.org/mailman/listinfo/pingus-cvs">pingus-cvs</a>
 	- Pingus CVS Commit List (only programmers need this one).
       </li>
+      -->
     </ul>
     <p>There is currently no pingus-users mailing list due to the lack
       of traffic, so using the pingus-devel list for questions about the
       game is perfectly ok.</p>
   </section>
 
-  
   <section title="Bug Reports">
     <p>
       If you want to submit a bug report about Pingus or simply browse
-      the list of open bugs, you can do so at the <a
-      href="http://savannah.nongnu.org/bugs/?group=pingus">Savannah Bug
-      Tracker</a>. Submitting stuff there should make it sure that it
-      doesn't get lost.
+      the list of open bugs, you can do so at
+      the <a href="http://code.google.com/p/pingus/issues/list">Pingus
+      Issue Tracker</a>. Submitting stuff there should make it sure
+      that it doesn't get lost.
     </p>
   </section>
 
@@ -58,7 +58,7 @@
     <dl>
       <dt>Ingo Ruhnke (nick: grumbel) [Maintainer/Programmer]</dt>
       <dd> 
-        Email: <a href="mailto:grumbel@gmx.de?subject=Pingus">grumbel@gmx.de</a><br/>
+        Email: <a href="mailto:grumbel@gmail.com?subject=Pingus">grumbel@gmail.com</a><br/>
         Jabber: <a href="xmpp:grumbel@jabber.org">xmpp:grumbel@jabber.org</a><br/>
         ICQ UIN: 59461927
       </dd>
