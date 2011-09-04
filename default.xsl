@@ -3,7 +3,6 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <xsl:output 
-     indent="yes" 
      method="html" 
      doctype-public="XSLT-compat"
      encoding="UTF-8"
@@ -184,7 +183,8 @@
     <div class="screenshotmenu-center">
     <ul class="screenshotmenu">
       <li><a href="videos.html">Videos</a></li>
-      <li><a href="screenshots.html">0.7</a></li>
+      <li><a href="screenshots.html">0.8</a></li>
+      <li><a href="screenshots-0.7.html">0.7</a></li>
       <li><a href="screenshots-0.6.html">0.6</a></li>
       <li><a href="screenshots-0.5.html">0.5</a></li>
       <li><a href="screenshots-0.4.html">0.4</a></li>

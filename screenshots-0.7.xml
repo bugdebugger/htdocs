@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<page title="Screenshots of Version 0.7">
+  <screenshot-menu/> 
+  <screenshots>
+    <item file="screen_0.7.0-1">The Main Menu</item>
+    <item file="screen_0.7.0-2">The Story</item>
+    <item file="screen_0.7.0-3">The Worldmap</item>
+    <item file="screen_0.7.0-4">The First Level</item>
+    <item file="screen_0.7.0-5">The Level Start Screen</item>
+    <item file="screen_0.7.0-6">Another Level</item>
+  </screenshots>
+</page>

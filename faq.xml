@@ -4,6 +4,18 @@
 
   <section title="FAQs - Frequently Asked Questions (and Answers)">
     <faq-list>
+      <faq date="01 Sep 2011">
+        <question>I am stuck, how can I beat level XY?</question>
+        <answer>
+          <p>
+            You can find
+            full <a href="http://www.youtube.com/playlist?list=PL85CB546B69E1E313">walkthrough
+              videos for the Tutorial Island and the Halloween 2007
+              levelset</a> on Youtube.
+          </p>
+        </answer>
+      </faq>
+
       <faq date="04 Oct 2010">
         <question>Where can I find more levels?</question>
         <answer>

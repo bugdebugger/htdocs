@@ -3,7 +3,8 @@ OUTPUTFILES = \
  build/desert.css \
  build/snow.css \
  build/index.html      \
- build/welcome.html  \
+ build/about.html  \
+ build/documentation.html  \
  build/news.html  \
  build/news_old.html  \
  build/faq.html      \
@@ -17,6 +18,7 @@ OUTPUTFILES = \
  build/screenshots-0.4.html \
  build/screenshots-0.5.html \
  build/screenshots-0.6.html \
+ build/screenshots-0.7.html \
  build/videos.html \
  build/levelbuilding-tutorial.html \
  build/development.html \
@@ -47,21 +49,21 @@ build/desert.css : default.css desert.css.sed compatibility.sed
 build/index.html : index.html
 	cp -v $< $@
 
-build/%.html :: %.xml default.xsl Makefile
+build/%.html :: %.xml default.xsl Makefile menu.xml
 	@echo "----------------------------------------------------------------------------"
 	FILENAME=$<; \
 	echo $${FILENAME%%.xml}; \
 	xsltproc -param filename "'$${FILENAME%%.xml}'" --output $@ default.xsl $<
-	sed -i 's/<!DOCTYPE html PUBLIC "XSLT-compat">/<!DOCTYPE html>/' $@
-	# sed -i 's/<!DOCTYPE html PUBLIC "XSLT-compat" "">/<!DOCTYPE html>/' $@
-	# tidy -modify -indent -wrap 1000 -quiet -ashtml $@ || (if [ $$? -eq 2 ]; then rm -v $@; exit 1; fi)
+	tidy -modify -wrap 10000 -quiet -ashtml $@
+	sed -i 's_<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">_<!DOCTYPE html>_g' $@
 
-upload: all
-	rsync --checksum --exclude "old/" --cvs-exclude -rv build/ \
-          grumbel@pingus.seul.org:/home/pingus/public_html/
+# Temporary disabled to avoid accidents: 04. Sep 2011
+# upload: all
+#	rsync --checksum --exclude "old/" --cvs-exclude -rv build/ \
+#          grumbel@pingus.seul.org:/home/pingus/public_html/
 
 #tidy -asxml -indent -quiet -modify $@
 
-.PHONY: all clean upload images
+.PHONY: all clean images
 
 # EOF #
