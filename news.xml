@@ -2,6 +2,41 @@
 <page title="News">
   <section title="2011">
     <news>
+      <item date="10. Oct 2011">
+        <p>
+          At long last, Pingus 0.7.4 is out. This release does not yet
+          continue the main story, but it contains all the little
+          improvements and bug fixes that have been allocated over the
+          last few years. As a bonus however this release contains two
+          new levelsets with 27 new levels. Some more things that have
+          changed in this release are:
+        </p>       
+        <ul>
+          <li>fixed game not starting when no soundcard is present</li>
+          <li>all halloween and tutorial levels have been converted to a minimum size of 1920x1200 so they can be played in fullscreen without letterboxing</li>
+          <li>new --userdir command line switch to set the directory where savegames are saved</li>
+          <li>menu getting confused by fast succedding clicks fixed</li>
+          <li>level-demo recording and playback are back (files not compatible between x86 and x86-64)</li>
+          <li>window resize support throughout the whole game</li>
+          <li>dirty-rectangles drawing for improved performance with software rendering</li>
+          <li>OpenGL rendering</li>
+          <li>new blackboard graphic</li>
+          <li>Unicode support</li>
+          <li>two new levelsets, "Desert" and "Factory Campaign", with 27 new levels</li>
+          <li>added a man-page</li>
+          <li>deadly fall height has been increased</li>
+          <li>support for prefab objects and groups in the editor</li>
+          <li>cleaned up digger, miner and basher paths</li>
+          <li>added an option menu</li>
+          <li>lots of minor bug fixes</li>
+          <li>bitmap fonts have been generated with anti-aliasing</li>
+        </ul>
+      </item>
+
+      <item date="01. Sep 2011">
+        Stuck in Pingus? Full <a href="http://www.youtube.com/playlist?list=PL85CB546B69E1E313">walkthrough videos for the Tutorial Island and the Halloween 2007 levelset</a> are available on Youtube.
+      </item>
+
       <item date="31. Aug 2011">
         The Pingus source code repository has been moved to Git and is now located at 
         <a href="http://code.google.com/p/pingus/source/checkout">code.google.com</a>.
