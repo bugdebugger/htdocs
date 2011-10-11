@@ -2,14 +2,30 @@
 <page title="News">
   <section title="2011">
     <news>
+      <item date="12. Oct 2011">
+        <p>
+          There is now a preliminary Win32 build available for Pingus
+          0.7.4. Note that this is a rather rough release, it doesn't
+          contain an installer yet and has not been tested at all on
+          native Windows, just in Wine. Use it at your own risk.
+        </p>
+        <ul>
+          <li><a href="http://pingus.seul.org/~grumbel/tmp/md5/90a04be9d1d57101d1cb91b6121a6cb9-pingus-0.7.4-3f338c61e9554b88b17fbef319465122cf1d8b31-win32.zip">pingus-0.7.4-3f338c61e9554b88b17fbef319465122cf1d8b31-win32.zip</a></li>
+        </ul>
+      </item>
+
       <item date="10. Oct 2011">
         <p>
-          At long last, Pingus 0.7.4 is out. This release does not yet
-          continue the main story, but it contains all the little
-          improvements and bug fixes that have been allocated over the
-          last few years. As a bonus however this release contains two
-          new levelsets with 27 new levels. Some more things that have
-          changed in this release are:
+          At long
+          last, <a href="http://pingus.googlecode.com/files/pingus-0.7.4.tar.bz2">Pingus
+          0.7.4</a> is out. This release does not yet continue the
+          main story, but it contains all the little improvements and
+          bug fixes that have been allocated over the last few years.
+          As a bonus however this release contains two new levelsets
+          with 27 new levels. This release is source only at the
+          moment and will compile in Linux. Windows and MacOSX
+          versions might follow at a later point. Some more things
+          that have changed in this release are:
         </p>       
         <ul>
           <li>fixed game not starting when no soundcard is present</li>
