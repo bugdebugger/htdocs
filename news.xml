@@ -2,6 +2,19 @@
 <page title="News">
   <section title="2011">
     <news>
+      <item date="23. Oct 2011">
+        <p>
+          Pingus 0.7.5 is nearing completion. A first release candidate is now available for testing at:
+        </p>
+        <ul>
+          <li><a href="http://pingus.googlecode.com/files/pingus-0.7.5rc1.tar.bz2">pingus-0.7.5rc1.tar.bz2 - source code</a></li>
+          <li><a href="http://pingus.googlecode.com/files/Pingus-0.7.5rc1.exe">Pingus-0.7.5rc1.exe - Windows version</a></li>
+        </ul>
+        <p>
+          Final release will follow in a few days.
+        </p>
+      </item>
+
       <item date="12. Oct 2011">
         <p>
           There is now a preliminary Win32 build available for Pingus
