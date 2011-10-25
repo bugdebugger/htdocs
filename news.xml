@@ -2,6 +2,25 @@
 <page title="News">
   <section title="2011">
     <news>
+      <item date="25. Oct 2011">
+        <p>
+          Pingus 0.7.5 is out, changes include among some fixes, 10
+          brand new Halloween levels. Linux and Windows versions are
+          provided. No Mac version at this point, it might fallow
+          later on.
+        </p>
+        <ul>
+          <li>fixed memory leak in OpenGL renderer</li>
+          <li>added support for Win32 cross-compilation with mingw32</li>
+          <li>added gamespeed adjustments via KPPlus, KPMinus, KPEnter</li>
+          <li>added single-stepping the game with 'S'</li>
+          <li>added better application icon</li>
+          <li>added access to all levelsets in developer-mode (Ctrl-m)</li>
+          <li>added 10 new Halloween levels</li>
+        </ul>
+        <a href="download.html">Download</a>
+      </item>
+      
       <item date="23. Oct 2011">
         <p>
           Pingus 0.7.5 is nearing completion. A first release candidate is now available for testing at:
@@ -117,8 +136,8 @@
           <li>numerous other command line parsing bugs fixed</li>
           <li>separate images for gfx and colmap are used again</li>
           <li>input subsystem rewritten from scratch, supports now gamepads,
-            usbmice, wiimote (some of those might unfinished and not enabled by
-            default)</li>
+          usbmice, wiimote (some of those might unfinished and not enabled by
+          default)</li>
         </ul>
       </item>
 
@@ -133,7 +152,7 @@
           <li>s-expression based file format (converter scripts are available)</li>
           <li>PPC and 64bit support</li>
           <li>language support for Czech, German, Finish, Italian, Norwegian,
-            Serbian, Turkish, Danish, Dutch, Spanish, Fench and Polish</li>
+          Serbian, Turkish, Danish, Dutch, Spanish, Fench and Polish</li>
           <li>level editor temporarly removed</li>
           <li>a little less fps then the ClanLib version</li>
           <li>no new levels or other main features</li>
@@ -145,7 +164,7 @@
         Pingus gfx in the creation of their Table Lemmings game, you can find screenshots 
         at <a href="http://www.flickr.com/photos/davidh/567995242/">Flickr</a> and at their page at the 
         <a href="http://media.informatik.rwth-aachen.de/tiki-index.php?page=table-lemmings">RWTH
-          Aachen</a>.
+        Aachen</a>.
       </item>
     </news>
   </section>
