@@ -1,6 +1,6 @@
 s/\$BACKGROUND-IMAGE\$/"images\/halloween_background.jpg"/g;
 
-s/\$COLOR-BACKGROUND\$/#01181f/g;
+s/\$COLOR-BACKGROUND\$/#000/g;
 
 s/\$COLOR-PAGEHEADER\$/#38661e/g;
 s/\$COLOR-PAGEHEADER-DIMMED\$/#463f24/g;
