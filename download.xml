@@ -9,8 +9,10 @@
       </ul>
     </subsection>
 
-    <subsection title="MacOSX">
-      <p>There are two unofficial ports to MacOSX, which can be found at:</p>
+    <subsection title="MacOSX (outdated)">
+      <p>There are two unofficial ports to MacOSX of older versions of
+      Pingus. There is currently no MacOSX port of the latest
+      version</p>
       <ul>
          <li><a href="http://www.apple.com/downloads/macosx/games/cards_puzzle/pingus.html">Pingus 0.7.2 for Intel Macs</a> [15MB]</li>
          <li><a href="http://community.games4mac.de/index.php?showtopic=17290">Pingus 0.7.0 for PPC Macs</a> [60MB]</li>
