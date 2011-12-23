@@ -67,7 +67,8 @@
     <html>
       <head>
         <title>Pingus - <xsl:value-of select="@title" /></title>
-        <link rel="stylesheet" type="text/css" href="halloween.css" />
+        <link rel="stylesheet" type="text/css" href="xmas.css" />
+        <link rel="alternate stylesheet" title="Desert Theme" type="text/css" href="halloween.css" />
         <link rel="alternate stylesheet" title="Desert Theme" type="text/css" href="desert.css" />
         <link rel="alternate stylesheet" title="Snow Theme" type="text/css" href="snow.css" />
         <link rel="shortcut icon" href="images/favicon.png" type="image/png" />

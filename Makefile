@@ -1,6 +1,7 @@
 OUTPUTFILES = \
  build/default.css \
  build/desert.css \
+ build/xmas.css \
  build/halloween.css \
  build/snow.css \
  build/index.html      \
@@ -47,6 +48,9 @@ build/desert.css : default.css desert.css.sed compatibility.sed
 
 build/halloween.css : default.css halloween.css.sed compatibility.sed
 	sed -f "compatibility.sed" -f "halloween.css.sed" $< > $@
+
+build/xmas.css : default.css xmas.css.sed compatibility.sed
+	sed -f "compatibility.sed" -f "xmas.css.sed" $< > $@
 
 build/index.html : index.html
 	cp -v $< $@

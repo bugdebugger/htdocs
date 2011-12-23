@@ -1,0 +1,8 @@
+s/\$BACKGROUND-IMAGE\$/"images\/xmas_background.jpg"/g;
+s/\$COLOR-BACKGROUND\$/#000000/g;
+s/\$COLOR-PAGEHEADER\$/#cd1d00/g;
+s/\$COLOR-PAGEHEADER-DIMMED\$/#911400/g;
+s/\$COLOR-PAGEHEADER-LIGHT\$/#e97664/g;
+s/\$COLOR-LINK-VISITED\$/rgb(0,0,100)/g;
+s/\$COLOR-LINK-HOVER\$/rgb(0,0,0)/g;
+s/\$COLOR-LINK\$/rgb(50,50,200)/g;
