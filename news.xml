@@ -2,6 +2,15 @@
 <page title="News">
   <section title="2011">
     <news>
+      <item date="24. Dec 2011">
+        <p>Pingus 0.7.6 is out, not much changes to the core game, but 10 brand new Xmas themed levels.</p>
+        <ul>
+          <li>added new SVG icons for Pingus</li>
+          <li>added 10 new xmas themed levels</li>
+          <li>added ability to sort levelsets by priority</li>
+        </ul>
+      </item>
+
       <item date="25. Oct 2011">
         <p>
           Pingus 0.7.5 is out, changes include among some fixes, 10
