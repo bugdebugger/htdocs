@@ -2,6 +2,27 @@
 <page title="News">
   <section title="2011">
     <news>
+      <item date="30. Dec 2011">
+        The MacOSX packages got another update, which should fix the remaining known issues.
+      </item>
+
+      <item date="29. Dec 2011">
+        A new <a
+        href="http://pingus.googlecode.com/files/Pingus-0.7.6.1.dmg">MacOSX
+        port of Pingus 0.7.6</a> is available, it should fix some
+        issues with the previous one.
+      </item>
+
+      <item date="27. Dec 2011">
+        <p>
+          <a href="mailto:jonas.baehr@web.de">Jonas Bähr</a> has build
+          a <a
+          href="http://pingus.googlecode.com/files/Pingus-0.7.6.dmg">MacOSX
+          port of Pingus 0.7.6</a>, you can find it in the download
+          section.
+        </p>
+      </item>
+
       <item date="24. Dec 2011">
         <p>Pingus 0.7.6 is out, not much changes to the core game, but 10 brand new Xmas themed levels.</p>
         <ul>
