@@ -4,26 +4,27 @@
   <section title="Playable Versions - Stable">
     <subsection title="Windows">
       <ul>
-        <li><a href="http://pingus.googlecode.com/files/Pingus-0.7.6.exe">Pingus-0.7.6.exe</a> [16 Mb]<br />
-        </li>
+        <li><a href="http://pingus.googlecode.com/files/Pingus-0.7.6.exe">Pingus-0.7.6.exe</a> [16 Mb]</li>
       </ul>
     </subsection>
 
-    <subsection title="MacOSX (outdated)">
-      <p>There are two unofficial ports to MacOSX of older versions of
-      Pingus. There is currently no MacOSX port of the latest
-      version</p>
+    <subsection title="MacOSX">
       <ul>
-         <li><a href="http://www.apple.com/downloads/macosx/games/cards_puzzle/pingus.html">Pingus 0.7.2 for Intel Macs</a> [15MB]</li>
-         <li><a href="http://community.games4mac.de/index.php?showtopic=17290">Pingus 0.7.0 for PPC Macs</a> [60MB]</li>
+        <li><a href="http://pingus.googlecode.com/files/Pingus-0.7.6.2.dmg">Pingus-0.7.6.2.dmg</a> for Intel Macs [15MB]</li>
+        <li><a href="http://pingus.googlecode.com/files/Pingus-0.7.6-x86_64.dmg">Pingus-0.7.6-x86_64.dmg</a> for 64bit Intel Macs [15MB]</li>
+        <li><a href="http://community.games4mac.de/index.php?showtopic=17290">Pingus 0.7.0</a> for PPC Macs (outdated) [60MB]</li>
+      </ul>
+    </subsection>
+
+    <subsection title="Ubuntu">
+      <ul>
+        <li><a href="https://launchpad.net/~gabriel-rota/+archive/ppa">https://launchpad.net/~gabriel-rota/+archive/ppa</a></li>
       </ul>
     </subsection>
 
     <subsection title="Linux / Source">
       <ul>
-        <li><a href="http://pingus.googlecode.com/files/pingus-0.7.6.tar.bz2">pingus-0.7.6.tar.bz2</a>
-          [13 MB]<br />
-        </li>
+        <li><a href="http://pingus.googlecode.com/files/pingus-0.7.6.tar.bz2">pingus-0.7.6.tar.bz2</a> [13 MB]</li>
       </ul>
     </subsection>
   </section>
@@ -31,12 +32,12 @@
   <section title="Development Versions">
     <p>The Git tree can be checked out via:</p>
     <ul>
-      <li><tt>git clone https://code.google.com/p/pingus/</tt></li>
+      <li><tt>git clone git@github.com:Pingus/pingus.git/</tt></li>
     </ul>
 
-    <p>The Google Code project page can be found at:</p>
+    <p>The Github project can be found at:</p>
     <ul>
-      <li><a href="http://code.google.com/p/pingus/">http://code.google.com/p/pingus/</a></li>
+      <li><a href="https://github.com/Pingus/">https://github.com/Pingus/</a></li>
     </ul>
   </section>
 
@@ -46,56 +47,56 @@
       <li><a href="ftp://pingus.seul.org/pub/pingus/">ftp://pingus.seul.org/pub/pingus/</a></li>
     </ul>
   </section>
-<!--
-  <hr/>
+  <!--
+      <hr/>
 
-  <section title="Development releases - Don't use them!">
-    <p>The <a href="development.html">development section</a> contains
-      untested development releases. These are fairly current, buggy
-      and unplayable from time to time. If you want to play a game,
-      don't touch them!</p>
-  </section>
-  
-  <section title="Older releases - Don't use them either!">
-    <p>These older releases are just here for historic record, they
-      are mostly very buggy and the level format has changed in the
-      meantime, so don't use them for anything beside historic research.
-      Be warned that some of them might <em>corrupt and destroy</em>
-      your <tt>~/.pingus/</tt> directory and savegames.</p>
-    
-    <subsection title="Pingus 0.4.0 - Don't use!">
-      <ul>
-        <li>Windows - <dlink
-            href="http://pingus.seul.org/files/pingus-0.4.0-binary-win32.zip"/>
-          [5.9 Mb]
-        </li>
-        <li>GNU/Linux - <dlink
-            href="http://pingus.seul.org/files/pingus-0.4.0-binary-i386.tar.gz"/>
-          [5.9 Mb]<br />
-        </li>
-      </ul>
-    </subsection>
-    
-    <subsection title="Other Versions">
-      <p>
-        All other versions of Pingus that ever made it into the public
-        are available via HTTP or FTP from:
-      </p>
-        <ul>
-          <li><dlink href="http://pingus.seul.org/files/"/></li>
-          <li><dlink href="ftp://pingus.seul.org/pub/pingus/"/></li>
-        </ul>
-    </subsection>
+<section title="Development releases - Don't use them!">
+<p>The <a href="development.html">development section</a> contains
+untested development releases. These are fairly current, buggy
+and unplayable from time to time. If you want to play a game,
+don't touch them!</p>
+</section>
 
-    <subsection title="CVS">
-      <p>
-        Informations on how to get the current development version via
-        CVS can be obtained in the <a
-        href="http://pingus.seul.org/development/cvs.html">development
-        section of this page</a>.
-      </p>
-    </subsection>
+<section title="Older releases - Don't use them either!">
+<p>These older releases are just here for historic record, they
+are mostly very buggy and the level format has changed in the
+meantime, so don't use them for anything beside historic research.
+Be warned that some of them might <em>corrupt and destroy</em>
+your <tt>~/.pingus/</tt> directory and savegames.</p>
 
-  </section>
--->
+<subsection title="Pingus 0.4.0 - Don't use!">
+<ul>
+<li>Windows - <dlink
+href="http://pingus.seul.org/files/pingus-0.4.0-binary-win32.zip"/>
+[5.9 Mb]
+</li>
+<li>GNU/Linux - <dlink
+href="http://pingus.seul.org/files/pingus-0.4.0-binary-i386.tar.gz"/>
+[5.9 Mb]<br />
+</li>
+</ul>
+</subsection>
+
+<subsection title="Other Versions">
+<p>
+All other versions of Pingus that ever made it into the public
+are available via HTTP or FTP from:
+</p>
+<ul>
+<li><dlink href="http://pingus.seul.org/files/"/></li>
+<li><dlink href="ftp://pingus.seul.org/pub/pingus/"/></li>
+</ul>
+</subsection>
+
+<subsection title="CVS">
+<p>
+Informations on how to get the current development version via
+CVS can be obtained in the <a
+href="http://pingus.seul.org/development/cvs.html">development
+section of this page</a>.
+</p>
+</subsection>
+
+</section>
+  -->
 </page>
