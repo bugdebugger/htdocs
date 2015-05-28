@@ -1,5 +1,13 @@
 <?xml version="1.0" ?>
 <page title="News">
+  <section title="2015">
+    <news>
+      <item date="23. Mar 2015">
+        <p>The Pingus source code repository has been moved to Github and is now located
+        <a href="https://github.com/Pingus/pingus">here</a>.</p>
+      </item>
+    </news>
+  </section>
   <section title="2011">
     <news>
       <item date="30. Dec 2011">
