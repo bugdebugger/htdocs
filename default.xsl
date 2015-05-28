@@ -115,7 +115,7 @@
           <div id="footer">
             Copyright &#169; 1998-2010
             <a href="http://pingus.seul.org/~grumbel/">Ingo Ruhnke</a> 
-            &lt;<a href="mailto:grumbel@gmx.de">grumbel@gmx.de</a>&gt;
+            &lt;<a href="mailto:grumbel@gmail.com">grumbel@gmail.com</a>&gt;
           </div>
         </div>
       </body>
