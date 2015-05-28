@@ -15,12 +15,6 @@
         <a href="http://lists.nongnu.org/mailman/listinfo/pingus-devel">pingus-devel</a>
 	- Pingus Developer List (for general discussion about the game, the development, etc.).
       </li>
-      <!--
-      <li>
-        <a href="http://lists.nongnu.org/mailman/listinfo/pingus-cvs">pingus-cvs</a>
-	- Pingus CVS Commit List (only programmers need this one).
-      </li>
-      -->
     </ul>
     <p>There is currently no pingus-users mailing list due to the lack
       of traffic, so using the pingus-devel list for questions about the
