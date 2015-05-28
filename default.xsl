@@ -113,7 +113,7 @@
           </div>             
 
           <div id="footer">
-            Copyright &#169; 1998-2010
+            Copyright &#169; 1998-2015
             <a href="http://grumbel.blogspot.co.at/">Ingo Ruhnke</a>
             &lt;<a href="mailto:grumbel@gmail.com">grumbel@gmail.com</a>&gt;
           </div>
