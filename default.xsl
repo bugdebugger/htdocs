@@ -67,10 +67,11 @@
     <html>
       <head>
         <title>Pingus - <xsl:value-of select="@title" /></title>
-        <link rel="stylesheet" type="text/css" href="xmas.css" />
+        <link rel="stylesheet" type="text/css" href="default.css" />
         <link rel="alternate stylesheet" title="Desert Theme" type="text/css" href="halloween.css" />
         <link rel="alternate stylesheet" title="Desert Theme" type="text/css" href="desert.css" />
         <link rel="alternate stylesheet" title="Snow Theme" type="text/css" href="snow.css" />
+        <link rel="alternate stylesheet" title="X-Mas Theme" type="text/css" href="xmas.css" />
         <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
       </head>
       <body>
@@ -93,6 +94,10 @@
               <input type="image" src="http://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="donate via PayPal" />
             </div>
           </form>
+        </div>
+
+        <div style="position: absolute; left: 16px; top: 100px;">
+          <a href="bitcoin:1C1LQVQJj7KFbAPc1woZbcS5oEHBfnJv2L"><img src="images/donatebitcoin.png" alt="Donate via Bitcoin"/></a>
         </div>
 
         <div id="logo">
