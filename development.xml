@@ -25,7 +25,7 @@
     </p>
     
     <p>
-      <tt>svn co svn://svn.berlios.de/pingus/trunk/pingus/</tt><br/>
+      <tt>git clone https://github.com/Pingus/pingus.git</tt><br/>
     </p>
   </section>
 </page>

@@ -12,7 +12,6 @@
       <ul>
         <li><a href="http://pingus.googlecode.com/files/Pingus-0.7.6.2.dmg">Pingus-0.7.6.2.dmg</a> for Intel Macs [15MB]</li>
         <li><a href="http://pingus.googlecode.com/files/Pingus-0.7.6-x86_64.dmg">Pingus-0.7.6-x86_64.dmg</a> for 64bit Intel Macs [15MB]</li>
-        <li><a href="http://community.games4mac.de/index.php?showtopic=17290">Pingus 0.7.0</a> for PPC Macs (outdated) [60MB]</li>
       </ul>
     </subsection>
 
@@ -47,56 +46,4 @@
       <li><a href="ftp://pingus.seul.org/pub/pingus/">ftp://pingus.seul.org/pub/pingus/</a></li>
     </ul>
   </section>
-  <!--
-      <hr/>
-
-<section title="Development releases - Don't use them!">
-<p>The <a href="development.html">development section</a> contains
-untested development releases. These are fairly current, buggy
-and unplayable from time to time. If you want to play a game,
-don't touch them!</p>
-</section>
-
-<section title="Older releases - Don't use them either!">
-<p>These older releases are just here for historic record, they
-are mostly very buggy and the level format has changed in the
-meantime, so don't use them for anything beside historic research.
-Be warned that some of them might <em>corrupt and destroy</em>
-your <tt>~/.pingus/</tt> directory and savegames.</p>
-
-<subsection title="Pingus 0.4.0 - Don't use!">
-<ul>
-<li>Windows - <dlink
-href="http://pingus.seul.org/files/pingus-0.4.0-binary-win32.zip"/>
-[5.9 Mb]
-</li>
-<li>GNU/Linux - <dlink
-href="http://pingus.seul.org/files/pingus-0.4.0-binary-i386.tar.gz"/>
-[5.9 Mb]<br />
-</li>
-</ul>
-</subsection>
-
-<subsection title="Other Versions">
-<p>
-All other versions of Pingus that ever made it into the public
-are available via HTTP or FTP from:
-</p>
-<ul>
-<li><dlink href="http://pingus.seul.org/files/"/></li>
-<li><dlink href="ftp://pingus.seul.org/pub/pingus/"/></li>
-</ul>
-</subsection>
-
-<subsection title="CVS">
-<p>
-Informations on how to get the current development version via
-CVS can be obtained in the <a
-href="http://pingus.seul.org/development/cvs.html">development
-section of this page</a>.
-</p>
-</subsection>
-
-</section>
-  -->
 </page>
